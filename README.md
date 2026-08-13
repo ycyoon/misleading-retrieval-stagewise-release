@@ -21,6 +21,33 @@ over Nested Policy Classes*.
 
 ## Reproducing the numbers
 
+One command recomputes the paper's headline numbers from the released rows
+and checks each against the published value:
+
+```bash
+python -m pip install -r code/requirements.txt   # numpy, pandas, pyarrow
+python code/reproduce.py                          # run from this directory
+```
+
+The script exits nonzero on any disagreement. Expected final line:
+
+```
+32 of 32 checks pass -- the released data reproduce the published numbers
+```
+
+It verifies, from raw rows only: the utility identity on every decision-row
+file; the primary panel's oracle (0.6150), headroom and G1 at all four
+costs, with the two question-keyed folds rebuilt from the recorded split
+seed 20260811; the decomposition identity on all three panels; the second
+reader's oracle (0.6675); the extension's prompted-minus-carried contrast
+(+0.0867) and the three per-collection points; the two ablation effects at
+c=2; the jury label distribution (202/226/19) and Fleiss' kappa (0.822)
+recomputed from the per-judge raw verdicts; and the Llama sufficiency gap
+(0.741) with its bootstrap interval ([0.706, 0.778], seed 42). Runtime is
+about one minute on a laptop.
+
+Beyond the driver:
+
 * Utilities: recompute from `data/decision_rows/` with the macro-average
   recipe above; the row-level identity `correct + wrong = returned` holds on
   every row.

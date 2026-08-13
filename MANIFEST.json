@@ -1,6 +1,6 @@
 {
  "README.md": {
-  "sha256": "93d6917cfc28820a1286b3e441e88f8d988a55ce7ed0e5348d49f169b7eb3f05",
+  "sha256": "658e74a4d073e59febeab7b13428459de0b80d1a97a92389fca225cd17111a05",
   "source": "generated"
  },
  "code/ablation_crossfit.py": {
@@ -35,6 +35,10 @@
   "sha256": "debfeeb856b8713974399b372d5e9333b26d2c16adf29e3c37afed559e51777b",
   "source": "experiments/scripts/maintrack/make_ladder_table.py"
  },
+ "code/reproduce.py": {
+  "sha256": "60100e200b7dfba5587d467a5207b94e9a603a534389fd9adfe9ee3df2b1b6b9",
+  "source": "experiments/scripts/maintrack/release_reproduce.py"
+ },
  "code/requirements.txt": {
   "sha256": "d932106411c00b96f329d90c30043419fe8892bbccb59d7deaaeb28d7d172176",
   "source": "generated"
@@ -63,6 +67,10 @@
   "sha256": "932af85d2c16f5c54389cf5ef0eadaa4f0f5d918498c2aef3e1dd24566ee57c8",
   "source": "artifacts/maintrack_v1/v12_21_ablation_crossfit/ablation_crossfit_bands28.csv"
  },
+ "data/decision_rows/ablation_rows.parquet": {
+  "sha256": "ac3d3a399f185716354c294c772531819be5574c596b832e7ed7267e990357c2",
+  "source": "artifacts/maintrack_v1/v12_14_architecture_ablation/ablation_rows.parquet"
+ },
  "data/decision_rows/extension_rows.parquet": {
   "sha256": "dde02dd19f23ea2db97287323694c17ee80f9f001b5a7325bef29887ff094fa7",
   "source": "artifacts/maintrack_v1/v12_13_e4_panel_extension/panel_decision_rows.parquet"
@@ -78,6 +86,10 @@
  "data/decision_rows/second_reader_all_arms.parquet": {
   "sha256": "84f0d1e162ec3efbc2221cdc3908c50b596de791e37b7be23299178bd80f8734",
   "source": "artifacts/maintrack_v1/v12_27_second_reader_70b/verification_arms/panel_all_arms.parquet"
+ },
+ "data/decision_rows/second_reader_closure_rows.parquet": {
+  "sha256": "34261a2b04d440d9a18253e9f5a554533693fe02d78988db979d4c1207f5a0f9",
+  "source": "artifacts/maintrack_v1/v12_27_second_reader_70b/closure/closure_decision_rows.parquet"
  },
  "data/diagnosis/sufficiency_crosscheck_ci.json": {
   "sha256": "36d00cb75f50ee57d71749fb571aec6fe26204701f6bbf756615e2ca980d17cf",
