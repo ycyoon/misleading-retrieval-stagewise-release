@@ -1,0 +1,45 @@
+{
+ "status": "E4_PANEL_INPUT_PREPARED_BEFORE_CANDIDATE_GENERATION",
+ "preregistration": "reports/v12_13/E4_PREREGISTRATION.md",
+ "preregistration_sha256": "fbb78683503e0eb70818a88e323c5639433bc4e181d5dfeda6a5868c0449babb",
+ "panel": "artifacts/maintrack_v1/v12_13_e4_panel_extension/panel_input.jsonl",
+ "n_rows": 300,
+ "n_questions": 300,
+ "datasets": [
+  "wp4_confiqa-mc",
+  "wp4_confiqa-mr",
+  "wp4_conflictqa-popqa-llama2-7b"
+ ],
+ "conditions": {
+  "external_supportive": 150,
+  "external_conflicting": 150
+ },
+ "source_files": {
+  "external/saber/data/datasets/confiqa-mc.jsonl": "d9a5cd517c0cd873cb3736eb4415a7821b88e11a8fd7f53f201ea0d8c8dae13f",
+  "external/saber/data/datasets/confiqa-mr.jsonl": "53797868edb2bf5515e3ee388aa3105e15d0c78e47431b4cd508fa0d53cefdc3",
+  "external/saber/data/datasets/conflictqa-popqa-llama2-7b.jsonl": "8bb20c4aa8d13e33311f94ad34587e90444e0fff8a2e38182fa89031acf8be3c"
+ },
+ "existing_panel": "artifacts/maintrack_v1/v12_9a_panel_rederived/panel_input.candidates.jsonl",
+ "existing_panel_sha256": "d7e6d28ee3ce38490f3285cc2c711f48ee0616df9f2a464b5726e0459a8d3d76",
+ "base_inventory_training_only": {
+  "question_keys": 2090,
+  "qids": 3382,
+  "source_document_ids": 11902,
+  "source_texts": 11452
+ },
+ "base_inventory_with_panel": {
+  "question_keys": 2265,
+  "qids": 3782,
+  "source_document_ids": 14035,
+  "source_texts": 13571
+ },
+ "overlap_counts": {
+  "question": 0,
+  "qid": 0,
+  "source_pid": 0,
+  "source_text": 0
+ },
+ "overlap_rule": "exact canonical question/qid/source pid/source text equality rejected against BOTH the training inventory and the existing panel",
+ "human_annotation": false,
+ "source_script": "experiments/scripts/maintrack/e4_panel_extension.py"
+}

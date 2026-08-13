@@ -1,0 +1,94 @@
+{
+ "judges": [
+  "qwen72b",
+  "mistral24b",
+  "phi4"
+ ],
+ "n_items": 447,
+ "positive_controls": [
+  "positive",
+  "alias"
+ ],
+ "negative_controls": [
+  "foreign",
+  "conjunct",
+  "perturbed"
+ ],
+ "settlement_rule": "at least two entitled families returning the same firm verdict; anything else is contested",
+ "entitlement_distribution": {
+  "0": 3,
+  "1": 11,
+  "2": 52,
+  "3": 381
+ },
+ "per_judge": {
+  "qwen72b": {
+   "positive_control_recall": 1.0,
+   "foreign_control_rejection": 0.9850586979722519,
+   "n_positive": 476,
+   "n_foreign": 937,
+   "main_verdicts": {
+    "incorrect": 231,
+    "correct": 215
+   },
+   "unparsed_main": 1
+  },
+  "mistral24b": {
+   "positive_control_recall": 0.9705263157894737,
+   "foreign_control_rejection": 0.9764705882352941,
+   "n_positive": 475,
+   "n_foreign": 935,
+   "main_verdicts": {
+    "incorrect": 216,
+    "correct": 224,
+    "unresolved": 7
+   },
+   "unparsed_main": 0
+  },
+  "phi4": {
+   "positive_control_recall": 0.9852941176470589,
+   "foreign_control_rejection": 0.9658484525080042,
+   "n_positive": 476,
+   "n_foreign": 937,
+   "main_verdicts": {
+    "incorrect": 228,
+    "correct": 217,
+    "unresolved": 1
+   },
+   "unparsed_main": 1
+  }
+ },
+ "label_distribution": {
+  "incorrect": 226,
+  "correct": 202,
+  "contested": 19
+ },
+ "contested_rate": 0.042505592841163314,
+ "unanimous_coverage": 0.7472035794183445,
+ "pairwise_agreement": {
+  "qwen72b|mistral24b": 0.8968609865470852,
+  "qwen72b|phi4": 0.9393258426966292,
+  "mistral24b|phi4": 0.8946188340807175
+ },
+ "fleiss_kappa": 0.8222827678626896,
+ "fleiss_kappa_items": 445,
+ "fleiss_kappa_basis": "raw three-family verdicts on items all three parsed, before entitlement, unresolved as its own category",
+ "leave_one_family_out": {
+  "without_qwen72b": {
+   "labels_changed": 79,
+   "fraction": 0.1767337807606264
+  },
+  "without_mistral24b": {
+   "labels_changed": 46,
+   "fraction": 0.1029082774049217
+  },
+  "without_phi4": {
+   "labels_changed": 63,
+   "fraction": 0.14093959731543623
+  }
+ },
+ "reader_family_judge": "qwen72b",
+ "entitlement_rule": "a judge votes on a question only where it called the accepted answer correct and a foreign answer incorrect for that question",
+ "contested_treatment": "carried into conservative and optimistic bounds, not resolved by the authors",
+ "source_script": "experiments/scripts/maintrack/jury_aggregate.py"
+}

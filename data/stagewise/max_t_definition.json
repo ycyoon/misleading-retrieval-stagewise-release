@@ -1,0 +1,5 @@
+{
+ "statistic": "for each of the eight cells (G2, G3) x (0.5, 1, 2, 4), the bootstrap draws are centred at the cell's mean and studentised by the cell's bootstrap standard deviation floored at 1e-12; the critical value is the 95th percentile over draws of the maximum studentised deviation across the eight cells, and the one-sided upper bound is point + critical * sd per cell",
+ "degenerate_cells": "cells whose selected policy is identical in every replicate have deviation identically zero; they contribute zero to each draw's maximum and their bound equals their point estimate",
+ "source_code": "experiments/scripts/maintrack/telescoping_decomposition.py::stagewise_bands"
+}

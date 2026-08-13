@@ -1,0 +1,2072 @@
+item_id,origin,condition,question,candidate_shown,accepted_answers,verdict,error_type,parse_note,status,presented_position,prompt_sha256,raw
+3556ad0a4ebd9a043d80f6154f19f2989a7eb14786c15d4989be415a919a4527,original_413,main,Which person or organization did Jan H Driller work for?,Universidade Federal de Santa Maria,['Aarhus University'],incorrect,wrong_entity,,ok,1,3a0278d5f203f5ce,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to any accepted answer.""
+}
+```"
+1f1217d5e408f09f63c6eb2ceef3e7fd55f810561c4a35ab3dbbf738be033ece,original_413,main,In which sport could the Pacers take on the Pistons?,Hockey,"['men s basketball', 'baksetball', 'baketball', 'boy s basketball', 'basketball club', 'high school basketball', 'rim basketball', 'basketball team', 'bball', 'unicycle basketball', 'basketball worldwide', 'shoot hoops', 'b ball', 'basketball', 'basketball net', 'women s hoops', 'basketball gear', 'basketballer', 'basket ball', 'basketball rim', '🏀', 'basketball parity worldwide', 'basketball player']",incorrect,wrong_entity,,ok,2,92888775b0d9d9b3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Hockey is not basketball""
+}
+```"
+3bee08d6a73c4e67fe6fbebdfec10bbe1eef3800323cabd6f6aa6798fc45064e,original_413,main,how many seasons of prison break are on netflix,four,['five'],incorrect,wrong_number,,ok,3,c89fe97b94c18380,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer is one season less""
+}
+```"
+5823a69c8e74e5733c1ed41c4fa6081068b5cf45d78ca9db6bfefa8b14e39f93,original_413,main,who was the aztec ruler when the spanish arrived,Montezuma I,"['Moctezuma II', 'emperor Cuauhtemoc']",incorrect,wrong_entity,,ok,4,d7a5729f60b8b59d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Montezuma I was not the ruler""
+}
+```"
+33ba432064aa087a827f65c3367ddf2a7bd8ed409a7551f53262224d935e1283,original_413,main,when were cigarette ads banned from tv uk,1965,['1 August 1965'],correct,none,,ok,5,93fbf875dcab1014,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Coarsening does not contradict accepted answer""}
+```"
+2ccd221a3429b761f6c4429dc6cc90989b2366951eba29a972dfd4faa88079e8,original_413,main,Which person or organization did Ullrich Wüllner work for?,Iowa State University,['German Center for Neurodegenerative Diseases'],incorrect,wrong_entity,,ok,6,7720eaed35a68047,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+8acc3cf3c793fac1def2dd74d5d4b890b626ac4060512a774c96967604824f0e,original_413,main,Which artist David was born in Bradford UK?,David Hockney,"['hockney', 'david hockney']",correct,none,,ok,7,4c224e36f3582afe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+e14ff72185626b32526b16ed33aa143aa6605a6ede01ee5e490a7082bad5d8af,restored_34,main,Which person or organization did Ilse Braun work for?,Martin Levy Marx,Albert Speer,incorrect,wrong_entity,,ok,8,6930df75944f416c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not equivalent to accepted answer""
+}
+```"
+a7615e11adf92181b721a130c090b59608bb0b90dcced30e7cb3212360d9b143,original_413,main,Which person or organization did Dengqing Zhang work for?,I don't know.,['Donghua University'],incorrect,other,,ok,9,4097702e203911bd,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+e3fde43a6c22cc2adbd17d28bbbf7b93c2f29840cf485e7f556a47b876a9b9d0,original_413,main,who does the voice of the gorilla in the movie sing,Taron Egerton,['Taron Egerton'],correct,none,,ok,10,0871604dca01223c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+579b8afcc7a93ec3a86874e44fe9c62c0741142fe9460e88205fe8dd4bcd45a7,restored_34,main,Where did Lyndon B. Johnson work?,"United States Representative, Senate, President","Washington, D.C. ; Washington, District of Columbia ; Washington D.C. ; D.C. ; Washington, D. C. ; Washington ; Washington DC ; Washington, DC ; Washington, D.C., U.S. ; D.C. Washington ; The District ; District of Columbia ; US-DC ; DC",incorrect,wrong_entity,,ok,11,b1212c5ec0c8a3e5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer lists roles, not locations.""
+}
+```"
+c0729896ae65ae57650bb7c86926980de0ca556ee5f2351600199cb947707d6a,original_413,main,where was part of the classic surfing movie endless summer filmed,South Africa,"['Tahiti', 'Ghana', 'Australia', 'South Africa', 'Nigeria', 'New Zealand', 'Hawaii', 'Senegal', 'the coasts of Australia, New Zealand, Tahiti, Hawaii, Senegal, Ghana, Nigeria and South Africa']",correct,none,,ok,12,ed37f9ac53c03d57,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is in accepted list.""}
+```"
+5638de2b354d3376341b63db374c7cbb326d937601811c3b01b30ff6145bac68,original_413,main,Art Garfunkel trained for which profession although he didn't qualify?,architect,"['master builder occupation', 'graziani corazza', 'architecht', 'clifford lawrie', 'architechts', 'architects', 'registered architect', 'hok canada inc', 'architect', 'stanford downey architects inc']",correct,none,,ok,13,33c39cb0eb713543,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'architect'.""}
+```"
+78b9b685de591fa05045080811ea8eab606b76396ed7ed60bf833e216d887e06,original_413,main,Which person or organization did Barbara Stecca work for?,I don't know.,['Careggi University Hospital'],incorrect,other,,ok,14,c0d5b4bebc264937,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+1f9766ad2830897612e24f99c6e2071f7079551ea72b6b296327f0d531763958,original_413,main,How was the European Recovery Program in the 1940s more commonly known?,The Marshall Plan,"['marshall aid plan', 'european recovery act', 'economic cooperation act of 1948', 'marshall aid', 'marshal plan', 'marshall paln', 'european recovery programme', 'european recovery program', 'organization for european economic recovery', 'ministère de la reconstruction', 'operation rathole', 'marshall plan']",correct,none,,ok,15,12f67bbbff33d557,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""
+}
+```"
+4cd4028b4239ad17c1316173011108b13971b45103b5b330c5d23d517669b524,original_413,main,Which 90s sci fi series with James Belushi was based on Bruce Wagner's comic strip of the same name?,I don't know.,['wild palms'],incorrect,other,,ok,16,94b0aa9b0c2fe05a,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+e860c81c239b2017fa16ce87c51e1120c5a133ef26a659eae31951001a8c7f2f,original_413,main,who won the award for best goalkeeper in football world cup 2006,Iker Casillas,['Gianluigi Buffon'],incorrect,wrong_entity,,ok,17,04cdec41b28038b5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer""
+}
+```"
+774dec830865ddad896dd2ba0ebf4418135e67f22c70e3c8c95b77a57ba25275,original_413,main,Who is the head of state of Spain?,King Felipe VI,"['Felipe VI of Spain', 'Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia', 'Felipe VI', 'Philip VI of Spain', 'Philip John Paul Alphonse of All Saints of Bourbon']",correct,none,,ok,18,09ee50bde1cba3d0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'Felipe VI'.""}
+```"
+ce72374d53f74ec3d29a6d7230cc962bcd7b4c9c8b33d9f9ec1e2666306e87e2,original_413,main,What genre is associated with Buddy Holly?,Rock and roll,['rockabilly'],incorrect,wrong_entity,,ok,19,36ce9563e0dc7a2a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Rock and roll is not rockabilly""
+}
+```"
+c4143463ed908478bd082de680aee8f0d0709c386d657ba3f4283502631c8554,original_413,main,What organization is Sheryl Sandberg a member of?,The Partridge Family,"['National Honor Society', 'NHS']",incorrect,wrong_entity,,ok,20,7e094b6be270e27f,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is unrelated to accepted answers""
+}
+```"
+afee479143827523ac4ffeebd68a354b0f5bb64a7fee52ad36bf25f6ce1e9e49,original_413,main,india participated olympic hockey for the first time,1928 Amsterdam Olympics,"['1928', '1927']",correct,none,,ok,21,730b9e072d6ea76b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""1928 is in accepted answers""}
+```"
+f549f3775814fc51d91df72ea5c503a1c1b81fea731657dc9b4128c47d151e23,original_413,main,Who composed the music for War for the Planet of the Apes?,Hauschka,"['Michael Giacchino', 'Michael George Giacchino']",incorrect,wrong_entity,,ok,22,3af7f8b85b5f7ca0,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answers""
+}
+```"
+89ca32393d0fb027c00e169e260094ccfe99fb7884d01df48b6b5f05bcf3c696,original_413,main,what is the most fundamental unit of life according to the cell theory,The cell,['cells'],correct,none,,ok,23,4b601c32625e354f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""singular vs plural form""}
+```"
+482dbeb65061cff5ef646d2afb2b2e1b7054ee64d8819764c6833ce1715d3ea1,original_413,main,What sport does Wyatt Russell play?,Ice hockey,"['ice hockey', 'hockey']",correct,none,,ok,24,51aa630b6ef280f1,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answer.""}
+```"
+9e80c2f79be933ee7ad282652ef21eb30e029c2b2b333af74b7f17ff29705158,original_413,main,when did the wave hill walk off end,16 August 1975,['16 August 1975'],correct,none,,ok,25,629f376f4dbfa53e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+adff37bc1d8efc3be988656a9a816f3b9749ec9fb1663469e518b12c2708fcdd,original_413,main,who won the award for best goalkeeper in football world cup 2006,I don't know.,['Gianluigi Buffon'],incorrect,other,,ok,26,57fa4289fdd5dc7d,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response.""}
+```"
+1dda3b240d6c559adca8beaa188c6ef092da349afea32908fb747ed4530c92ec,original_413,main,who plays the mom on the tv show mom,Meryl Streep,"['Anna Faris', 'Allison Janney']",incorrect,wrong_entity,,ok,27,1270a42aa283cd6e,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not in accepted answers""
+}
+```"
+d60b300480f55900c77e3811b49ec193a5abca26e641313f4dc9f6d012d59987,original_413,main,How old was Jimi Hendrix when he died?,27,"['27', 'twenty seven']",correct,none,,ok,28,d022b283cccd63f8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+a1a4c1da1ef73ded2a9dcc79c6ffd9f7ac45c4a3b4eb3ae445aab9c8fc29c079,original_413,main,Which person or organization did Ullrich Wüllner work for?,I don't know.,['German Center for Neurodegenerative Diseases'],incorrect,other,,ok,29,98e7c8ef31556622,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+13571e6f53161fc7257c19f7fa8d3e410a414bbc1ffbae01379f4881edbade76,original_413,main,Dave Gilmore and Roger Waters were in which rock group?,Pink Floyd,"['screaming abdabs', 'megadeaths', 'clive metcalfe', 'pink floyd band', 'pink flowd', 'meggadeaths', 'pi5', 'pink floyd', 'screaming ab dabs', 'grey floyd', 'architectural abdabs', 'pink flod', 'pinkfloyd', 'pik floyd', 'pink floyd sound', 'tea set', 'pink floid', 't set', 'pink floyd trivia', 'notable or frequent contributors to pink floyd']",correct,none,,ok,30,12fb56acf7303c0b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'pink floyd'.""}
+```"
+85b17990a5d030af6ccf3fb453470560bb8b5d681e5675e9e69aaf294c96e63a,original_413,main,"Who is the spouse of Prince Richard, Duke of Gloucester?",Rachel Hunter,"['Birgitte, Duchess of Gloucester', 'Birgitte Eva Henriksen', 'Birgitte Eva van Deurs Henriksen']",incorrect,wrong_entity,,ok,31,d316613feda4cad0,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+98afb06b497cae9f3f15cb7919d39d2fd5069b20a0d0655c0f267d1c8bfb8112,restored_34,main,Who had a Too Legit To Quit Tour?,M.C. Hammer,too tight mc hammer album ; family affair mc hammer album ; stanley burrell ; hammer rapper ; stanley kirk burrell ; stanley k burrell ; wiredoo ; mchammer ; hammer crew ; m c hammer ; you shouldn t touch this ; mc hammer,correct,none,,ok,32,c1381da65762cbc9,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""
+}
+```"
+cc865e3fd46dec5a8c48af01aef189d5ad4fd68b052ddc7d93df798bc6d17abd,original_413,main,Which society was Sigmund Freud a member of?,I don't know.,"['Royal Society', 'The Royal Society of London for Improving Natural Knowledge', 'Royal Society of London', 'The President, Council, and Fellows of the Royal Society of London for Improving Natural Knowledge', 'The Royal Society, UK', 'royalsociety.org']",incorrect,other,,ok,33,497370845be28ec0,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+6ac0f5f09b93d25d338644afbf041dd22041fbc44ab375c4660d8ff975756abb,original_413,main,who gave the famous objective co relative theory,Ezra Pound,"['poet and literary critic T.S. Eliot', 'T.S. Eliot']",correct,none,,ok,34,4a14c351785ad44e,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answer.""
+}
+```"
+ef9c427c88bc2c68a3f3f121c15387a43c5ad466548d6aaf8c53597c54145fce,original_413,main,What is Osbert Lancaster best known for producing?,cartoons published in the Daily Express,"['cartoonish', 'cartoons', 'cartoon', 'cartoonistic', 'cartoonism', 'american cartoon']",incorrect,wrong_entity,,ok,35,90043f919081733a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer specifies 'Daily Express', not in accepted answers.""
+}
+`"
+f22fe2e5a2ec8ebb1b931c88428955abf035ab43623409a6f6e23f0149541812,original_413,main,what part of the brain is in the middle cranial fossa,"Optic nerve, pituitary gland.","['pituitary gland', 'temporal lobes', 'the temporal lobes', 'the pituitary gland']",incorrect,partial,loose_parse,ok,36,dc0739834bac30fb,"```json
+{""verdict"": ""partial"", ""error_type"": ""partial"", ""brief_reason"": ""Optic nerve is incorrect""}
+```"
+12ed3ee12f8be634872553585e694e7f2b81b60166f851874b0ae05291ab0e6b,original_413,main,Which person or organization did Barbara Stecca work for?,Moravian Archives Herrnhut,['Careggi University Hospital'],incorrect,wrong_entity,,ok,37,42f0baa7b5184bbf,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+2eb9b8e249beb79808092c25b9cbb73881ae165fa89d6496e80c489c7cec7813,original_413,main,Who had a 70s No 1 hit with Let's Do It Again?,The Temptations,"['cleotha staples', 'staple singers', 'staples singers']",incorrect,wrong_entity,,ok,38,ba9dae0dfbb5f0d5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answers""
+}
+```"
+9863c76178d0633d722ae0bf7540a063a86bc058ce89b2fe1ff5064c20b6c984,original_413,main,bacterial cell walls are made rigid by the presence of,peptidoglycan,"['Peptidoglycan', 'Peptidoglycan, also known as murein']",correct,none,,ok,39,ffdd90ea2cda4507,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Peptidoglycan'.""}
+```"
+cc2a38947871b7f92f84c6a5f2eba4299b8bfa26c3282ac2ff86ab81dab55483,restored_34,main,Who is the spouse of B. R. Ambedkar?,Savita Ambedkar,Ramabai Ambedkar ; Ramabai Bhimabai Ambedkar ; Ramai ; Ramabai Bhimrao Ambedkar,incorrect,wrong_entity,,ok,40,09afe0d1bf502ec1,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+0d7df76182c4dee7d863748ada8c87bf9b857d8eb04ce03cc792018b0829548b,original_413,main,Which person or organization did Barbara Stecca work for?,Unity Archives – Moravian Archives Herrnhut,['Careggi University Hospital'],incorrect,wrong_entity,,ok,41,f14c7dbacd251069,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+040638bd0834ed09596cda55442d32abdc1749d344d877bac2db6445eff1ea76,original_413,main,What was the name of Michael Jackson's autobiography written in 1988?,Moonlight Journeys,"['moon walk', 'lunar walks', 'moonwalks', 'moonwalk disambiguation', 'lunar walking', 'moonwalking', 'lunar walk', 'walk on moon', 'moon walks', 'moon walking', 'moonwalk']",incorrect,wrong_entity,,ok,42,52d317df753a404e,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+12443e5df2834d02f7e3b64523e33ceacd88bf7ba3f78fc03b265cecede510d0,restored_34,main,epidemiologists attempt to explain the link between health and variables such as,"health outcomes, risk factors, social structures, economic incentives.",stress ; chemicals ; alcohol ; smoking ; disease conditions in defined populations ; biological agents,unresolved,other,,ok,43,6e7b71e875d3b951,"```json
+{
+  ""verdict"": ""unresolved"",
+  ""error_type"": ""other"",
+  ""brief_reason"": ""Candidate answer does not match any accepted answer""
+}
+```"
+53f7a82b57f46dab23a2ac32735b8d949dc23c7af8e7dd33c4c839fd57696b5f,restored_34,main,cast of law & order special victim unit,"Mariska Hargitay, Christopher Meloni, Dann Florek, Richard Belzer, Dean Winters",Dann Florek ; Mariska Hargitay ; B. D. Wong ; Diane Neal ; Danny Pino ; Michelle Hurd ; Kelli Giddish ; Adam Beach ; Michaela McManus ; Tamara Tunie ; Richard Belzer ; Ice-T ; Christopher Meloni ; Raúl Esparza ; Stephanie March ; Peter Scanavino,correct,none,,ok,44,86213ba763cf0ebe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""All candidate names match accepted answers.""}
+```"
+b96add9412e634d023f412d1c6888bc614ff49c20cfa4ada4e6722972d1bcfc3,original_413,main,Which person or organization did Sin-Yeon Kim work for?,University of Glasgow,['University of Glasgow'],correct,none,,ok,45,e891150ef02b87f2,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+0f1cfe294ca107b371b586ca610dfbbb9185132aaaa1bfba4e291ba2f5022889,original_413,main,Which person or organization did Shawn Martin work for?,"Tianjin University, University of Oxford, University of California, Berkeley.",['Indiana University Bloomington'],incorrect,wrong_entity,,ok,46,808556b8f0f51f1c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer has no overlap with accepted answer.""
+}
+```"
+1e0d0b881aedd10c364571bdccc59cdd9c965c3cba6a3d2904a160bbfe41fea1,original_413,main,when are the opening ceremonies for the 2018 olympic games,"February 9, 2018",['9 February 2018'],correct,none,,ok,47,e7182ca9e7d82a17,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Date matches, ignoring notation differences""}
+```"
+a1ae1a68de9ffa5a7f3945c47e3cade0b2c24b8ea90872e439eaf09900806be4,original_413,main,Which person or organization did Nilesh Kumar work for?,Kansas State University,['International Centre for Genetic Engineering and Biotechnology'],incorrect,wrong_entity,,ok,48,c5f2da1ae37f2a45,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+efa6a89436d4d4247ef13c66f14a402923d8f03d31c107f39e4090678ad50936,restored_34,main,Where is the headquarters of the Minnesota Vikings located?,"Eagan, Minnesota","Minnesota ; MN ; Land of 10,000 Lakes ; Minnesota, United States ; State of Minnesota ; Minn. ; US-MN ; North Star State",incorrect,wrong_entity,,ok,49,5f9a6fd90d29c77f,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate specifies Eagan, not a general location.""}
+```"
+4749c497900010825ebcce1c36638ba74b434d976e74460512a4b72e01f5f149,original_413,main,In the 80s who wrote the novel Empire of The Sun?,J.G. Ballard,"['ballardian', 'user s guide to millenium', 'james g ballard', 'j g ballard', 'jg ballard', 'james graham ballard']",correct,none,,ok,50,05f14168868946fe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'j g ballard'.""}
+```"
+2142c6ff248e104b9b46c1923e0e233b3ad3dba776fe55aa627400906d0642dd,original_413,main,Who had a Too Legit To Quit Tour?,Hammer,"['too tight mc hammer album', 'family affair mc hammer album', 'stanley burrell', 'hammer rapper', 'stanley kirk burrell', 'stanley k burrell', 'wiredoo', 'mchammer', 'hammer crew', 'm c hammer', 'you shouldn t touch this', 'mc hammer']",correct,none,,ok,51,5229fea482a8742e,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""
+}
+```"
+2ef9e61964c92fe73f75cc808f7ae3dff7d9b12b45fb15f061ef4f609c0f86a2,original_413,main,the sport psychology sub-field of performance enhancement deals primarily with,mental techniques to improve athletic performance.,['Arousal regulation'],incorrect,wrong_entity,,ok,52,a2fd6932829498b5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is broader than accepted answer.""
+}
+```"
+5e5b50fc226e31a32d7d69ac12629de0e632984379ffb6d19ec422922000bb91,original_413,main,where do they grow hops in the us,"Oregon, Washington state","['Willamette (Oregon)', 'western Canyon County, Idaho', 'western Canyon County, Idaho (including the communities of Parma, Wilder, Greenleaf, and Notus)', 'the Yakima (Washington) and Willamette (Oregon) valleys', 'Yakima (Washington)', 'Idaho', 'the leading potato-growing states in the United States', 'Oregon', 'Washington']",correct,none,,ok,53,7c8a95707f74d3db,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is a partial enumeration of accepted answers.""}
+```"
+59bb3aeb55173357c0c2ffe897a3da5ef62f3aeceb20f3cdee2df03878989f45,original_413,main,Brandon Lee died during the making of which movie?,The Raven,"['crow', 'crow dead time', 'crow 2016 film']",correct,none,,ok,54,c1177537ec123ae3,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""The Raven is semantically equivalent to 'crow'.""}
+```"
+e613252540c4efbb3a3a602a54c6fff8563e6f034466117cc7e9406ebd478911,original_413,main,who is the number one ranked golfer in the world right now,Dustin Johnson,['Dustin Johnson'],correct,none,,ok,55,bf518d143fc78fd9,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+8c8d7fce1f2148362e4c44b58582d8de517c578096815ee78f6975a22927b7bd,original_413,main,The flag of Libya is a plain rectangle of which color?,light green,"['greenishness', 'color green', '0 255 0', 'green color', 'green', 'rgb 0 255 0', 'avacado color', 'greenest', 'list of terms associated with color green', 'greenness', 'greenishly', 'colour green', 'pastel green', 'green colour']",correct,none,,ok,56,130597a6393afe6c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""light green is semantically equivalent to green""}
+```"
+a5a4cef5c8a98eff027c321d8e9754e5d10bff37eaf4f2bb3b6d46cc97665eac,original_413,main,Which person or organization did Agata Lipko work for?,Agostino Gemelli University Polyclinic,['Institute of Biocybernetics and Biomedical Engineering'],incorrect,wrong_entity,,ok,57,4097580131d6f5e5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answer""
+}
+```"
+8f1c387b816b3e61f1bce66e4654d58321363560b80f9eeef437c35b7e93d298,original_413,main,Which musical featured the song The Street Where You Live?,My Fair Lady,"['my fair lady musical', 'my fair lady', 'my fair lady 2010 film', 'why can t english 3f', 'my fair lady upcoming film', 'my fair lady 2012 film', 'my fair lady 2014 film', 'my fair lady 2015 film', 'i m ordinary man', 'enry iggins']",correct,none,,ok,58,9cc86aab5265733a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'my fair lady'.""}
+```"
+6cec9f65d833b65ba2bf43a8b0a7e22c110c3d9763ef9a16b0b8a854ada67514,original_413,main,If I Were A Rich Man Was a big hit from which stage show?,Fiddler on the Roof,"['fiddler on roof', 'sprintze', 'anatevka', '2 life', 'fiddler on reoof']",correct,none,,ok,59,f97d8ff3e675e359,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'fiddler on roof'.""}
+```"
+f2dff2def6718f965f4165d95145903a156ad4bc43a3b969411451e207934f92,original_413,main,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Hitler,"['hitler s medical health', 'adlof hitler', 'adolf hiedler', 'hitler adolf', 'hitleradolf', 'adolpf hitler', 'history of adolf hitler', 'hitleradolph', 'adolphhitler', 'adolf hitler s health', 'adoff hitler', 'hitlar', 'adolf hiler', 'adolph hiedler', 'adolf hitle', 'aldof hilter', 'adolph hiter', 'hitler s', 'hitler', 'adolf hister', 'adolf hittler', 'nazi leader', 'adolfhitler', 'adolf hitler s medical health', 'hitler adolph', 'hitler s health', 'herr hitler', 'adolfus hitler', 'adolph hitler', 'adolph schicklegruber', 'adolf hilter', 'adolf hitler s medical condition', 'health of adolf hitler', 'hitlerian', 'adolph schicklgruber', 'adolph hitler s medical health', 'adolph hitler s health', 'adolph schickelgruber', 'adolf schicklgruber', 'day of potsdam', 'adolf hitlier', 'adolf hitler', 'hitlers medical health', 'hittler', 'hitlers', 'herr wolf', 'hitlet', 'adolf schickelgruber', 'adolf schicklegruber', 'adolph hittler']",correct,none,,ok,60,3f4ed88bf7c9f0bb,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""}
+```"
+85fd195608a6e86b38c543aa7e3b9ed232638746b701f50ba0658bebf948950b,original_413,main,how many seasons of prison break are on netflix,five,['five'],correct,none,,ok,61,4156851189036560,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+1cc6b07700d2296a03d6ab74b5dd3e69f66b51664ee2adae00d05ead8c25ad0e,original_413,main,"What record label is associated with the album ""Witness"" by Katy Perry?",Capitol Records,"['Capitol Records', 'Capitol']",correct,none,,ok,62,f93dcd664b46e796,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Capitol Records'.""}
+```"
+aa5fbf3f6ce97daed9bf296a7d52d53779678c29f053e4af7e801a71e349e4f1,original_413,main,Which volcano in Tanzania is the highest mountain in Africa?,Mount Kilimanjaro,"['mawensi', 'kilimanjaro', 'mount killimanjaro', 'mount kilimanjaro', 'mount kilamanjaro', 'tussock grassland tanzania', 'mt kilamanjaro', 'mount kilimandjaro', 'kilamanjaro', 'kibo volcano', 'kilimanjaro massif', 'uhuru peak', 'kilimanjaro mountain', 'kaiser wilhelm spitze', 'gilman s point', 'mt kilimanjaro', 'kilima njaro', 'stella point', 'mawenzi', 'mount kiliminjaro', 'kilimandjaro', 'killimanjaro', 'kilimanjiro', 'kilimonjaro', 'highest mountain in africa', 'kiliminjaro']",correct,none,,ok,63,fc20d2c45554faa0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'kilimanjaro'.""}
+```"
+946653c8c0a5277be5c1bfdb3a56260b9768cc26bea4eb909127b0983e70f86e,original_413,main,How old was Jimi Hendrix when he died?,28,"['27', 'twenty seven']",incorrect,wrong_number,,ok,64,874d4a1b7390b955,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_number"", ""brief_reason"": ""Candidate answer is 28, not 27.""}
+```"
+28aae35474d16d8e242e2babbd1a6173feca506fc9943be64dd1df470af05d46,original_413,main,Which was the only eastern bloc country to participate in the 1984 LA Olympics?,Romania,"['danubian carpathian area', 'roumania', 'austro hungarian empire romania', 'romania', 'rromania', 'iso 3166 1 ro', 'rou', 'country rom', 'ro country', 'rumunia', 'romainia', 'rumänien', 'etymology of romania', 'north danubian region', 'romînia', 'rumania', 'romanian state', 'carpathian danubian space', 'românia', 'republic of romania', 'roumanie']",correct,none,,ok,65,a1c67914a4bdde7f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches 'romania'.""}
+```"
+ca7a8c31ead368ce6ce035148b1c9202723c2376675072cfb885028c607a368d,original_413,main,Who was the next British Prime Minister after Arthur Balfour?,Herbert Henry Asquith,"['henry campbell bannerman', 'sir henry campbell bannerman', 'campbell bannerman']",incorrect,wrong_entity,,ok,66,6912ac76350798ca,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Asquith succeeded Balfour, not Campbell Bannerman""
+}
+```"
+b4205b7a37cfeda9463a667e0ad928b9c32647062e73ecd4900205efe274feea,restored_34,main,where does the last name andersen originate from,Norway and Denmark,"Danish ; Norwegian ; Danish-Norwegian patronymic surname meaning ""son of Anders""",correct,none,,ok,67,7a4ed7a505f94cc4,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Denmark and Norway are correct origins""
+}
+```"
+6913090b845c23df8c0070a92c58e07f38ece8eaa0df21a515e17aba8f564d6f,original_413,main,when was penicillin first introduced to the public,"March 15, 1940","['After World War II', '1942']",incorrect,wrong_number,,ok,68,a164a6d04deb5de3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate date is before accepted answers""
+}
+```"
+0639d470d74066352d51b25a4e7f6c4c5e662c7a7e654020de07c8c247d8a2cb,original_413,main,Who owns Arsenal F.C.?,Stan Kroenke,"['Kroenke Sports & Entertainment', 'Kroenke Sports Enterprises', 'KSE']",incorrect,wrong_entity,,ok,69,b134af99843d4d83,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Stan Kroenke is not an entity""}
+```"
+ff5e39dc307431a8897fc1cd67a2d3487dc63dcd4a430e3194e7b811d8a5606d,original_413,main,What Michelle Pfeiffer movie got a boost from the Coolio song Gangsta's Paradise?,Up Close & Personal,"['my posse don t do homework', 'dangerous minds', 'dangerous minds film']",incorrect,wrong_entity,,ok,70,92220a55ce24a162,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+7ac2d38324cfe8081e6c8d83d2859c3a71b60e3972a381f32a87b38d47a84305,original_413,main,who won the fountain of youth stakes at gulfstream park,I don't know.,['Gunnevera'],incorrect,other,,ok,71,f265cb868c253e83,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+10bd71fe848c2a6ddc7a4ae5b1c70f8fc030501bf9ae8125764d32f01a98f729,original_413,main,Which person or organization did Abebe Mekuria Shenkutie work for?,University College London (UCL),['Arsi University'],incorrect,wrong_entity,,ok,72,47b3d7f9b2f2c9d7,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+1b0b73a849da3af26558db98c35ce4707949b0b68d479bf8dca1a01dcc9d6d8e,original_413,main,who was the aztec ruler when the spanish arrived,Moctezuma II,"['Moctezuma II', 'emperor Cuauhtemoc']",correct,none,,ok,73,d6a1956f9a976a7f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches one accepted answer.""}
+```"
+64eb267cd8bde9a3c79e3d8b1ddda8f872e68f8a98f62c1cd688acf6895eafe4,original_413,main,Who had a Too Legit To Quit Tour?,Vanilla Ice,"['too tight mc hammer album', 'family affair mc hammer album', 'stanley burrell', 'hammer rapper', 'stanley kirk burrell', 'stanley k burrell', 'wiredoo', 'mchammer', 'hammer crew', 'm c hammer', 'you shouldn t touch this', 'mc hammer']",correct,none,,ok,74,685fb5cc695735bd,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Vanilla Ice is semantically equivalent to MC Hammer""
+}
+```"
+05b9b98eb42d258401e6bf4c911c4843020588c45e56e3bfe2b8ee48c45540bb,original_413,main,Who was the defending champion when Martina Navratilova first won Wimbledon singles?,Virginia Wade,"['virginia wade', 'sarah virginia wade']",correct,none,,ok,75,2b47f699bcfe5e38,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+c3379e8f797d4873db994a709cd7d2a4242c135bd4d0c7ff2b49c99f70498055,restored_34,main,What organization is Indonesia a member of?,"ASEAN, UN, WTO, OIC, G20, APEC, EAS, AIIB, NAM.",ASEAN Regional Forum ; ARF,incorrect,wrong_entity,,ok,76,ff92f7c766e1e40e,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate includes ARF but not as 'ASEAN Regional Forum'""}
+```"
+4afb975690cfdb78e01ae0f4e27a191d38d5c32be1ac254c6040acc7fe564ceb,restored_34,main,Which society was Sigmund Freud a member of?,Vienna Psychoanalytic Society,"Royal Society ; The Royal Society of London for Improving Natural Knowledge ; Royal Society of London ; The President, Council, and Fellows of the Royal Society of London for Improving Natural Knowledge ; The Royal Society, UK ; royalsociety.org",incorrect,wrong_entity,,ok,77,4ccb07931f38099a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to any accepted answer.""
+"
+377e6a4b2c230c1201cd0e5346908a7e8921fe55b02c17634b9490286b3ad418,original_413,main,Which person or organization did Danhuai Guo work for?,Cure Foundation,['Cure Foundation'],correct,none,,ok,78,e3feb2d00ea74d68,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+92c35919d584db692d5faf8b4c547609cb984664ef9c66933eaca5909736315e,original_413,main,Who is the spouse of Idina Menzel?,Aaron Lohr,['Aaron Lohr'],correct,none,,ok,79,8e4d650f375729bc,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer""}
+```"
+8238a25f824aa4d07c984cdbde7e86ca47eeb0f337ca64f48cfb626246c31617,original_413,main,What is Osbert Lancaster best known for producing?,Cartoons and illustrations,"['cartoonish', 'cartoons', 'cartoon', 'cartoonistic', 'cartoonism', 'american cartoon']",correct,none,,ok,80,188efb2fbc7f1022,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'cartoons'.""}
+```"
+aac7c3a4f68c183340c906d8418306928463b6c41fd11c2b045b767af72e1728,original_413,main,What is the official language of Brazil?,Portuguese,"['Portuguese', 'pt', 'Portuguese language']",correct,none,,ok,81,9cb3909edc1d12e7,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+951fd1b4fbdef6f98a7f417279db4681a97e7ef2762803f00fb10d0c260947d3,original_413,main,Which person or organization did Florencia Miguel work for?,Centro Científico Tecnológico - Mendoza,['Centro Científico Tecnológico - Mendoza'],correct,none,,ok,82,47a19f3e70071b05,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+d30699983857f755368268f85fc2e9beb5eba62f08467942bbb149a658b5be6c,original_413,main,Who is the chief executive officer of GB News?,David Brandon,['Angelos Frangopoulos'],incorrect,wrong_entity,,ok,83,62d1415ddb53d1e4,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+b8f345e92845bb61f0921783f434d991d23c4f684872ae4b022be865baff6e5c,original_413,main,"Who is the spouse of Prince Richard, Duke of Gloucester?","Birgitte, Duchess of Gloucester.","['Birgitte, Duchess of Gloucester', 'Birgitte Eva Henriksen', 'Birgitte Eva van Deurs Henriksen']",correct,none,,ok,84,aa8e173763b1e6de,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+3ae596166584d465b5a543baba407b268c86c786b862b6119197714e442a0290,restored_34,main,civil war what did the north fight for,"To preserve the union, abolish slavery.",loyalty to the U.S. Constitution ; maintaining the republic,correct,none,,ok,85,9a9e6a67b9f1767c,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Semantically equivalent to accepted answers""
+}
+```"
+374a6f3ae57895a739e5476ec6eafdcc9eaf542443ee712bad04464e6183f289,original_413,main,Which person or organization did José-Manuel Rodríguez-Fortún work for?,I don't know.,['University of Zaragoza'],incorrect,other,,ok,86,0b4fbe788cfd68d2,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+92b208954d1eafce7773e8bf3812a40eed54003c1fa202e419c551361737ea07,original_413,main,wolf of wall street number of f words,570,['569'],incorrect,wrong_number,,ok,87,95abd22850a19f94,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_number"", ""brief_reason"": ""Candidate answer is off by one.""}
+```"
+8bf457c8012ea6fba036ab519a3ed610f2a9f7133dd65d0de51ac0fa5450fe6f,original_413,main,who won the fountain of youth stakes at gulfstream park,Tapwrit,['Gunnevera'],incorrect,wrong_entity,,ok,88,72e185f2371f0132,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer""
+}
+```"
+292ebe2cd5bde454a188965f8245a331813fe0e4cf61e80fddffcdbb7b69eea0,original_413,main,who is playing the halftime show for the superbowl,Beyoncé,['Justin Timberlake'],incorrect,wrong_entity,,ok,89,b21472556948f489,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not in accepted answers""
+}
+```"
+546e68ca2131eb5faaf25d704fb82ba616e47389bc2e246b49dc8e79c5a3219d,original_413,main,Which society was Sigmund Freud a member of?,Royal Society,"['Royal Society', 'The Royal Society of London for Improving Natural Knowledge', 'Royal Society of London', 'The President, Council, and Fellows of the Royal Society of London for Improving Natural Knowledge', 'The Royal Society, UK', 'royalsociety.org']",correct,none,,ok,90,d1783bef56c05760,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Royal Society'.""}
+```"
+a10d54dc6c27635777ac4b19a64c238f9333a8ecb241adb6611577b71aeec320,original_413,main,The flag of Libya is a plain rectangle of which color?,Green,"['greenishness', 'color green', '0 255 0', 'green color', 'green', 'rgb 0 255 0', 'avacado color', 'greenest', 'list of terms associated with color green', 'greenness', 'greenishly', 'colour green', 'pastel green', 'green colour']",correct,none,,ok,91,48d9dee7cd7e346c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted 'green'.""}
+```"
+451836d72e8fc169cf8e0c94d2a64e3c25f45a303cb92ed96c69c0b3cb94ba92,original_413,main,What is the native language of Jeff Lynne?,English,"['English', 'English language', 'English (language)', 'English Language', 'English-language', 'English the Global Language', 'The English language', 'en']",correct,none,,ok,92,609efcccc67ae24a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'English'.""}
+```"
+29bd92fb9a50171ca4c4d160718670ba26c456b59b91880bf4e853de2fca2792,original_413,main,What was President Gerald Ford's middle name?,Rudolph,"['rudolf', 'rudolph', 'rodolphe', 'rudolph disambiguation', 'rodolph']",correct,none,,ok,93,aebe8e6057898078,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+5cf3e7f1a6c290ffd5bb8ed023e39189c1e86571515bb0c0f60e410bfc44a4bd,original_413,main,Which person or organization did Lee Gilad work for?,I don't know.,['Sheba Medical Center'],incorrect,other,,ok,94,8de3ebbd5a8b259a,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+ae4c12a27fdee2c8fb47c117aa58a06a29f5a5419862fe1673196f1b7d2b0fee,original_413,main,In the 80s who wrote the novel Empire of The Sun?,J. G. Ballard,"['ballardian', 'user s guide to millenium', 'james g ballard', 'j g ballard', 'jg ballard', 'james graham ballard']",correct,none,,ok,95,04f1fac47a6ac725,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""}
+```"
+bcd3417ffb04399d06aaac413034c1c6fdf302473b79d92fd99c7b7cb6aded62,original_413,main,What sport is Wolverine (character) associated with?,I don't know.,"['karate', 'karatedō', 'karate-dō', 'karatedo', 'karate-do', 'karate-dô', 'karatedô']",incorrect,other,,ok,96,c3f2e4e0afa5ece8,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+e99bde5f63f615b536d8cfc4944f32bb6594d06e16130e77f0232fadccb0e509,original_413,main,Which person or organization did Barbara Stecca work for?,Careggi University Hospital,['Careggi University Hospital'],correct,none,,ok,97,75a4250615164375,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+43e686af31a503647fd1a40b84e9f78afe47ac855c0a194d4d1618afefc2b7b9,restored_34,main,What was the country of citizenship of Anne Frank?,"Germany, then stateless.",Nazi Germany ; Third Reich ; Greater German Reich ; Hitler's Third Reich ; German Reich ; Thousand-Year Reich,correct,none,,ok,98,a5131fca90ca87cb,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent.""
+}
+```"
+7c8ef3979659043012183722e5c228be6699ed9cb9605e9f997ca4040f684cac,original_413,main,"""In which movie did Garbo say, """"I want to be alone"""".""","""Camille"" (1936)","['grand hotel disambiguation', 'grand hôtel', 'grand hotel']",incorrect,wrong_entity,,ok,99,0a81c2242dda1eae,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate answer not in accepted list""}
+```"
+45b74ececf4919fc5418d03b9c142e48d171aa80b4bd646e53e5b9a57fae17f9,original_413,main,Who directed the TV series Knightfall?,Samira Radsi,['Samira Radsi'],correct,none,,ok,100,e97c34635f307130,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+3e0a536d83b47422c1d53a6620b8ef041f4fcb1b61d269e21206d87ed721702e,original_413,main,What organization is Indonesia a member of?,ASEAN Regional Forum (ARF),"['ASEAN Regional Forum', 'ARF']",correct,none,,ok,101,d0ec8493e9f10c90,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+7ee52c2782eb9173b311ea30bcfefb7a47c2cf4a9fd2e270af043922ffabfd06,original_413,main,What claimed the life of singer Kathleen Ferrier?,Breast cancer,"['aids related cancer', 'sporadic cancer', 'cancer disease', 'malignant tumors', 'cancers', 'carcinophobia', 'cancer', 'cancer diagnosis', 'malignant neoplastic disease', 'malignant neoplasm', 'tumour virus', 'cancer medicine', 'deaths by cancer', 'malignant tumour', 'epithelial cancers', 'solid cancer', 'cancerous', 'borderline cancer', 'invasive cancer', 'anti cancer', 'cancer pathology', 'cancer signs', 'cancer aromatase', 'cancer therapy', 'financial toxicity', 'cancerophobia', 'cancer en cuirasse', 'cancer patient', 'cancerous tumor', 'malignant cancer', 'malignant neoplasms', 'tumor medication', 'signs of cancer', 'malignacy', 'malignant tumor', 'cancer medication', 'microtumor', 'malignancies', 'malignant lesion', 'malignant growth']",correct,none,,ok,102,d9726ed4a311a110,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Breast cancer is a type of cancer.""}
+```"
+1753190298a5e9f2ef1d8c334dc6993aac78a8fd0e4f2ca96abe3a861a354433,original_413,main,Where did Ernest Rutherford work?,University of Manchester,"['Victoria University of Manchester', 'Owens College', 'Owens College, Manchester', 'University of Manchester']",correct,none,,ok,103,372c011e31b56a84,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""University of Manchester is equivalent to Victoria University of Manchester""}
+```"
+d37c82c6a4199e3f48e97a680a5ace786c092419ef6edf560bf1d4ff06c0807b,original_413,main,who got the first arjun award in athletics,I don't know.,['Gurbachan Singh Randhawa'],incorrect,other,,ok,104,74d290debf548a3a,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+c2dc76989849aa965e5f897211f4ee03724fd9d5a23906ecd96735ba8b3d25ba,original_413,main,Which person or organization did Florencia Miguel work for?,University of Pisa,['Centro Científico Tecnológico - Mendoza'],incorrect,wrong_entity,,ok,105,05bdfd3a68fdeade,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+5b9ee0772ce6e5f644da2a94237487ae64cd576dc1c45453519de4c4ec407ea2,original_413,main,Where did Lyndon B. Johnson work?,"teacher, congressional aide, House of Representatives, Senate, President","['Washington, D.C.', 'Washington, District of Columbia', 'Washington D.C.', 'D.C.', 'Washington, D. C.', 'Washington', 'Washington DC', 'Washington, DC', 'Washington, D.C., U.S.', 'D.C. Washington', 'The District', 'District of Columbia', 'US-DC', 'DC']",incorrect,wrong_entity,,ok,106,8372e5dfc5cb1fbe,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer lists jobs, not locations.""
+}
+```"
+6f1caa1100c302712311a919a1bd017d8fc5cac824f0fb0825afa53e5fde9220,original_413,main,What Michelle Pfeiffer movie got a boost from the Coolio song Gangsta's Paradise?,Dangerous Minds,"['my posse don t do homework', 'dangerous minds', 'dangerous minds film']",correct,none,,ok,107,cbfb7ec5128167df,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'dangerous minds'.""}
+```"
+fd4405e795dd045e5e31b77799230a2df965d60c5b3756f96d8945993fab7cbb,original_413,main,What was Walter Matthau's first movie?,The Kentuckian (1955),['kentuckian'],correct,none,,ok,108,8d65e0c15b09d677,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Case and punctuation differences are ignored.""}
+```"
+ce0a5ee7ca629779f0baa25139ba1fc67df17d85ca6760aa1fb662082e83bb1b,original_413,main,Which person or organization did Danhuai Guo work for?,I don't know.,['Cure Foundation'],incorrect,other,,ok,109,08af402da80cf209,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+a847a57abd7d31ffacfb69872fa35a33ef18e38feb0fd12a737e2ab77dd0a754,original_413,main,What award did Alison Brie receive?,Screen Actors Guild Award,['Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series'],incorrect,partial,,ok,110,fabe582e849fb801,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""partial"",
+  ""brief_reason"": ""Candidate answer lacks specificity""
+}
+```"
+76eb7a912c75d15c90c031096c99a5e8754467c10c879da2b0f622f865ff3dd4,original_413,main,Who is the spouse of B. R. Ambedkar?,Kishele Shipley,"['Ramabai Ambedkar', 'Ramabai Bhimabai Ambedkar', 'Ramai', 'Ramabai Bhimrao Ambedkar']",incorrect,wrong_entity,,ok,111,cf680a22a4cde951,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+8dd5deda16bf3af8dda64857fce2ad7007b97093730992f4a60d6687dccb98d8,original_413,main,Who is the head of state of Spain?,Felipe VI,"['Felipe VI of Spain', 'Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia', 'Felipe VI', 'Philip VI of Spain', 'Philip John Paul Alphonse of All Saints of Bourbon']",correct,none,,ok,112,37995645f1d38c4e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Felipe VI'.""}
+```"
+37b3311336b0ac9915ba1f350dff45637ed78975dac00d80db14ac0c7744d1d0,original_413,main,who won the most stanley cups in history,Toronto Maple Leafs,['Montreal Canadiens'],incorrect,wrong_entity,,ok,113,2ec57d6622488a51,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+9905114194e5dbe85fff5b82ed716d9f193e78f1ef258ccebf32720a733e2628,original_413,main,Which person or organization did Ullrich Wüllner work for?,German Center for Neurodegenerative Diseases (DZNE),['German Center for Neurodegenerative Diseases'],correct,none,,ok,114,ae03ee66a2beb383,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+5c1067887d12a4b48a5d1909f2a70a0b99eea2bd83be3556b370c5a275b3fa62,original_413,main,philadelphia is known as the city of what,Lovely City,"['City of Brotherly Love', 'Brotherly Love']",incorrect,wrong_entity,,ok,115,e86295af1b2244c4,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not equivalent to accepted answers""
+}
+```"
+c529010a62c5f4773023ef0ec944cf97b74adbca2f38ca7b9a95ec319369adcf,original_413,main,who played susanna in legends of the fall,Brad Pitt,['Julia Ormond'],incorrect,wrong_entity,,ok,116,b9863edca46507f6,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Brad Pitt played a different character""
+}
+```"
+c227b0f7b934b2c79e765bb8fb9fd30524aaccee09de0a335b9737328aba7df7,original_413,main,Which person or organization did Shoudong Zhang work for?,I don't know.,['The Chinese University of Hong Kong'],incorrect,other,,ok,117,5570a9b0213ef0b5,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+a0a855f5c6cf45b0d7ef3f7e4b5bd76233b6e62a10f0254c92322f4d5a524f0a,original_413,main,where was part of the classic surfing movie endless summer filmed,"Australia, New Zealand, Tahiti, Hawaii, Senegal, Ghana, Nigeria, South Africa","['Tahiti', 'Ghana', 'Australia', 'South Africa', 'Nigeria', 'New Zealand', 'Hawaii', 'Senegal', 'the coasts of Australia, New Zealand, Tahiti, Hawaii, Senegal, Ghana, Nigeria and South Africa']",correct,none,,ok,118,354ccbfdc773e3a0,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""All elements in candidate answer are in accepted answers.""
+}
+```"
+3431da6ffb47ffdda4a5b0a20181055c1c1b81e27ef36bdc4eb263b296a0a401,original_413,main,who turned out to be the mother on how i met your mother,"Ted's mother in ""How I Met Your Mother"" is revealed to be Tracy McConnell. However, if you are asking about the mother of Ted's children,",['Tracy McConnell'],correct,none,,ok,119,d945aeae702d2c8a,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer semantically equivalent to accepted answer.""
+}
+```"
+f772b39f6fafc0f43ec29aca9e98477fd2438d55e0387d256f46baf686c66d2a,original_413,main,Who is Rick Fox's spouse?,Vanessa Williams,"['Vanessa Williams', 'Vanessa Lynn Williams', 'Vanessa L. Williams']",correct,none,,ok,120,cfed1889a74ddd7c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+ef3a6a5c2136642fe728eaad7cf67669b6f2509045b5a50ee7ca457c2a308580,original_413,main,who won the fountain of youth stakes at gulfstream park,Gunnevera,['Gunnevera'],correct,none,,ok,121,45c587a4be4799e3,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+93ab2481457d15edb7f333ce5ce7265f798f1773c0e3934d18d9d2d34472bd90,original_413,main,Who directed the classic 30s western Stagecoach?,Howard Hawks,"['john ford 1895 1973', 'sean o feeney', 'ford john 1895 1973', 'john ford statue', 'ford john', 'john o feeney', 'john ford', 'sean aloysius o feeney', 'argosy pictures', 'cavalry trilogy', 'john ford film director', 'john ford director', 'john martin o feeney']",incorrect,wrong_entity,,ok,122,a607c7a0da16250b,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate is not in accepted answers""}
+```"
+7a2d58979983c5fc05659730634206521dc3159a1707b399ef06abbb50b3ca12,original_413,main,What country is Ryan Giggs a citizen of?,United Kingdom,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",correct,none,,ok,123,e3057d97e8b77208,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'United Kingdom'.""}
+```"
+056d6f03d99344580a86e4b7eefd0cb87d2930efbc0b37cb4efdebb4d447cf8f,original_413,main,Who is the composer of Bad Boys for Life?,Lorne Balfe,"['Lorne Balfe', 'Lorne David Roderick Balfe']",correct,none,,ok,124,8dff845350912832,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Lorne Balfe'.""}
+```"
+f14b61c12cd8b6910dc53aea5f498c5534aefc28ee1e4665a1cac9e03e4e4fe7,original_413,main,"In Greek mythology, who were Arges, Brontes and Steropes?",They were the Cyclopes.,"['cyclopes disambiguation', 'cyclopes']",correct,none,,ok,125,592778a7d27c0e56,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+ff477e0b3a7ce5da3d1144c9ee49dadb888f4fe72563f7fd59db1c9c0e5ded86,original_413,main,Which person or organization did José-Manuel Rodríguez-Fortún work for?,University of Zaragoza,['University of Zaragoza'],correct,none,,ok,126,365ff756e9c6a450,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+9cb0c0bf256104fc9324636b8fe7e6e767f8a986959fb1c1b8f1bbab1a96de28,original_413,main,Which person or organization did Shoudong Zhang work for?,The Chinese University of Hong Kong,['The Chinese University of Hong Kong'],correct,none,,ok,127,c21a13b874eed6d4,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+2f799482928b38c0345d0936b0eb90a70fa5374c4bcb68844199b0d50b028279,original_413,main,Which highway was Revisited in a classic 60s album by Bob Dylan?,Highway 61 Revisited,"['61', 'sixty one']",correct,none,,ok,128,eee738090c8bbcda,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Refinement of accepted answer""}
+```"
+3e4ef402eff68fe4ee3fb96bd6b73845d25f66901aad4699ff22e53a90e7666e,original_413,main,who does the voice of the gorilla in the movie sing,Will Smith,['Taron Egerton'],incorrect,wrong_entity,,ok,129,c929e0a6475bb88c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+2044ae285f133a9281f27be5a78f1b8e7a7ee754f04cd9281660504458e4da28,original_413,main,who got the first arjun award in athletics,Milkha Singh,['Gurbachan Singh Randhawa'],incorrect,wrong_entity,,ok,130,1df9100814ae1805,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+05660abead4f65ea6689ae904232bd6b56307341517777d98e9e007669bd8f5c,original_413,main,What country is Martin Compston a citizen of?,United Kingdom,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",correct,none,,ok,131,c80f7ff4b1e99f79,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'United Kingdom'.""}
+```"
+f4397df11f689074e7a479913f1ccace506fe8be6f457c3c439f57a62b4fb2ba,original_413,main,who does the voice of the gorilla in the movie sing,I don't know.,['Taron Egerton'],incorrect,other,,ok,132,b4a484393e5d4eb8,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer.""}
+```"
+f1786ed768ddce5e61f25eb78394e5d36f0361cf09109968e6b54e6fae85b30e,original_413,main,Art Garfunkel trained for which profession although he didn't qualify?,I don't know.,"['master builder occupation', 'graziani corazza', 'architecht', 'clifford lawrie', 'architechts', 'architects', 'registered architect', 'hok canada inc', 'architect', 'stanford downey architects inc']",incorrect,other,,ok,133,26fe19cff32f388a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""other"",
+  ""brief_reason"": ""Candidate answer is not an answer.""
+}
+```"
+3990b18993f097d0601d6def162d241ad271edd989e0a16cb8002c427e42cc99,original_413,main,Who is the spouse of B. R. Ambedkar?,Ramabai Ambedkar,"['Ramabai Ambedkar', 'Ramabai Bhimabai Ambedkar', 'Ramai', 'Ramabai Bhimrao Ambedkar']",correct,none,,ok,134,d1fee647c24a2eef,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'Ramabai Ambedkar'.""}
+```"
+e9a77e3af93b6d2543e9654825db481b5462add673849e7603af7d0594bc4351,original_413,main,What award did Mariska Hargitay receive?,Primetime Emmy Award,['Primetime Emmy Award for Outstanding Lead Actress in a Drama Series'],correct,none,,ok,135,ab2e501b49245762,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Coarsening is allowed; core assertion matches.""}
+```"
+d6c5c2c4727ed3068d395180e86167e75ff3b12cb2ad307df0987e5ccb06ad05,original_413,main,Who developed Resident Evil 2?,Capcom,"['Capcom', 'Capcom Co., Ltd.', 'CAPCOM', 'Capcom Entertainment Inc', 'CAPCOM Germany']",correct,none,,ok,136,461746a347a5f6fc,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Capcom'.""}
+```"
+c6058d7e8b8a9fa8ca2ecc41eb6a55c70ddb5e75f0f80d79a44c1166c06baa2c,original_413,main,what part of the brain is in the middle cranial fossa,The temporal lobe and part of the frontal lobe.,"['pituitary gland', 'temporal lobes', 'the temporal lobes', 'the pituitary gland']",incorrect,wrong_entity,,ok,137,4103a04ad926044d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Includes frontal lobe, not in accepted answers""
+}
+```"
+090a051b9c18860c45c5000b12ff9331d2727c3df8b11197c134e09cda2aa2c5,restored_34,main,What genre is the film Downsizing?,science fiction comedy-drama,science fiction film ; sci-fi film ; science fiction movie ; sci-fi movie ; scifi film ; scifi movie ; sci fi film ; sci fi movie ; scifi-film ; scifi,correct,none,,ok,138,d35c322bcb154080,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Includes 'science fiction' as per accepted answers.""}
+```"
+bc7d04e579aed8ca4b5c0e08a8518c2bbf853b8ccde253c5f500449970da7ba0,original_413,main,when are the opening ceremonies for the 2018 olympic games,9 February 2018,['9 February 2018'],correct,none,,ok,139,6284d5e0e9947912,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+1adf682828ab2a439742fb3294bd22558b633040f96d96aebad6e67dd694052c,original_413,main,who sang theme song for dukes of hazard,Waylon Jennings,"['American country music singer Waylon Jennings', 'Waylon Jennings']",correct,none,,ok,140,4cacb30da040f94a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+fd835fb808c2159a6b3be54537334590656e95bd8443eb3892f1c46272bbf17d,original_413,main,who played susanna in legends of the fall,Julia Ormond,['Julia Ormond'],correct,none,,ok,141,68dc419f983216fe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+00756ef186e0c9b9f8cfe86683bbc6a96399e82f430fedaf585cd2a8cb7f37d1,original_413,main,Richard Daley was mayor of which city for 21 years?,Chicago,"['sayre language academy', 'chicago transportation committee', 'chicago illinois u s', 'sister cities of chicago', 'sister cities chicago', 'transport in chicago', 'chicago illinois', 'chicago illinois usa', 'chi town', 'hog butcher for world', 'religion in chicago', 'chicago', 'chicago wi', 'near north montessori', 'un locode uschi', 'city of broad shoulders', 'chicago theatre', 'chicago usa', 'uschi', 'chicago il', 'city of chicago', 'chicago finance committee', 'list of sister cities of chicago', 'chi beria', 'weather in chicago', 'chicago wisconsin', 'land of smelly onions', 'ariel community academy', 'chicago theater scene', 'chicago united states', 'paris of america', 'chicago illionis', 'chicago illinois united states', 'chcago', 'chi city', 'chicago illinois us', 'performing arts in chicago', 'chicago theatre scene', 'chichago', 'chicago ill', 'city of chicago illinois']",correct,none,,ok,142,3698d9b6919a0b87,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'chicago'.""}
+```"
+765cfa6bfc9bcac70961a4da56629869b1521cebea25b5ba0276cdb174bbc4bc,original_413,main,who turned out to be the mother on how i met your mother,Tracy McConnell,['Tracy McConnell'],correct,none,,ok,143,36a8e74388f31fe6,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+50045fe7a0db4104337b22a19f4ae79b4acc7d3360c530350c2c66b3a3162325,original_413,main,Men Against the Sea and Pitcairn's Island were two sequels to what famous novel?,Mutiny on the Bounty,"['mutiny on bounty history', 'hms bounty mutineers', 'bounty vessel', 'mutiny on bounty', 'thomas ledward']",correct,none,,ok,144,ecf3344be65ea4b4,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""
+}
+```"
+8002b312e213d9cfb61f41202a66eec521b07c74a0232310ee073eda9950f3f9,original_413,main,Of which African country is Niamey the capital?,Niger,"['niger', 'iso 3166 1 ne', 'nigerien', 'republic of niger', 'niger country', 'ng ni', 'republique du niger', 'niger republic', 'nigerois', 'république du niger']",correct,none,,ok,145,96e8b636dcfa6271,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'niger' in accepted answers.""}
+```"
+7248e261c5e2cec150095f751780db64006be9aea694daa8f5e3d0cce4f12461,original_413,main,how many seasons of prison break are on netflix,I don't know.,['five'],incorrect,other,,ok,146,80acf4cd60d15781,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+bef3f0ba500914ecaa7545a4c06a45669dee342ea4b30f6bed092c350af6eeba,original_413,main,philadelphia is known as the city of what,brotherly love,"['City of Brotherly Love', 'Brotherly Love']",correct,none,,ok,147,ba57616d1c26e8dd,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Brotherly Love'""}
+```"
+e930b3070179ec53db6ad987582c0892d88ba50880c0a422adc518e94713c680,original_413,main,What genre is the film Downsizing?,science fiction,"['science fiction film', 'sci-fi film', 'science fiction movie', 'sci-fi movie', 'scifi film', 'scifi movie', 'sci fi film', 'sci fi movie', 'scifi-film', 'scifi']",correct,none,,ok,148,22b71c8818661b21,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted genre.""}
+```"
+50ffc235ac1f25d1f83aaaf1e61344d0111538c7414493c34e01bf7d84d8ef33,original_413,main,Art Garfunkel trained for which profession although he didn't qualify?,Civil engineering,"['master builder occupation', 'graziani corazza', 'architecht', 'clifford lawrie', 'architechts', 'architects', 'registered architect', 'hok canada inc', 'architect', 'stanford downey architects inc']",correct,none,,ok,149,c49c13fc8de91e0a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Civil engineering is equivalent to architect.""}
+```"
+b706746af35317019842a480051a591a93c413a63f75a1906c1aa5e1a8eebcd2,original_413,main,Who was the defending champion when Martina Navratilova first won Wimbledon singles?,I don't know.,"['virginia wade', 'sarah virginia wade']",incorrect,other,,ok,150,04b8d5e931b5b8f5,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+3e09c51db154f17c07e4d96b7be25a4eb9f24230bb39610b8b9498d1ba295219,original_413,main,epidemiologists attempt to explain the link between health and variables such as,"dietary patterns, dietary choices","['stress', 'chemicals', 'alcohol', 'smoking', 'disease conditions in defined populations', 'biological agents']",incorrect,wrong_entity,,ok,151,32611665e74a9221,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer elements not in accepted answers""
+}
+```"
+a1b72c8a7d2f42c1edf21acdbc637b4eb05f21e179a6ff13b4706c0ff7b427c6,original_413,main,Which Lloyd Webber musical premiered in the US on 10th December 1993?,The Phantom of the Opera,"['sunset boulevard', 'sunset bulevard', 'west sunset boulevard', 'sunset blvd']",incorrect,wrong_entity,,ok,152,6938c67e995a3310,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate answer is not in accepted answers""}
+```"
+b32fd6cc21d7ad1e352f1dbb437e9f8a613080891d7e22eaeff6c9f0cbc0c305,original_413,main,What was Truman Capote's last name before he was adopted by his stepfather?,Parsons,"['personhood theory', 'persons', 'person', 'perſon', 'perſons', 'person philosophical']",incorrect,wrong_entity,,ok,153,e51a1875f9103cd5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not in accepted answers""
+}
+```"
+d3234fb37bc2bb09933ed18df44427aad0c8a73c324ee1a0b587b7ae1e210329,original_413,main,Which person or organization did Shawn Martin work for?,I don't know.,['Indiana University Bloomington'],incorrect,other,,ok,154,a8c096238a627add,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+f729c898cb17a88e28c38be2b86602355e715ee17cb31fea6e97ca8dab6c1c22,original_413,main,when did linkin park release one more light,June 2017,"['May 19, 2017']",incorrect,wrong_number,,ok,155,83a327dff523042c,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_number"", ""brief_reason"": ""June 2017 is not May 19, 2017""}
+```"
+f2d1d0d45529217bda743d99973dc2aa8e688004ebce97f6fefa15757cf0cb0e,original_413,main,Which person or organization did Florencia Miguel work for?,I don't know.,['Centro Científico Tecnológico - Mendoza'],incorrect,other,,ok,156,64e1e721f6f7ffbc,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+c6a5dfedae86dd801e527b28a7cf30bcdf16016f6ec9f5bb45d38480d1093648,original_413,main,fast and furious 7 red car abu dhabi,Lykan Hypersport,['The Lykan Hypersport'],correct,none,,ok,157,92625abaf63dbe5d,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate matches accepted answer semantically.""
+}
+```"
+ff93f66b00e60cb97f0bcc3a5b0a692fdc20b0b4ceb2e87e7e675808ef5a0124,original_413,main,how many characters are present in icd-10 codes,7,['7'],correct,none,,ok,158,9732215d7c18b183,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+d800617059409354c3e26c0dab248fa4723eae7b6f2bea266518ef0e3b718e5f,original_413,main,Where in England was actor Nigel Hawthorne born?,"Coventry, Warwickshire, England","['coventry uk', 'cofantre', 'coventry united kingdom', 'coventry borough', 'coventry city', 'coventry england', 'metropolitan borough of coventry', 'coventry city council', 'coventry', 'county borough of coventry', 'coventry warwickshire', 'city of coventry']",correct,none,,ok,159,10b6fde0b4ad13a1,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+4d2a72d06a838d12bf611c4785a11a36e2fe99f9d6e437cec23b01621ae45bc8,original_413,main,The flag of Libya is a plain rectangle of which color?,I don't know.,"['greenishness', 'color green', '0 255 0', 'green color', 'green', 'rgb 0 255 0', 'avacado color', 'greenest', 'list of terms associated with color green', 'greenness', 'greenishly', 'colour green', 'pastel green', 'green colour']",incorrect,other,,ok,160,b1bc848ff0bde534,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+388cf5f1e3f5e004923b08b6c402d7ccd280dab2825c4069c294b6c6c8d3a811,original_413,main,when were cigarette ads banned from tv uk,15 March 1973,['1 August 1965'],incorrect,wrong_number,,ok,161,27469a52d56415c2,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Date does not match accepted answer""
+}
+```"
+ccd0b068043b27a9e93a3452b56ea71aef4d0a3a19d214c81dac839c08244aba,original_413,main,cast of law & order special victim unit,"Mariska Hargitay, Christopher Meloni, Ice-T, Tamara Taylor, Peter Scanavino, Kelli Giddish, Daniella P","['Dann Florek', 'Mariska Hargitay', 'B. D. Wong', 'Diane Neal', 'Danny Pino', 'Michelle Hurd', 'Kelli Giddish', 'Adam Beach', 'Michaela McManus', 'Tamara Tunie', 'Richard Belzer', 'Ice-T', 'Christopher Meloni', 'Raúl Esparza', 'Stephanie March', 'Peter Scanavino']",correct,none,,ok,162,8dc4347aa07ca909,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""All candidate names match accepted answers.""}
+```"
+fe28f7cdfc1e6349639f217fc5d3820654c540212930a7096bbe9c807d0a77ed,original_413,main,What was the name of Michael Jackson's autobiography written in 1988?,Moonwalk,"['moon walk', 'lunar walks', 'moonwalks', 'moonwalk disambiguation', 'lunar walking', 'moonwalking', 'lunar walk', 'walk on moon', 'moon walks', 'moon walking', 'moonwalk']",correct,none,,ok,163,7e96fe62d357df2b,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate matches accepted answer 'moonwalk'""
+}
+```"
+7e55ff5fca4e0115319cb7433b9da080d382e36291206a0a37948ee3579fa4a6,original_413,main,Who is the spouse of Idina Menzel?,Annette Robertson,['Aaron Lohr'],incorrect,wrong_entity,,ok,164,b9a624658653e3b9,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+6bf38dd7ba8ac11ae957965d2e1b990ff5b1381d419479e488ac607c505f6182,original_413,main,Which person or organization did Nilesh Kumar work for?,I don't know.,['International Centre for Genetic Engineering and Biotechnology'],incorrect,other,,ok,165,91c2e221acb74cb6,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+0a4efe7041b5e86ef17e051812457b27f61adbc2a97d9f9fda25ba044139fa42,original_413,main,Which person or organization did Anders Ruus work for?,Princeton University,['University of Oslo'],incorrect,wrong_entity,,ok,166,b5870d7ba93bda10,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+459f0873ab058a4e7a488023b59c0090b642e9b6b2afc81cdf8a2713363da168,original_413,main,What was President Gerald Ford's middle name?,Randolph,"['rudolf', 'rudolph', 'rodolphe', 'rudolph disambiguation', 'rodolph']",incorrect,wrong_entity,,ok,167,44c475651b82a0db,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate name not in accepted list""}
+```"
+1118250505b8cf1ec11b958c65aae9820791e3fb287ef64e653118d78735aafd,original_413,main,when did the song the joker come out,1973,"['October 1973', '1973']",correct,none,,ok,168,f114b1119e769260,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Coarsening does not contradict accepted answer""}
+```"
+46217857b7f3051f510bd20a5922ab948a3bf235314ea98dfa154256d5821ec3,restored_34,main,who were the original voices of the flintstones,"Alan Reed, Jean Vander Pyl",John Stephenson ; Jean Vander Pyl ; Harvey Korman ; Verna Felton ; Mel Blanc ; Don Messick ; Alan Reed ; Bea Benaderet,,none,unparseable,ok,169,dc3b48350ce8ca05,"```json
+{""verdict"": ""partial"", ""error_type"": ""partial"", ""brief_reason"": ""Candidate answer is a subset of accepted answers""}
+```"
+d6609a01d30095414a82aa36dae605fc09a8fab2353724ce634307cd44facc4a,original_413,main,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Adolf Hitler,"['hitler s medical health', 'adlof hitler', 'adolf hiedler', 'hitler adolf', 'hitleradolf', 'adolpf hitler', 'history of adolf hitler', 'hitleradolph', 'adolphhitler', 'adolf hitler s health', 'adoff hitler', 'hitlar', 'adolf hiler', 'adolph hiedler', 'adolf hitle', 'aldof hilter', 'adolph hiter', 'hitler s', 'hitler', 'adolf hister', 'adolf hittler', 'nazi leader', 'adolfhitler', 'adolf hitler s medical health', 'hitler adolph', 'hitler s health', 'herr hitler', 'adolfus hitler', 'adolph hitler', 'adolph schicklegruber', 'adolf hilter', 'adolf hitler s medical condition', 'health of adolf hitler', 'hitlerian', 'adolph schicklgruber', 'adolph hitler s medical health', 'adolph hitler s health', 'adolph schickelgruber', 'adolf schicklgruber', 'day of potsdam', 'adolf hitlier', 'adolf hitler', 'hitlers medical health', 'hittler', 'hitlers', 'herr wolf', 'hitlet', 'adolf schickelgruber', 'adolf schicklegruber', 'adolph hittler']",correct,none,,ok,170,7ec3e5046a6b32b8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'adolf hitler'.""}
+```"
+8256c6193a02f46112c5aa3246a934171cc9d166e1bbc1d7099120e37a9d7031,original_413,main,Which person or organization did Shankararaman Chellam work for?,Korea Institute for Advanced Study (KIAS),['Texas A&M University'],incorrect,wrong_entity,,ok,171,6c57a43327ea9ae5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+e35cf906f4a95c221579080fdd8f3f4902d0b445d52a17c93365c6977077ce93,original_413,main,Who directed the TV series Knightfall?,Sam Hargrave,['Samira Radsi'],incorrect,wrong_entity,,ok,172,c56bd0be1495c11d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+727d285651abd2245872b8319291dab0e053116da9e729ced201b5c59bbfe671,original_413,main,What award did Alison Brie receive?,I don't know.,['Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series'],incorrect,other,,ok,173,67d4ca8b76cf5757,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+050b42f966c38aa924f1bb19b08986b64a9d2b11ce6a667eef7ba47a2b9b55f5,original_413,main,What field of work is Ray Kroc associated with?,Fast food industry,"['entrepreneurship', 'entrepreneurship approach', 'entrepreneurial approach']",incorrect,unsupported,,ok,174,46d166842b196249,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+7822495720d1ba89ed13419836f73cf91c62b6a3bd01866440b09716845192f1,original_413,main,River Phoenix died during the making of which movie?,Dark Blood (1993),"['dark blood', 'dark blood film']",correct,none,,ok,175,884539d98224f484,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+8379cb81064f592acfd5a1a21abec1e2a7ef083d4afad258ce425fc3305c0fa2,original_413,main,Which 90s sci fi series with James Belushi was based on Bruce Wagner's comic strip of the same name?,Virtual Reality,['wild palms'],incorrect,wrong_entity,,ok,176,a9ec450d652398dd,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+046406dfe3c051251c6d0771c51ed07ef7347e636c800c4eeb3a27e4b3ef05a8,restored_34,main,"In Greek mythology, who were Arges, Brontes and Steropes?","Cyclopes, sons of Uranus and Gaia.",cyclopes disambiguation ; cyclopes,correct,none,,ok,177,28369313b21c3412,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""
+}
+```"
+1ec1cf6395a23f54518d385437185ab10764d4a8f5da0329778fcfb265b6c921,original_413,main,Which person or organization did Gia Lisa Krahne work for?,Durham University,['NYU Langone Medical Center'],incorrect,wrong_entity,,ok,178,e40d9aa2b15082b8,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+f091a8ca3cdbea38b7b47b0b70c776f5a0a840b47696243ecd8bff70af92f346,original_413,main,Which person or organization did Agata Lipko work for?,Institute of Biocybernetics and Biomedical Engineering,['Institute of Biocybernetics and Biomedical Engineering'],correct,none,,ok,179,5dde82605655245b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+dc7158e19411956ad7c72f32dfd7c59b233f48cd10629f8105d57fdabf781349,original_413,main,who played sarah hedley in when the boat comes in,Jane Seymour,['Rosalind Bailey'],incorrect,wrong_entity,,ok,180,a92da31090f46a4d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+f47bfc486a6f145a4082677978a4441ab070eaadc40fb912fce6928d82e30898,original_413,main,when did the 5 day work week begin,1926,"['In 1908', '1908', '1940']",incorrect,wrong_number,,ok,181,cc4fe37610697bc6,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer does not match any accepted answer.""
+}
+```"
+0f655da9c2cb864d9b1c71932bbe95048dcd367320e8725550fdcf1161a07161,original_413,main,Men Against the Sea and Pitcairn's Island were two sequels to what famous novel?,"Mutiny on the ""Bounty""","['mutiny on bounty history', 'hms bounty mutineers', 'bounty vessel', 'mutiny on bounty', 'thomas ledward']",correct,none,,ok,182,35cc099e967f357f,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Semantically equivalent to 'mutiny on bounty'""
+}
+```"
+f7611fb0ae854a7e4acacca540e86fef3c2ec373396909f986642c16af9a97c6,original_413,main,Who is the composer of Bad Boys for Life?,I don't know.,"['Lorne Balfe', 'Lorne David Roderick Balfe']",incorrect,other,,ok,183,6bca9cbdd314d6f8,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+df031a7dd2c8339534ef9c13df62d497c9ee625bd151555a53b9da12de374014,restored_34,main,where do they grow hops in the us,"Washington, Oregon, California, New York, Idaho, Montana.","Willamette (Oregon) ; western Canyon County, Idaho ; western Canyon County, Idaho (including the communities of Parma, Wilder, Greenleaf, and Notus) ; the Yakima (Washington) and Willamette (Oregon) valleys ; Yakima (Washington) ; Idaho ; the leading potato-growing states in the United States ; Oregon ; Washington",correct,none,,ok,184,af0c86f089be7dad,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""All candidate states are in accepted locations.""
+}
+```"
+3126ecacdc98da611b8b746a80781384b9a9f618d5ffa564b32ef86fd0d2c0aa,original_413,main,Which person or organization did Shawn Martin work for?,Indiana University Bloomington,['Indiana University Bloomington'],correct,none,,ok,185,37a54ea27e07b4f2,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+b0ba64f6119f7b4febb70520fd24c1c52d54f3cc6d1b13fa5207183700ee9587,original_413,main,Which person or organization did Anders Ruus work for?,University of Oslo,['University of Oslo'],correct,none,,ok,186,82bf891fac8cad7c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+65f4947a464e6434514fb43631ae9151a7eb50e9de0433e859cf0643fae764fa,original_413,main,Who composed the music for War for the Planet of the Apes?,Michael Giacchino,"['Michael Giacchino', 'Michael George Giacchino']",correct,none,,ok,187,976b2ec060b54c40,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+2cc15039f67c6c8c09ae4c168b202d55b948604353279754c7010580a7c34a1f,original_413,main,fast and furious 7 red car abu dhabi,Ferrari 458,['The Lykan Hypersport'],incorrect,wrong_entity,,ok,188,3ad3675a4588c898,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Ferrari 458 is not The Lykan Hypersport""
+}
+```"
+c300ec3034fb7c4652d47283f2e6347ac22449fae436e03cf08f4022f9420433,original_413,main,Who had a 70s No 1 hit with Kiss You All Over?,Foreigner,"['exiles', 'voluntary exile', 'forced exile', 'banish', 'self exile', 'exile politics and government', 'exile in greek tragedy', 'sent into exile', 'banishment', 'transported for life', 'exile', 'internal exile', 'exile and banishment']",incorrect,wrong_entity,,ok,189,59c9f5ad9a819cb4,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent to any accepted answer.""
+}
+`"
+fbd77e4898cdc2f6c99a11e15c6aee2324ddfc521dfca293e69c1eda49f86711,original_413,main,civil war what did the north fight for,To preserve the Union.,"['loyalty to the U.S. Constitution', 'maintaining the republic']",correct,none,,ok,190,02b2855770649408,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Semantically equivalent to 'loyalty to the U.S. Constitution'""
+}
+```"
+369d5fafc772fdc8b1def7bbf24e41335ef73eca392e3cac996c0700e0a498f1,original_413,main,Which person or organization did Shoudong Zhang work for?,George Mason University,['The Chinese University of Hong Kong'],incorrect,wrong_entity,,ok,191,9e82f04f2a30a281,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent.""
+}
+```"
+9e44152f399e85896ae8cffb6c4c7c7b2e178d6e10abe8824178640fe2d0613e,original_413,main,What organization is Sheryl Sandberg a member of?,National Honor Society,"['National Honor Society', 'NHS']",correct,none,,ok,192,8332c5a50f0524df,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+7c681f96c473a44b65022e474ee438b6ced901fff40f91de5d7fc7f25baec970,original_413,main,who is the actor that plays saul on grace and frankie,I don't know.,['Sam Waterston'],incorrect,other,,ok,193,beae127427171acc,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+49e4d0d08b68fb010f3af7de1e353871eb9fa9d9adaa997a0bb4921f69f81bc3,original_413,main,Which person or organization did Ilse Braun work for?,Charité university hospital,['Albert Speer'],incorrect,wrong_entity,,ok,194,c3a313cdb9683d28,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Charité is not equivalent to Albert Speer""
+}
+```"
+a8c5bb6e37f3dd24cb7d978f6f29eb1390c287bd45dc80363fc65e4d696e2ae4,original_413,main,Which person or organization did Jorge Jódar work for?,Spanish National Research Council (CSIC),['Spanish National Research Council'],correct,none,,ok,195,448692f708375492,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+b41d6f7c858ba96c7246672aee75a051cd58d7ce46b79087a965438e7c500641,original_413,main,Which person or organization did Sin-Yeon Kim work for?,Pablo de Olavide University,['University of Glasgow'],incorrect,wrong_entity,,ok,196,493aac199a95af39,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+cb21239ef7911d38de68888dc2d829bb770a4c604aa02c794e699405fcc16673,original_413,main,Who is the chief executive officer of GB News?,Angelos Frangopoulos,['Angelos Frangopoulos'],correct,none,,ok,197,80eb4cae8ea4c408,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+3af0e49ae1d12f028a5af1eb5886c698dbd4eab9a8b30443e732ddba8a14f4fa,restored_34,main,wolf of wall street number of f words,between 506 and 569,569,incorrect,partial,,ok,198,8ac758179db55c02,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""partial"", ""brief_reason"": ""candidate answer is a range, not exact""}
+```"
+10f6db2d5abe3cc1c882fbc72118a6e4a844dcb73530748be64fde61374ca1c8,original_413,main,india participated olympic hockey for the first time,1928,"['1928', '1927']",correct,none,,ok,199,255a67cb6fa77c8a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""1928 is an accepted answer""}
+```"
+12c482c99b39752b0f79d752e29bc33c06e07905b3548d6cafe7ce8ca658e20d,original_413,main,Which person or organization did Masahisa Nakamura work for?,Catholic University of Korea School of Medicine,['Waseda University'],incorrect,wrong_entity,,ok,200,010770ffa0bbc383,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+1b0da11d12e5f5161d8c5dcb02e50656eee3d05c64294329a3d4fa9dac31d143,restored_34,main,River Phoenix died during the making of which movie?,Dark Blood,dark blood ; dark blood film,correct,none,,ok,201,e5e9cebaf5714efa,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+a49713fac4cbc20865a6df01da00f44617b1c05c8f427e5acc543f7dd3fc9d0d,original_413,main,Which person or organization did Sin-Yeon Kim work for?,I don't know.,['University of Glasgow'],incorrect,other,,ok,202,ec9c850bdad7128d,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+95d1b5645a7a767c6541eeb167f356a57014424b4f46900f37ddd5fb5d158df3,original_413,main,how many characters are present in icd-10 codes,up to six characters,['7'],incorrect,wrong_number,,ok,203,fc18d8d74848bd3c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer contradicts accepted answer""
+}
+```"
+6718028bdf9e8440e5fc6fc3939a6be3a1329bd903eb0f8d4f7f082131de33f1,restored_34,main,how many characters are present in icd-10 codes,7 characters,7,correct,none,,ok,204,6a11b2cd04d19b09,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+006c44d658bfb46969cc5c587f148b216c3823891527b201d4746abe7bce3296,restored_34,main,when was penicillin first introduced to the public,"March 15, 1945",After World War II ; 1942,incorrect,wrong_number,,ok,205,c0a532c784c7de6e,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate date does not match accepted answers""
+}
+```"
+fab8c80ec2690a7dae9129d249fd870b15187c90b1e902c8ff4097079998ef28,original_413,main,"In Lewis Carroll's poem The Hunting of the Snark, what did the elusive, troublesome snark turn into to fool hunters?",A Boojum.,"['boojum disambiguation', 'boojum']",correct,none,,ok,206,3f6d4a02f668ff38,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'boojum'.""}
+```"
+52dd9d546c08f767a99915011010c3beae5731d3d37a3b5e893a53fb2190c48b,original_413,main,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Hitler and Himmler,"['hitler s medical health', 'adlof hitler', 'adolf hiedler', 'hitler adolf', 'hitleradolf', 'adolpf hitler', 'history of adolf hitler', 'hitleradolph', 'adolphhitler', 'adolf hitler s health', 'adoff hitler', 'hitlar', 'adolf hiler', 'adolph hiedler', 'adolf hitle', 'aldof hilter', 'adolph hiter', 'hitler s', 'hitler', 'adolf hister', 'adolf hittler', 'nazi leader', 'adolfhitler', 'adolf hitler s medical health', 'hitler adolph', 'hitler s health', 'herr hitler', 'adolfus hitler', 'adolph hitler', 'adolph schicklegruber', 'adolf hilter', 'adolf hitler s medical condition', 'health of adolf hitler', 'hitlerian', 'adolph schicklgruber', 'adolph hitler s medical health', 'adolph hitler s health', 'adolph schickelgruber', 'adolf schicklgruber', 'day of potsdam', 'adolf hitlier', 'adolf hitler', 'hitlers medical health', 'hittler', 'hitlers', 'herr wolf', 'hitlet', 'adolf schickelgruber', 'adolf schicklegruber', 'adolph hittler']",correct,none,,ok,207,d52761b3681f88d0,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Hitler is a correct element""
+}
+```"
+14686e694be18554a10cc6df924154ffe60addc177a44cbed2c23702829d9a3d,original_413,main,Who owns Arsenal F.C.?,Kering,"['Kroenke Sports & Entertainment', 'Kroenke Sports Enterprises', 'KSE']",incorrect,wrong_entity,,ok,208,6ee070a4f0508a7e,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to any accepted answer""
+}
+```"
+6576d58cce02e8fefe092061486000ce8d489c0dce39e8423027d178cf205219,original_413,main,Who was the next British Prime Minister after Arthur Balfour?,Andrew Bonar Law,"['henry campbell bannerman', 'sir henry campbell bannerman', 'campbell bannerman']",incorrect,wrong_entity,,ok,209,644e3c7c2a5ecaf7,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate is not semantically equivalent to accepted answers""
+}
+```"
+93e923ced6d4125cff23fde4a6026b318752c620847e09fae2f16e6730498edb,original_413,main,Kagoshima international airport is in which country?,Japan,"['nihon koku', 'nihon', 'japoa', 'japang', 'japan', '日本國', 'etymology of japan', 'iso 3166 1 jp', 'jpan', 'japan country', 'riben', 'rìběn', '🗾', 'japanese financial sector', 'japian', 'nippon koku', 'state of japan', 'nippon', 'modern–era japan', 'republic of japan', '日本国', 'jpn', 'japao', 'ja pan', '日本']",correct,none,,ok,210,9863357be669bb3c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""}
+```"
+5f3c9ad3dcaf9a2708f471409b63cbd601da91c087e061abd2ab725ee11c5194,original_413,main,the sport psychology sub-field of performance enhancement deals primarily with,techniques and strategies aimed at improving an athlete's performance.,['Arousal regulation'],incorrect,wrong_entity,,ok,211,6402b2ee6093c2c3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is too broad.""
+}
+```"
+4def6198580cb0238b8f8502ccc095414e0d7a53b1c6457d2b6696e60d92c1b9,original_413,main,Where is the headquarters of The Walt Disney Company located?,"Burbank, California","['United States of America', 'United States', 'the States', 'the United States of America', 'US of America', 'USA', 'U.S.A.', 'America', 'the US', 'the U.S.', 'the US of A', 'U.S. of America', 'the US of America', 'US', 'the USA', 'U.S.', 'the U.S.A.', 'the U.S. of A', 'US of A', 'the U.S. of America', 'U. S.', 'U. S. A.', 'the United States', 'Merica', 'Murica']",correct,none,,ok,212,32aeda73858835c0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Burbank, California is in the USA""}
+```"
+387e5f6706ba72d45c2affff987aef7ba8d2e58b2856a6ad25c2e6481ffac585,original_413,main,Who is the author of Jujutsu Kaisen?,Tatsuki Fujimoto,"['Gege Akutami', 'Akutami Gege']",incorrect,wrong_entity,,ok,213,33d8c6fda645df7e,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+5be4cc3d32d50df282b3d49f940ee2868d650c61022d904de6d222dd918ec683,original_413,main,Who owns Arsenal F.C.?,Kroenke Sports & Entertainment,"['Kroenke Sports & Entertainment', 'Kroenke Sports Enterprises', 'KSE']",correct,none,,ok,214,9e13fee2291e87ec,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'Kroenke Sports & Entertainment'.""}
+```"
+cdb9eb0d3b8fb34f0ab75702a0967ad738020cc7b9481f5e2b1314eaf1806415,original_413,main,Which person or organization did Jorge Jódar work for?,I don't know.,['Spanish National Research Council'],incorrect,other,,ok,215,3d2ee41708587f32,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+9908497a21beff97f2792ca6488e635c97ab26e6309ddc363bbb30ba38c3d204,original_413,main,Who directed the TV series Knightfall?,I don't know.,['Samira Radsi'],incorrect,other,,ok,216,8c612727cd097a3b,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+423bd9f7a56e0fd0f83463aa406c76443a62c80a70804fd93664749f2f6e2070,original_413,main,Kim Carnes' nine weeks at No 1 with Bette Davis Eyes was interrupted for one week by which song?,"""Endless Love"" by Diana Ross & Lionel Richie.","['stars on 45 song', 'stars on 45 single', 'stars on 45 medley', 'medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45']",correct,none,,ok,217,7eebca7bb7e5c5a9,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""
+}
+```"
+0db488f847bf3d04cb1d20a7baeede97284d16e464deb53926d2fd8ba4656ff0,original_413,main,who sang theme song for dukes of hazard,Johnny Cash,"['American country music singer Waylon Jennings', 'Waylon Jennings']",incorrect,wrong_entity,,ok,218,78d2d845f4064756,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Johnny Cash is not listed as an accepted answer""}
+```"
+9575003071216d6cff6b777200f938ee5b8599e00fb22db799b289ce6da46b04,original_413,main,who plays the woodsman in over the garden wall,Jim Carrey,['Christopher Lloyd'],incorrect,wrong_entity,,ok,219,c706836e5d76cd10,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+33e3cafaf6e63b1a5b6d6548fabbecd0f3d352db2c0549fca39b48ae93156d7a,original_413,main,who won the most stanley cups in history,Montreal Canadiens,['Montreal Canadiens'],correct,none,,ok,220,9a869186571b9227,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+38ed4175f6c833dfecdcf4014f7179b00bdc651817501ea9746bfd3f81ed229d,original_413,main,Which person or organization did José-Manuel Rodríguez-Fortún work for?,Candiolo Cancer Institute,['University of Zaragoza'],incorrect,wrong_entity,,ok,221,808586623dea7e66,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+9aa7287b564918c0e717410a975dfe7859ffce593568cec848f71b0e4f243000,original_413,main,In which state was Gene Vincent born?,Virginia,"['commonwealth of virginia', 'sports in virginia', 'va state', 'rest of virginia', 'va usa', 'virginia usa state', '10th state', 'virginian commonwealth', 'us va', 'tenth state', 'viginia', 'commonwealth of va', 'mother of presidents', 'virginia', 'virginia united states', 'council of virginia', 'virginia usa', 'virgina', 'old dominion', 'state of virginia', 'religion in virginia', 'virginia state', 'virginia u s state']",correct,none,,ok,222,6304550f4e6a0a4a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'virginia'.""}
+```"
+a58a0220f73223009e94efd337500679709bad13e46ad407359d9627ac2066e6,original_413,main,Which person or organization did Danhuai Guo work for?,Zhejiang Chinese Medical University,['Cure Foundation'],incorrect,wrong_entity,,ok,223,87b314ffd90171da,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+a9cc682490f5eed4c5613a8a16dc9d6f02c32b1501809e11bb963ff85e92d1b9,original_413,main,civil war what did the north fight for,"Union victory, military and economic supremacy.","['loyalty to the U.S. Constitution', 'maintaining the republic']",incorrect,wrong_entity,,ok,224,724c75d8d3ece437,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+6ad1418e98058eb0a1471d65038d4235c191d8e8ae6b8c498d1c787679a49c66,original_413,main,Which person or organization did Abebe Mekuria Shenkutie work for?,University College London,['Arsi University'],incorrect,wrong_entity,,ok,225,6853319e82b7344c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match any accepted answer.""
+}
+```"
+03839903095fbc18a9b654934d8f7507ed789b6aa19ab53ac852b613f73f4e8e,original_413,main,is there a name for the at symbol,at sign,"['commercial at', 'at symbol', 'at sign']",correct,none,,ok,226,41961543ac7418c7,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answer""}
+```"
+3cc2f3d34c01438bab30028ebfeb09c7e240b863767b495eb129c9e3f3546789,original_413,main,Brandon Lee died during the making of which movie?,The Crow,"['crow', 'crow dead time', 'crow 2016 film']",correct,none,,ok,227,5567eda3f9cec258,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches 'crow'.""}
+```"
+72151e9e88b013f1d1a0e75818a77237dc16efc58bbac653886aa513e62b8099,original_413,main,Which person or organization did Shawn Martin work for?,Tianjin University,['Indiana University Bloomington'],incorrect,wrong_entity,,ok,228,91b63df70a5b36e7,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+3323cbf0eb02dc661b8349bc545523c6b906e3b2373d7d7abb350506a4ba9d94,original_413,main,Which Lloyd Webber musical premiered in the US on 10th December 1993?,Sunset Boulevard,"['sunset boulevard', 'sunset bulevard', 'west sunset boulevard', 'sunset blvd']",correct,none,,ok,229,0a4663bd6dcdc53d,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+f9e4e37169e4e7010aeaffe77a842dda01e87205620f3cf60b78133e2863eb9a,original_413,main,who was the aztec ruler when the spanish arrived,Cuauhtémoc,"['Moctezuma II', 'emperor Cuauhtemoc']",incorrect,wrong_entity,,ok,230,ea3883e0b797d840,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Cuauhtémoc was not the ruler when Spanish arrived""
+}
+```"
+fcac3cf2060f65a6b4532100b2ab1ebd651b88710a250a1709bd3b8153d32fb3,restored_34,main,what is the definition of ph in water,logarithmic scale of hydrogen ion activity,"neutral, at pH 7 (25 °C), being neither an acid nor a base ; potential of hydrogen",incorrect,wrong_entity,,ok,231,2f05858d4886f1d3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answers""
+}
+```"
+56ce572b03479b8de77e520558facbe8758ecc51069edd36e9044ada79116e3c,original_413,main,how many characters are present in icd-10 codes,three to seven characters,['7'],incorrect,partial,,ok,232,2b52a88e149b8357,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""partial"",
+  ""brief_reason"": ""Candidate answer is partially correct but not specific enough.""
+}
+```"
+2cfd884c2402e7ed2ae126a8b430c49d3d03e40435c93d14fa0385d9f2c1d101,original_413,main,who sang picking up pebbles and throwing them into the sea,Matt Flinders,"['Matt Flinders', 'Matt Flinders (born Sylvan Louis Bonett']",correct,none,,ok,233,448a6dd3eaccf023,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+10b5b4d32d92f9c15b7d1a3e0d5ff9643de556f6346d091d1eea5ee6be6b6e13,original_413,main,Richard Daley was mayor of which city for 21 years?,"Chicago, Illinois","['sayre language academy', 'chicago transportation committee', 'chicago illinois u s', 'sister cities of chicago', 'sister cities chicago', 'transport in chicago', 'chicago illinois', 'chicago illinois usa', 'chi town', 'hog butcher for world', 'religion in chicago', 'chicago', 'chicago wi', 'near north montessori', 'un locode uschi', 'city of broad shoulders', 'chicago theatre', 'chicago usa', 'uschi', 'chicago il', 'city of chicago', 'chicago finance committee', 'list of sister cities of chicago', 'chi beria', 'weather in chicago', 'chicago wisconsin', 'land of smelly onions', 'ariel community academy', 'chicago theater scene', 'chicago united states', 'paris of america', 'chicago illionis', 'chicago illinois united states', 'chcago', 'chi city', 'chicago illinois us', 'performing arts in chicago', 'chicago theatre scene', 'chichago', 'chicago ill', 'city of chicago illinois']",correct,none,,ok,234,2312723c3159bc74,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'chicago'.""}
+```"
+b1de5b1f605928b5f1dfd2b755430a5ff741544f0261415d0dac47efcdcd5825,original_413,main,Who had an 80s No 1 hit with Hold On To The Nights?,Rick Springfield,"['richard marx', 'richard noel marx']",incorrect,wrong_entity,,ok,235,6526062993aed68a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+7adb8e31cb74d8571708d8a4a6c7a5bf870d05ad587cb60a38d1683cf596e618,original_413,main,where was part of the classic surfing movie endless summer filmed,"California, Malibu, Huntington Beach, Santa Cruz.","['Tahiti', 'Ghana', 'Australia', 'South Africa', 'Nigeria', 'New Zealand', 'Hawaii', 'Senegal', 'the coasts of Australia, New Zealand, Tahiti, Hawaii, Senegal, Ghana, Nigeria and South Africa']",incorrect,wrong_entity,,ok,236,61961f6cb3251c43,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer locations are not in accepted list.""
+}
+```"
+62c488c0ba8690ba5703cf4af18311494b2b27a661d22a7fe0b077e6ad9ddcd8,restored_34,main,Where did Ernest Rutherford work?,"McGill University, Victoria University of Manchester","Victoria University of Manchester ; Owens College ; Owens College, Manchester ; University of Manchester",correct,none,,ok,237,9217af658df41c18,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Both elements are semantically equivalent to accepted answers.""}
+```"
+43f263f764cccc364cddfe91b2c31ebae850e4f16eecd614a08a376d2634c2c0,original_413,main,who played the little boy in polar express,Miley Cyrus,"['Dante Pastula', 'Daryl Sabara']",incorrect,wrong_entity,,ok,238,8bb02e085ba9d3ce,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+6954fb1debcd77879633e7c3102552dd95bd02186a83e362ccc8b183aa1f7aed,original_413,main,what is the most fundamental unit of life according to the cell theory,Cells,['cells'],correct,none,,ok,239,247b849e3413bd9c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+5e47fc0145b4a8c07d6d3ac8906ea3a790fff43956f59d3a29e42620fc18c733,original_413,main,What is the field of work associated with Ted Kennedy?,Politics,"['gun control', 'firearms control', 'gun law', 'gun ban', 'gun control law', 'gun prohibition', 'gun regulation', 'handgun ban']",incorrect,unsupported,,ok,240,b9da579c7f32aba8,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer is too broad.""
+}
+```"
+b1f51ba1ee9f63cd4f75f3f495161a9ca2e05f848ef8728fe66a63119341007f,original_413,main,Which person or organization did Ilse Braun work for?,I don't know.,['Albert Speer'],incorrect,other,,ok,241,8d6ea02b435870cf,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+ff432e60ff8df233d730a467055c8e6d8481d9f2f956a7b15c2ad4f5cc201988,original_413,main,What was Walter Matthau's first movie?,I don't know.,['kentuckian'],incorrect,other,,ok,242,51244732fcf28159,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+6b7450a9b0e7676d732fc929c85e6a6a2d68ba5ddd2da2896b08a8fc06aa9b84,original_413,main,who were the original voices of the flintstones,"Alan Reed, Mel Blanc","['John Stephenson', 'Jean Vander Pyl', 'Harvey Korman', 'Verna Felton', 'Mel Blanc', 'Don Messick', 'Alan Reed', 'Bea Benaderet']",correct,none,,ok,243,5184ba9c9fc8be4c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+e5cfffdcacce14538064ea5d24e9537a8dca278acbe75253ffb8e14390f7a540,original_413,main,What is the country of origin of the film Lightyear?,United States,"['United States of America', 'United States', 'the States', 'the United States of America', 'US of America', 'USA', 'U.S.A.', 'America', 'the US', 'the U.S.', 'the US of A', 'U.S. of America', 'the US of America', 'US', 'the USA', 'U.S.', 'the U.S.A.', 'the U.S. of A', 'US of A', 'the U.S. of America', 'U. S.', 'U. S. A.', 'the United States', 'Merica', 'Murica']",correct,none,,ok,244,24ff2f53e2e731fc,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'United States'.""}
+```"
+6f0bcbb2e1d34b54d2393da0ac1dba5ecbab8d5d03fb67e89b52e9e288cbf1cb,original_413,main,Which person or organization did Fasong Yuan work for?,Brigham and Women's Hospital,['Cleveland State University'],incorrect,wrong_entity,,ok,245,9fb9334eae80d3a3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+0401d32a065343d4147b1e8d9b29bf5431f088a7c5abfb2f9da02103c8c00a04,original_413,main,Which person or organization did Jorge Jódar work for?,University of Sydney,['Spanish National Research Council'],incorrect,wrong_entity,,ok,246,0cdd2e3ea826c1f6,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answer""
+}
+```"
+b046af01d4c52e1396d1b859a41deee01f216dcad27c4c7aefa40dfa946ad5bd,original_413,main,who played nathan scott on one tree hill,James Lafferty,['James Martin Lafferty'],correct,none,,ok,247,d86c4a548e7e64ef,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Ignore notation: middle name omitted""}
+```"
+cc56395d51bbb46bd6d7af455b303bd5c19e3ff23b38e1e2becca63b9b2290f4,original_413,main,Which country does the airline TAAG come from?,Angola,"['angola', 'etymology of angola', 'republic of angola', 'sport in angola', 'angloa', 'iso 3166 1 ao']",correct,none,,ok,248,8b5e01cc72fb6afe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'angola' in accepted answers.""}
+```"
+3a0c7932fff82c3ebf36366640508777b218f50ae9748a10cb0141f6cbf123af,original_413,main,Which person or organization did Jan H Driller work for?,Aarhus University,['Aarhus University'],correct,none,,ok,249,4c6e4605830d54e8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+1608b89565d990b6769b2c0b7938d6e1d8614e80e047eef8d7e24049c11c8c93,original_413,main,when did the wave hill walk off end,May 1976,['16 August 1975'],incorrect,wrong_number,,ok,250,e7c8c145e322481b,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer date does not match accepted answer.""
+}
+```"
+a057e291e2eb451745147b8e69322c5d0df5942eb6ce1de27a94ab562f1fb5f4,original_413,main,Which US No 1 single came from Diana Ross's platinum album Diana?,"""I'm Coming Out""","['upside down diana ross song', 'up side down', 'upside down', 'upside down single']",correct,none,,ok,251,cea0965d68332b73,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+9520c6737caa0dd80408633d11283bae820a69977f91bf36d0df677e432747c1,original_413,main,who plays the mom on the tv show mom,Mimi Kennedy,"['Anna Faris', 'Allison Janney']",incorrect,wrong_entity,,ok,252,858008c03677dc45,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not in accepted answers""
+}
+```"
+c72fe187bd3970b8d841081308a083b5b8a9224250f8aed890d55a989c6c04aa,restored_34,main,What is the country of citizenship of Judi Dench?,British,United Kingdom ; UK ; United Kingdom of Great Britain and Northern Ireland ; U.K. ; U. K. ; U K ; G.B. ; G. B. ; G B ; Great Britain ; G.B.R. ; G B R ; Britain ; Great Britain and Northern Ireland ; The United Kingdom of Great Britain and Northern Ireland ; The UK,correct,none,,ok,253,f61e3cd07e35a498,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""British is equivalent to United Kingdom""}
+```"
+0ef8026e0007f2f7159f5a2ad7fbc258a2bce571c8527d064729875d33050aec,original_413,main,Where in Canada is the Lion's Gate bridge?,"Vancouver, British Columbia","['south vancouver british columbia', 'vansterdam', 'vancouvr', 'vancouver bc', 'vancover', 'vancouver british colombia', 'hong kouver', 'vancouver', 'vancouver bc canada', 'vancouverites', 'un locode cavan', 'vancouver christian school', 'vancouver b c canada', 'vancouver city centre british columbia', 'vanocuver', 'vancouver british columbia', 'corpus christi elementary', 'vancouverite', 'hongcouver', 'hong couver', 'hastings east vancouver', 'vancouver canada', 'vancover british columbia', 'corpus christi elementary school canada', 'city of vancouver', 'greater vancouver bridges', 'vancouver b c', 'vancouver british columbia canada']",correct,none,,ok,254,25ddeb4ce01f82bb,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Refinement of accepted answer""}
+```"
+48e1d21651eea577ce22d5ed904edfee8d3983d7d4478d08e024baa9abdb3a1e,restored_34,main,What is the field of work associated with Ted Kennedy?,United States Senator from Massachusetts,gun control ; firearms control ; gun law ; gun ban ; gun control law ; gun prohibition ; gun regulation ; handgun ban,incorrect,unsupported,,ok,255,aa261dba7f519da3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+3521d90d550f0237d1a2e010039d9f37c1e1983b81f2f9f03eb0edf745ce07b2,original_413,main,when did the wave hill walk off end,1975,['16 August 1975'],correct,none,,ok,256,df505d7703a26bed,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Coarsening to year is acceptable""}
+```"
+7e4753e6d98e764912c1e508a2940ba32e774a02450de468421d2de9cd4018ad,original_413,main,who played the little boy in polar express,Daryl Sabara,"['Dante Pastula', 'Daryl Sabara']",correct,none,,ok,257,7be49300bd09ddbe,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches an accepted answer.""}
+```"
+769835b74f662ea6a8827e775b7f68769c588ee18e464dd7daed66a12785d526,original_413,main,Which person or organization did Abebe Mekuria Shenkutie work for?,Arsi University,['Arsi University'],correct,none,,ok,258,99e6e625b893761c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+c974a40f454ee20279bbc0594c102437d3b2c9328a6a5b1f31eb6e22de510414,original_413,main,What sport is Francesco Totti known for?,football,"['association football', 'football', 'soccer', 'footie', 'footy', 'futbol', 'futebol', 'association soccer', 'foot ball']",correct,none,,ok,259,227503b99bd0bbac,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'football'.""}
+```"
+8885d9c7908a50b33edefa9aed2d5e662bedf23ff4521509140366825d090bc6,original_413,main,What band is Hugh Laurie a member of?,Band from TV,['Band from TV'],correct,none,,ok,260,e09c1b268ecda77d,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+ea6f155d43b0dde38878be6a65f3754e0cc3a5758deafaa4faf1b49b62b09f4c,original_413,main,Who had a Too Legit To Quit Tour?,MC Hammer,"['too tight mc hammer album', 'family affair mc hammer album', 'stanley burrell', 'hammer rapper', 'stanley kirk burrell', 'stanley k burrell', 'wiredoo', 'mchammer', 'hammer crew', 'm c hammer', 'you shouldn t touch this', 'mc hammer']",correct,none,,ok,261,f6aeeb4be14dd7c5,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answer 'mc hammer'""
+}
+```"
+25e81e8ec5fbb705517037d6db1d879ad641089b9dc9a18fb7b343043cbf68ec,original_413,main,Which person or organization did Anders Ruus work for?,I don't know.,['University of Oslo'],incorrect,other,,ok,262,ba0ba3c840cd8ea6,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+6137421917935d4f156934b7703192f45824d1756c48c3f3610fa4a874cf09e4,original_413,main,who is the actor that plays saul on grace and frankie,Sam Waterston,['Sam Waterston'],correct,none,,ok,263,49258789f40265db,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+4e00602e9a0592343d9305302de6286157b557402f0a511cbe80e9e2f9c69870,original_413,main,What organization is Indonesia a member of?,ASEAN,"['ASEAN Regional Forum', 'ARF']",incorrect,partial,,ok,264,7f3c1b7ce7c6cb28,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""partial"", ""brief_reason"": ""Candidate answer is a subset of accepted answers""}
+```"
+ed91a40f81e57ec9c2e51b36925391d952b1cf86410ae3673e50df15ab00c862,original_413,main,What is the language of work for Tokyo Revengers?,Japanese,"['Japanese', 'Nihongo', 'Japanese language', 'ja', 'jpn', 'jp', 'Japanesic']",correct,none,,ok,265,0c243544c8751b94,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'Japanese'.""}
+```"
+29a43a69386dd2c82a33ae792b6ebb61eb73501dbdf30bdd9667e4be16d28cfa,original_413,main,who is the number one ranked golfer in the world right now,I don't know.,['Dustin Johnson'],incorrect,other,,ok,266,b8f4d97828ad69b0,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response.""}
+```"
+b6ce9ff53100ee4f8fdb333ddea03217ae2c46c151fa283511affd5a141bff77,original_413,main,who gave the famous objective co relative theory,T.S. Eliot,"['poet and literary critic T.S. Eliot', 'T.S. Eliot']",correct,none,,ok,267,1feae626b2b954b2,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+e91a61833fe67faf5c489ad2cd1ec563e0d8349021fd288580994c318800098c,restored_34,main,Kim Carnes' nine weeks at No 1 with Bette Davis Eyes was interrupted for one week by which song?,Stars on 45 Medley,stars on 45 song ; stars on 45 single ; stars on 45 medley ; medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45,correct,none,,ok,268,28541772cb9068a2,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer matches accepted answer.""
+}
+```"
+50490b22a093785f2b48b300ff0ad50733aee94d1aa43bfdb4eac4a920327e2a,original_413,main,What country is Jamie Dornan a citizen of?,United Kingdom,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",correct,none,,ok,269,af5e0528d20ac554,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'United Kingdom'.""}
+```"
+b355d64273bcca3c0d272ae97efb44d92527f83eb3fd32b1677cbf1d19417f48,original_413,main,Kim Carnes' nine weeks at No 1 with Bette Davis Eyes was interrupted for one week by which song?,I don't know.,"['stars on 45 song', 'stars on 45 single', 'stars on 45 medley', 'medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45']",incorrect,other,,ok,270,c3f24328d36c6018,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer.""}
+```"
+0d62a456dc9342a85410856895d6aff73d1829dc68e1ed289d05227411848661,original_413,main,What is the currency of Taiwan?,New Taiwan dollar (NTD),"['New Taiwan dollar', 'NT$', '$', 'TWD', 'NTD']",correct,none,,ok,271,50e761a1ee0c3922,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+8f48250ddece60946f2f91aef35913509e8e408e098ff141815cf154ae4db80a,original_413,main,who played the little boy in polar express,Dante Pastula,"['Dante Pastula', 'Daryl Sabara']",correct,none,,ok,272,24011e22f00c0b77,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches one accepted answer""}
+```"
+a182b90d133a0789e47fa87220cebf532f5d633810a0396e75fecdc1a602087c,original_413,main,who is the number one ranked golfer in the world right now,Tiger Woods,['Dustin Johnson'],incorrect,wrong_entity,,ok,273,1cb8ddd68eedf6ac,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+e80d9fecdbf3f4e6b9f2c2c125ea1048b5def810d8d622acea88dc784cabff8b,restored_34,main,who is the winner of bigg boss kannada season,Pratham,Chandan Shetty ; rapper Chandan Shetty,incorrect,wrong_entity,,ok,274,7d9d06697e53c1d2,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate answer is not in accepted answers""}
+```"
+16c29e5c156a8debf459efe7d1b4e0c2571866ff6298d76d1207f345f8a70a1c,original_413,main,wolf of wall street number of f words,506,['569'],incorrect,wrong_number,,ok,275,ca17971e8e6e525b,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+1adfc49097b457508fd220ddab6b6420f61184fe2a82520ba49d74fc82851b0c,original_413,main,who is the winner of bigg boss kannada season,Pradeep Shetty,"['Chandan Shetty', 'rapper Chandan Shetty']",incorrect,wrong_entity,,ok,276,2a397ad62dfe347a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not in accepted answers""
+}
+```"
+8d1ddbd1a77ae96d057fd3b3dd0fc2ba4a3face8cf62a51d657dbbec7405791b,original_413,main,What sport does Wyatt Russell play?,Association football,"['ice hockey', 'hockey']",incorrect,wrong_entity,,ok,277,7a2c6d8bcc404e93,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Association football is not equivalent to ice hockey or hockey""
+}
+```"
+fd03871807687de5847f6f272da53a9bc9979074194e9bc624fc48af913dd62f,original_413,main,Which person or organization did Dengqing Zhang work for?,Donghua University,['Donghua University'],correct,none,,ok,278,bcf3f07491334c6b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+5d138aceac6e161d59de461e0e0143097bb9fc599ee2091c36e4dec79b411144,original_413,main,Which musical featured the song The Street Where You Live?,Camelot,"['my fair lady musical', 'my fair lady', 'my fair lady 2010 film', 'why can t english 3f', 'my fair lady upcoming film', 'my fair lady 2012 film', 'my fair lady 2014 film', 'my fair lady 2015 film', 'i m ordinary man', 'enry iggins']",correct,none,,ok,279,2fb8dc4187a36d0c,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Camelot is semantically equivalent to 'my fair lady'""
+}
+```"
+518b8b511f590b94245d93a702444f35c7d283d34900fd97b36db247da50989a,original_413,main,Which person or organization did Kalayou Kidanu Berhe work for?,University Hospital Muenster,['Mekelle University College of Health Sciences'],incorrect,wrong_entity,,ok,280,63bd011c63685e56,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is a different entity""
+}
+```"
+9acfbdf508e0abcd361879119639421e5353a05da57d1b68aa2449420a64860c,original_413,main,Which person or organization did Agata Lipko work for?,I don't know.,['Institute of Biocybernetics and Biomedical Engineering'],incorrect,other,,ok,281,ff6f3a0a732dc6cc,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+e1b8e167a2a77d38bf5277b090156e3534c9021f36a57beb0c24f340ceba044e,original_413,main,Which musician founded the Red Hot Peppers?,Louis Armstrong,"['ferdinand morton', 'jellyroll morton', 'joseph ferdinand morton', 'f p lamothe', 'ferdinand lamothe', 'ferdinand joseph la menthe', 'ferdinand joseph morton', 'ferdinand joseph lamothe', 'jelly roll morton', 'louise monette', 'ferdinand 22jelly roll 22 morton']",incorrect,wrong_entity,,ok,282,b14399ec6b725c5a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate is not semantically equivalent to any accepted answer""
+}
+```"
+11a2dcce3cf04f385fa15d3f489d8bdfa8ddb4bace2fbe8ee0ff8a65c603b181,original_413,main,What is the currency of Taiwan?,New Taiwan Dollar,"['New Taiwan dollar', 'NT$', '$', 'TWD', 'NTD']",correct,none,,ok,283,de00bb2ed3c87066,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Semantically equivalent to accepted answers""}
+```"
+9fd97d2512cac0c6a4af5e1f535ce1a8525f23e80dbf82b7864e74f5df95fad8,original_413,main,What was the country of citizenship of Anne Frank?,Germany,"['Nazi Germany', 'Third Reich', 'Greater German Reich', ""Hitler's Third Reich"", 'German Reich', 'Thousand-Year Reich']",correct,none,,ok,284,2c949a51a8ec175c,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Germany is equivalent to Nazi Germany""
+}
+```"
+a2f00eb575438a817feae6c318041ecc1e13ad8129d771df43cbc2efb82662cc,original_413,main,Who is Rick Fox's spouse?,I don't know.,"['Vanessa Williams', 'Vanessa Lynn Williams', 'Vanessa L. Williams']",incorrect,other,,ok,285,e7cff07ae5990358,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+d600f80a937bfb4296a1d48e1eb0e187e58aa8943b3f274ca944faf680779f6a,original_413,main,who is the winner of bigg boss kannada season,I don't know.,"['Chandan Shetty', 'rapper Chandan Shetty']",incorrect,other,,ok,286,c0c753fc028239f4,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+f714c551957e45e6583d02810ccc826396ad922a7a000ffd4f971e4b3ee748a2,original_413,main,What was Truman Capote's last name before he was adopted by his stepfather?,Persons,"['personhood theory', 'persons', 'person', 'perſon', 'perſons', 'person philosophical']",correct,none,,ok,287,f63c323ae242cace,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'persons'.""}
+```"
+5506a6d82ca43100dbcef40b2d4e194b361e08a7cdd967cff855cc2a2020a627,original_413,main,What was President Gerald Ford's middle name?,Leslie,"['rudolf', 'rudolph', 'rodolphe', 'rudolph disambiguation', 'rodolph']",incorrect,wrong_entity,,ok,288,55a4c83d4db71c19,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+d464bac9aa5a6c15001d5520e0fff6cffe28bd0d650d5d0acb73a16881a3a6a2,restored_34,main,the sport psychology sub-field of performance enhancement deals primarily with,psychological skills training for performance improvement.,Arousal regulation,incorrect,wrong_entity,,ok,289,64ba3ae9f9c22c8d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answer.""
+}
+```"
+0d8710232876982dfdfaed38565a089d3628bc8d719c06e6c16c33b6364510e0,original_413,main,Which person or organization did Jan H Driller work for?,Universidade Federal de Santa Maria (UFSM),['Aarhus University'],incorrect,wrong_entity,,ok,290,a7f82efaa18a021a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to any accepted answer.""
+}
+```"
+f3a9b3e6fae8138fc98d80deea644066283aea6ce50b1afca9a97abd6227d7c5,original_413,main,Which person or organization did Lee Gilad work for?,University of Oxford,['Sheba Medical Center'],incorrect,wrong_entity,,ok,291,fb546a9278a79465,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+ff3473cc5a3d08495fb638de1e550781f1807015ce6a586d0b10e65e0c5afc60,original_413,main,Who is the chief executive officer of GB News?,Derek Draper,['Angelos Frangopoulos'],incorrect,wrong_entity,,ok,292,6f9601561a9003f9,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+a453ca0c27c81ffa42eca2bc70162fc21ffd8a9584a494837c7324206e773fe5,original_413,main,What award did Mariska Hargitay receive?,I don't know.,['Primetime Emmy Award for Outstanding Lead Actress in a Drama Series'],incorrect,other,,ok,293,c0ad9e6f7ef01b1a,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+bd86183046c5e1ca8ded1f7b352c1abc2cda4dcffcd05b1c610d640de80e33c1,original_413,main,What award did Mariska Hargitay receive?,New Jersey Hall of Fame,['Primetime Emmy Award for Outstanding Lead Actress in a Drama Series'],incorrect,wrong_entity,,ok,294,1b0361b2980e5fbb,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is a different award""
+}
+```"
+1d4858eb009e2ad67e9f76c21304fc0f0c05eeeafcd0944dfb0489d90966b868,original_413,main,Which person or organization did Shankararaman Chellam work for?,I don't know.,['Texas A&M University'],incorrect,other,,ok,295,f5f47bc168cc7f85,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+326e47f6871703f06ac53a6ca74e9a024740e5113eaaf902a5d1c1fe3f7c2eda,original_413,main,Where did Ernest Rutherford work?,Victoria University of Manchester,"['Victoria University of Manchester', 'Owens College', 'Owens College, Manchester', 'University of Manchester']",correct,none,,ok,296,a8aa47efbb5de70e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches one accepted answer.""}
+```"
+66ef59abd54e7548fbe1d41e9154d3b51a51a3bece1cb13e1dc69363c8bd9030,original_413,main,What award did M. G. Ramachandran receive?,Gold Medal of the Royal Order of Sports Merit,['Bharat Ratna'],incorrect,wrong_entity,,ok,297,9031abb90d309ed3,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not equivalent to accepted answer""
+}
+```"
+fa2d70a48a4f34c4a5051cb16bb0eae54cc0ece29e16f9ad9e3e046a4ef3940f,original_413,main,Where in England was actor Nigel Hawthorne born?,"Birmingham, West Midlands, England","['coventry uk', 'cofantre', 'coventry united kingdom', 'coventry borough', 'coventry city', 'coventry england', 'metropolitan borough of coventry', 'coventry city council', 'coventry', 'county borough of coventry', 'coventry warwickshire', 'city of coventry']",incorrect,wrong_entity,,ok,298,a84c1d4e5282fd91,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is Birmingham, not Coventry.""
+}
+```"
+9b70b811087f2336e66f35bbdf51467e9ab3e763782f79b7122eb7c182fb7478,original_413,main,epidemiologists attempt to explain the link between health and variables such as,"environment, lifestyle, genetics, and socioeconomic status.","['stress', 'chemicals', 'alcohol', 'smoking', 'disease conditions in defined populations', 'biological agents']",incorrect,unsupported,,ok,299,0c503c19554980b6,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer contains unsupported elements.""
+}
+```"
+694dfe53741228e8f736bec2ec6a939ee3d81c72c7268c4c841bf0dc0189c5ee,original_413,main,Which highway was Revisited in a classic 60s album by Bob Dylan?,Highway 61,"['61', 'sixty one']",correct,none,,ok,300,1a24e11c8156da82,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+1efb01f601a28e0935b9b66e2f3ffd05239a34b97a8adc14ef254609e5076649,original_413,main,who plays the mom on the tv show mom,Allison Janney,"['Anna Faris', 'Allison Janney']",correct,none,,ok,301,621d0c9194f6e686,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches one accepted answer""}
+```"
+c686d967d36add01fe3fdcf2cad0889b6ab27a034b0e1f9ad2b5201821bc493d,original_413,main,What is the country of citizenship of Judi Dench?,United States of America,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",incorrect,wrong_entity,,ok,302,4b24db43bc77af0b,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not in accepted answers""
+}
+```"
+6a3683d256b306f28c25db71f549a259c9c03af5a3b4fc7337a77402c99c27d2,original_413,main,is there a name for the at symbol,"at sign, ampersand, commercial at, address sign","['commercial at', 'at symbol', 'at sign']",correct,partial,loose_parse,ok,303,e2c2f4cb10a0b69c,"```json
+{
+  ""verdict"": ""partial"",
+  ""error_type"": ""partial"",
+  ""brief_reason"": ""Includes correct and incorrect elements""
+}
+```"
+dc0e7eea1100f257af9564e1e88209b7e6a4456304833b9b2e95621bcd987a3d,original_413,main,Which person or organization did José-Manuel Rodríguez-Fortún work for?,"Spanish National Cancer Research Centre (CNIO), Candiolo Cancer Institute",['University of Zaragoza'],incorrect,wrong_entity,,ok,304,3d5f81ac185d5abe,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer""
+}
+```"
+b9d68431f0ca4adcaa07daca7d3b41351691b2355180f5fff07d931c500f4876,original_413,main,Men Against the Sea and Pitcairn's Island were two sequels to what famous novel?,Treasure Island,"['mutiny on bounty history', 'hms bounty mutineers', 'bounty vessel', 'mutiny on bounty', 'thomas ledward']",incorrect,wrong_entity,,ok,305,7cf802011d423e76,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+8306fbfbab52c9f1ab4ee6f2baa2db2a2e5bbca01381bad234e50a2e56f3c278,original_413,main,What is the field of work associated with Ted Kennedy?,"American politician, senator from Massachusetts.","['gun control', 'firearms control', 'gun law', 'gun ban', 'gun control law', 'gun prohibition', 'gun regulation', 'handgun ban']",incorrect,wrong_entity,,ok,306,23b1183accb90991,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answers.""
+}
+```"
+31e47ff5b1533d3df68c7e0b2eabd5a6d6289738d48db0ddf539d97b21fc704b,original_413,main,What is the country of citizenship of Judi Dench?,United Kingdom,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",correct,none,,ok,307,af7cc562b27d785f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'United Kingdom'.""}
+```"
+df34363cacb1f3a48ed812c7612df6f356a683272e692ac6004245028c4a79cd,original_413,main,Which person or organization did Shankararaman Chellam work for?,Korea Institute for Advanced Study,['Texas A&M University'],incorrect,wrong_entity,,ok,308,bfb799515de54b72,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+d3f56c129b64a6cd0937d74ab594433342024ed2c68b4cef821c94c29637153c,original_413,main,What is the religion of Eddie Murphy?,Devout Christian,"['Christianity', 'Christian faith', 'Christian']",correct,none,,ok,309,dbbc38e18ceec158,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""
+}
+```"
+6bafc1748df0a05f1b7c0cd62ebff99913b88aea38ef037ff06e129440bebd39,original_413,main,Which person or organization did Shankararaman Chellam work for?,Texas A&M University,['Texas A&M University'],correct,none,,ok,310,b1d615336fd9443c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+e22354ed294ae609b8799dbf6545e54428ab97a5258c2c8a8aa1ed325ac12985,original_413,main,Who was the next British Prime Minister after Arthur Balfour?,Sir Henry Campbell-Bannerman,"['henry campbell bannerman', 'sir henry campbell bannerman', 'campbell bannerman']",correct,none,,ok,311,ef81366259aa262f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Semantically equivalent to accepted answers""}
+```"
+0b833decef1193f50ced877bea8a0539e0d39be6d60d8e265d1408133f76211f,original_413,main,when did the 5 day work week begin,Early 1930s,"['In 1908', '1908', '1940']",incorrect,wrong_number,,ok,312,d29c72483130cce1,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer does not match any accepted answer""
+}
+```"
+33895cac4adb782b0f04913909c5bb13039cc0b07105ca855905aac807c23d54,original_413,main,"In Lewis Carroll's poem The Hunting of the Snark, what did the elusive, troublesome snark turn into to fool hunters?",Jabberwock,"['boojum disambiguation', 'boojum']",incorrect,wrong_entity,,ok,313,7b0fcd7bfbd2cef7,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+81e7b9333f3a11931826d4c41f91af1767240def80ddd430b8f627fc8516623b,original_413,main,What is the religion of Eddie Murphy?,I don't know.,"['Christianity', 'Christian faith', 'Christian']",incorrect,other,,ok,314,7ffe056e79b3c614,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+b63fdf03cc352ce48291f34f66c97380129c722b7ce7ad86f0399c59c8eb1e21,original_413,main,Which person or organization did Luis J Martinez work for?,I don't know.,['Universidad ECCI'],incorrect,other,,ok,315,05c181ea5264ec1b,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+7a25cae00b2d51edac6425e2906a89da9f28d982c2fcff09aff45b04001124fc,original_413,main,Which musician founded the Red Hot Peppers?,I don't know.,"['ferdinand morton', 'jellyroll morton', 'joseph ferdinand morton', 'f p lamothe', 'ferdinand lamothe', 'ferdinand joseph la menthe', 'ferdinand joseph morton', 'ferdinand joseph lamothe', 'jelly roll morton', 'louise monette', 'ferdinand 22jelly roll 22 morton']",incorrect,other,,ok,316,2b042f94bf85c566,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+f95a70f3ad3f9317004dfa857bd2a83e9e67c416d49d54a4dfbbd5dd87f93434,original_413,main,who sang picking up pebbles and throwing them into the sea,John Mayer,"['Matt Flinders', 'Matt Flinders (born Sylvan Louis Bonett']",incorrect,wrong_entity,,ok,317,3f12e3eda0792a64,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+1d77614af084d5aa7ab72325d07121ef45619be9b0ef488640deac8bc3b03783,original_413,main,india participated olympic hockey for the first time,1926 Amsterdam Olympics,"['1928', '1927']",incorrect,wrong_number,,ok,318,99e80c79384117e9,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""1926 is not in accepted answers""
+}
+```"
+d1b62fd95b91ecb5f480783fe82497ac8d1ddec6e01df3fac561718fe307f412,original_413,main,Which person or organization did Masahisa Nakamura work for?,Waseda University,['Waseda University'],correct,none,,ok,319,77473fdaa714255a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+3e6e91241f1b851b285ffad2a995bf82487a9cf38fd7f031f0a98e960d2b67a5,original_413,main,River Phoenix died during the making of which movie?,I don't know.,"['dark blood', 'dark blood film']",incorrect,other,,ok,320,51e3984407ec211f,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+e3bbc4a2b2ca4a617c82832f4258ca221a319f393bae2a206adc46e7b2c8d0c1,original_413,main,philadelphia is known as the city of what,The City of Brotherly Love,"['City of Brotherly Love', 'Brotherly Love']",correct,none,,ok,321,fd8dd6c58f64c135,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Semantically equivalent to accepted answers""}
+```"
+5d318170b140be9d90e76d229e300fb4863ae4c049cf5a28643fc84cee3434a1,original_413,main,What sport does Wyatt Russell play?,I don't know.,"['ice hockey', 'hockey']",incorrect,other,,ok,322,d87e46f9d64327aa,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a sport.""}
+```"
+1f9372313c95efdfbf452883464eb57e8c6a17903629627620cefccd1c9999f4,original_413,main,what is the definition of ph in water,pH in water is a measure of the acidity or basicity of an aqueous solution.,"['neutral, at pH 7 (25 °C), being neither an acid nor a base', 'potential of hydrogen']",incorrect,unsupported,,ok,323,1e6e023a1ae31a26,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer lacks specific accepted details""
+}
+```"
+67471953c094a7d52b3f16363f3e1d06b1baab09c880ff2b855fbe86e75c8e4c,original_413,main,What country is Jamie Dornan a citizen of?,Ireland,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",incorrect,wrong_entity,,ok,324,a53388fcd2fa9874,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not in accepted list""
+}
+```"
+dd7af262e283965497a8a209c45001036fc000b94992a459ddcf5e75fe8e264a,original_413,main,Which person or organization did Rannveig Bjornsdottir work for?,University of Akureyri,['University of Akureyri'],correct,none,,ok,325,eb98187980ae671b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+3cac3210ed2e49fe075d778cfb75c03b1da0c812f0a1cb75a3afe1c8d5c8405e,original_413,main,Which person or organization did Fasong Yuan work for?,Cleveland State University,['Cleveland State University'],correct,none,,ok,326,bded0f1bf3712c7e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+ead7ea546b617e63c2952448cd8f63e60431ac741269425a45bf6e630f139135,original_413,main,Which person or organization did Rannveig Bjornsdottir work for?,Chapman University,['University of Akureyri'],incorrect,wrong_entity,,ok,327,0ba2e59b35e35975,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+d286e35d5b38000e0d6fabed5a63bd2b0bc136acbefe8e674ed8376460b65b1e,original_413,main,who sang picking up pebbles and throwing them into the sea,I don't know.,"['Matt Flinders', 'Matt Flinders (born Sylvan Louis Bonett']",incorrect,other,,ok,328,c4bc567e9b3fe4f1,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""other"",
+  ""brief_reason"": ""Candidate answer is not an answer""
+}
+```"
+2605e1862837b06ab366e1cbe42da520b8c36342e0a8bf74ced62d2d98e23ed3,original_413,main,What genre is associated with Buddy Holly?,Rockabilly,['rockabilly'],correct,none,,ok,329,1352df7cc4bbb99f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+9f59b82e0f9eda6e2b60a1c9fd7afb4a2ed8544c3f85b9ad1dad3a563b76c9e6,original_413,main,Who had a 70s No 1 hit with Let's Do It Again?,The Commodores,"['cleotha staples', 'staple singers', 'staples singers']",incorrect,wrong_entity,,ok,330,6ea4ac7ac87ee274,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+ffe772567f2ee7c9c633a7a5fc2c1382daeba20e37c656f789dcbdf6521cdb41,original_413,main,Where did the Shinning Path terrorists operate?,"Bolivia, Chapare, Yungas, Beni, Pando.","['republic of perú', 'piruw suyu', 'iso 3166 1 pe', 'peruvian republic', 'perú', 'piruw ripuwlika', 'perù', 'lower peru', 'republic of peru', 'el peru', 'el perú', 'pérou', 'peruano', 'name of peru', 'peruvia', 'piruw', 'peru', 'república del perú', 'peruvian', 'etymology of peru', 'péru']",incorrect,wrong_entity,,ok,331,2776e811dce02e86,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer lists countries in Bolivia.""
+}
+```"
+b1bc03989c8ff69848e4d38a594aab6eb77a78e9bccc38adf6bf5a44921166e3,original_413,main,"Who is the spouse of Prince Richard, Duke of Gloucester?","Birgitte, Duchess of Gloucester","['Birgitte, Duchess of Gloucester', 'Birgitte Eva Henriksen', 'Birgitte Eva van Deurs Henriksen']",correct,none,,ok,332,3b27020537a7d435,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+2c8497bc4adb26aea40c8432c40238d435b8ae60e850546d20abe7a216d44407,original_413,main,who played nathan scott on one tree hill,Paul William Walker IV,['James Martin Lafferty'],incorrect,wrong_entity,,ok,333,487b0b4dba83e5cf,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate name does not match accepted answer""
+}
+```"
+a919950deacbfe4b48f99c6a4b4d318d8093f553b74ba1c2c493a996eac35b43,original_413,main,who was defeated in the french and indian war,French and Spanish,"['the French', 'France', 'Wabanaki Confederacy', 'British']",incorrect,wrong_entity,,ok,334,9c9affb00f998179,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer includes 'Spanish', not in accepted answers""
+}
+```"
+cbaf927d5810ac4021ca2d47fe23f26639436bd910fbf0750ac94c185669f420,original_413,main,where do they grow hops in the us,"California, Oregon, Washington state.","['Willamette (Oregon)', 'western Canyon County, Idaho', 'western Canyon County, Idaho (including the communities of Parma, Wilder, Greenleaf, and Notus)', 'the Yakima (Washington) and Willamette (Oregon) valleys', 'Yakima (Washington)', 'Idaho', 'the leading potato-growing states in the United States', 'Oregon', 'Washington']",correct,none,,ok,335,d2ecfc1223d485ac,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted locations.""}
+```"
+1ee2b990469ce00efe009a474d8bd94fb773534d88ff0ec507e2def7de32a72c,original_413,main,who played king theoden in lord of the rings,Ian McKellen,['Bernard Hill'],incorrect,wrong_entity,,ok,336,2795018f549da707,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Ian McKellen played Gandalf, not Theoden""
+}
+```"
+5fd8c3cfce66f1955e91752ebee9116c5816b0c977e544ba5984dbace547a0df,original_413,main,Which person or organization did Masahisa Nakamura work for?,I don't know.,['Waseda University'],incorrect,other,,ok,337,25a92de4f106a800,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+5feff374f9d13dc85f0221753b6b8aa1cf7281633ae438fc517e6272ebbdaa0d,original_413,main,Where does Mel Gibson work?,Hollywood,"['United States of America', 'United States', 'the States', 'the United States of America', 'US of America', 'USA', 'U.S.A.', 'America', 'the US', 'the U.S.', 'the US of A', 'U.S. of America', 'the US of America', 'US', 'the USA', 'U.S.', 'the U.S.A.', 'the U.S. of A', 'US of A', 'the U.S. of America', 'U. S.', 'U. S. A.', 'the United States', 'Merica', 'Murica']",incorrect,wrong_entity,,ok,338,b28ed6fcf3db7034,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Hollywood is not equivalent to any accepted answer.""
+}
+```"
+a7db49579a5cf7212196f7a279e1f51075ee814aa9ffe982df45d72fa91adf89,original_413,main,where do they grow hops in the us,"Washington, Oregon, and Idaho","['Willamette (Oregon)', 'western Canyon County, Idaho', 'western Canyon County, Idaho (including the communities of Parma, Wilder, Greenleaf, and Notus)', 'the Yakima (Washington) and Willamette (Oregon) valleys', 'Yakima (Washington)', 'Idaho', 'the leading potato-growing states in the United States', 'Oregon', 'Washington']",correct,none,,ok,339,ba1df0c97b2db08c,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is a partial enumeration of accepted answers.""}
+```"
+b3471dce9a404dd90bd40b17d94488b6a03c59826f005d625955040599d052de,restored_34,main,What organization is Sheryl Sandberg a member of?,LeanIn.Org,National Honor Society ; NHS,incorrect,wrong_entity,,ok,340,0c80eb9920db2461,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate answer not equivalent to accepted answers""}
+```"
+c6b8cee0af1f42821319f5d30c221514c4209331ff717e5ecb028d607fc11676,original_413,main,who got the first arjun award in athletics,Gurbachan Singh Randhawa,['Gurbachan Singh Randhawa'],correct,none,,ok,341,7f3012ee4717b7a7,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+6d50b52175199d956643c802047d447a13a9ab3584c7ec364a3e3097b13b7023,original_413,main,Which person or organization did Kalayou Kidanu Berhe work for?,Mekelle University College of Health Sciences,['Mekelle University College of Health Sciences'],correct,none,,ok,342,3a31d3beb73b3374,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+359d8c9d0648b8c83b9d5f66ae6627ab497b1acc8254a5176dfa3d2801c17998,original_413,main,when did linkin park release one more light,2017,"['May 19, 2017']",correct,none,,ok,343,0421081276522a96,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Year matches accepted answer""}
+```"
+36f1e3736694b3e778c5b30ded09d98e4ae5af5647d486ec5ac80fccce8c8a39,original_413,main,Who had an 80s No 1 hit with Hold On To The Nights?,Richard Marx,"['richard marx', 'richard noel marx']",correct,none,,ok,344,7fcfd97a5738b40a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'richard marx'.""}
+```"
+31f906c8154f3ea168fec036b5c0bb69ffbcb89f8acb79ce08abc49d9acbe1d7,original_413,main,How was the European Recovery Program in the 1940s more commonly known?,Marshall Plan,"['marshall aid plan', 'european recovery act', 'economic cooperation act of 1948', 'marshall aid', 'marshal plan', 'marshall paln', 'european recovery programme', 'european recovery program', 'organization for european economic recovery', 'ministère de la reconstruction', 'operation rathole', 'marshall plan']",correct,none,,ok,345,0d2876245b8e4b72,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""}
+```"
+9676d7b7aaf2bf3181143efc33173b691543df009f57f0c11af1ddbd6a01a6f3,original_413,main,Who was the last inmate of Spandau jail in Berlin?,Albert Speer,"['rudolf hesse', 'hess rudolf', 'walther richard rudolf hess', 'rudolf hess', 'rudolf w hess', 'rudolf walter richard heß', 'rudolf walter richard hess', 'rudolph heß', 'rudolf heß', 'rudolph hess']",incorrect,wrong_entity,,ok,346,2805025b64a922f8,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not in accepted answers""
+}
+```"
+e5d8aff404e5d6b619251e59c77b88d3efa71c18f8f822a9d4edaef690211dd5,original_413,main,Who is the composer of Bad Boys for Life?,Petri Alanko,"['Lorne Balfe', 'Lorne David Roderick Balfe']",incorrect,wrong_entity,,ok,347,c1914c856084e2f8,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+d830a9200c16e6bba91d0851838ba65c0b87c2e95d92921043f9dfbea81ef61a,original_413,main,In the 80s who wrote the novel Empire of The Sun?,George Orwell,"['ballardian', 'user s guide to millenium', 'james g ballard', 'j g ballard', 'jg ballard', 'james graham ballard']",incorrect,wrong_entity,,ok,348,4dddec41e7d25740,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate is not semantically equivalent to accepted answers""
+}
+```"
+a537ee700f994e4b61022038104ad815e1cb8cfd32509b64cba645d433fca427,restored_34,main,what part of the brain is in the middle cranial fossa,temporal lobes of the brain,pituitary gland ; temporal lobes ; the temporal lobes ; the pituitary gland,correct,none,,ok,349,d5a148039e5ea562,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Temporal lobes are in the middle cranial fossa.""}
+```"
+f0c613182a7ce99916d0c37a729e3be671c70938be3ab14490e13f1816eed9d3,original_413,main,who were the original voices of the flintstones,"Alan Reed, Jean Vander Pyl, Mel Blanc, Bea Benaderet, Don Messick, and Gerry Johnson.","['John Stephenson', 'Jean Vander Pyl', 'Harvey Korman', 'Verna Felton', 'Mel Blanc', 'Don Messick', 'Alan Reed', 'Bea Benaderet']",incorrect,wrong_entity,,ok,350,b8f13f0eba9fea42,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Gerry Johnson not in accepted answers""
+}
+```"
+5d0ab27df3100252765a4984fd4b47de8ef3aa4d6b93730ddc38afc350a5ead9,original_413,main,Who is the spouse of Idina Menzel?,I don't know.,['Aaron Lohr'],incorrect,other,,ok,351,6f6f5d2187d8e9ad,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+76ff018b0ee2400972a08cb979eb7f4ff80feab548a95e2df6da014cdff8de89,original_413,main,What band is Hugh Laurie a member of?,Central Committee of the Communist Party of the Soviet Union,['Band from TV'],incorrect,wrong_entity,,ok,352,440a492a7568238b,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is unrelated to accepted answer""
+}
+```"
+8d124799b1db8b84e5b9ec08625a1579958e6c99cdf5206f65e5a792d64186c5,original_413,main,Which person or organization did Lee Gilad work for?,Sheba Medical Center,['Sheba Medical Center'],correct,none,,ok,353,bcf7c46e2b1a1d32,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+d934fba1a22343c1b7c2d54ae4adae4f275b0cb62a6f1d72dd5b821b04311673,original_413,main,Which was the only eastern bloc country to participate in the 1984 LA Olympics?,Czechoslovakia,"['danubian carpathian area', 'roumania', 'austro hungarian empire romania', 'romania', 'rromania', 'iso 3166 1 ro', 'rou', 'country rom', 'ro country', 'rumunia', 'romainia', 'rumänien', 'etymology of romania', 'north danubian region', 'romînia', 'rumania', 'romanian state', 'carpathian danubian space', 'românia', 'republic of romania', 'roumanie']",correct,none,,ok,354,8ac9dad03c634c9b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Czechoslovakia is not in the accepted list""}
+```"
+337b383ce21e1103951420a909fea72a2623624cea6716523e7dda2e4b2f4463,original_413,main,when were cigarette ads banned from tv uk,1 August 1965,['1 August 1965'],correct,none,,ok,355,f4ff154b1f9c2457,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+1ff255c4d3371715212f6084683a70902ad40d3e977e37e1b1e2c0b3279461db,original_413,main,Which person or organization did Takamitsu Inoue work for?,International University of Health and Welfare,['International University of Health and Welfare'],correct,none,,ok,356,a5c78b2f37c25171,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+7ae90bd697b737404e2150c37d1aef665651e090773a6a0b54698ce3dc50500e,original_413,main,Which person or organization did Kalayou Kidanu Berhe work for?,I don't know.,['Mekelle University College of Health Sciences'],incorrect,other,,ok,357,fa892a3711463aa9,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+85d325d15d34e7bce9e1982dca71373a24b12e60b29fcd60d747e1bb45d75df8,restored_34,main,What award did Mariska Hargitay receive?,Primetime Emmy and Golden Globe.,Primetime Emmy Award for Outstanding Lead Actress in a Drama Series,incorrect,overinclusive,,ok,358,d2d81ef94f51c0fc,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""overinclusive"",
+  ""brief_reason"": ""Includes Golden Globe, not in accepted answer""
+}
+```"
+a98141ff4e9a19c0213cfa707cf4004c328ca4b6d8574cd28e27d11883453369,original_413,main,who played sarah hedley in when the boat comes in,Rosalind Bailey,['Rosalind Bailey'],correct,none,,ok,359,a4c425f55c21fca8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+1bd08701ba085943d59131a0d93cf13bdfbea94e1e4e7546ac91ea138543994e,original_413,main,In which state was Gene Vincent born?,West Virginia,"['commonwealth of virginia', 'sports in virginia', 'va state', 'rest of virginia', 'va usa', 'virginia usa state', '10th state', 'virginian commonwealth', 'us va', 'tenth state', 'viginia', 'commonwealth of va', 'mother of presidents', 'virginia', 'virginia united states', 'council of virginia', 'virginia usa', 'virgina', 'old dominion', 'state of virginia', 'religion in virginia', 'virginia state', 'virginia u s state']",incorrect,wrong_entity,,ok,360,d5a965311497ffd2,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_entity"", ""brief_reason"": ""Candidate answer is a different state""}
+```"
+ac57929eebc4c56572aa61071fffed116b671cd53f384d4461dd8c563adc6fe7,original_413,main,Who is the author of Jujutsu Kaisen?,Gege Akutami,"['Gege Akutami', 'Akutami Gege']",correct,none,,ok,361,a3cc4330f2cb5280,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer ignoring order""}
+```"
+f9da84a57fbee6ece25c6121c9c2a9e6f1ed524045f039cc6bbecfdada5abd4f,original_413,main,Which person or organization did Rannveig Bjornsdottir work for?,I don't know.,['University of Akureyri'],incorrect,other,,ok,362,7916a3cf499e37b3,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+0203e4f5ee5049feb09bb05d109c7d477d86efafd359055cbc56e49e557735fb,original_413,main,when did linkin park release one more light,"May 19, 2017","['May 19, 2017']",correct,none,,ok,363,ed7bf488e5d88204,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+0dd2aef03bd5243b616d89a4dd7edf7d9af3e0c9fc9cea616fdc8c2dd090013a,original_413,main,"In Greek mythology, who were Arges, Brontes and Steropes?","Sons of Uranus and Gaia, Cyclopes.","['cyclopes disambiguation', 'cyclopes']",correct,none,,ok,364,c0a130e70935a175,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""
+}
+```"
+817c094347c45c8b882859d6c6038b3068f74e59658711acb1ab03379ab8ff09,original_413,main,"In Lewis Carroll's poem The Hunting of the Snark, what did the elusive, troublesome snark turn into to fool hunters?",I don't know.,"['boojum disambiguation', 'boojum']",incorrect,other,,ok,365,df26cccc83aa3fc8,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate is not an answer""}
+```"
+aeb44a4b75655b574304e677c6bfb1f45a8c23531736e1901c810c2f545870eb,original_413,main,is there a name for the at symbol,"at symbol, commercial at, address sign","['commercial at', 'at symbol', 'at sign']",correct,none,,ok,366,5f610e6bcf2c7bf7,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""All candidate terms match accepted answers.""}
+```"
+c2d1821bcfa96a3893db113982bd6ffe85de033f9a90d6109e8bb79fa3cba59b,original_413,main,who is the winner of bigg boss kannada season,Chandan Shetty,"['Chandan Shetty', 'rapper Chandan Shetty']",correct,none,,ok,367,9ed12e078762c547,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer""}
+```"
+fcddfcaed69e07016b9fc8476383cfa368c15852937bb9a4093709d2a8b5c554,original_413,main,Which actress was voted Miss Greenwich Village in 1942?,Katharine Hepburn,"['lauren becall', 'loren bacall', 'lauren becal', 'lauren bacall', 'betty j perske', 'betty perske', 'betty joan perske', 'bacall', 'betty joan perski']",incorrect,wrong_entity,,ok,368,e6946e005d920b8c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate is not in accepted answers""
+}
+```"
+5aaef3621e09ac0d2d3a6735ba912b50c462e72b8e7ec64b0d2935ba32b0f82e,original_413,main,Who is the spouse of Warren Beatty?,Annette Bening,"['Annette Bening', 'Annette Carol Bening']",correct,none,,ok,369,198c9390c7e9f2d1,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+5650de554291004ea3d36b75f776368c5a71d97d0a3f3f59a03757921013b805,original_413,main,Who had a 70s No 1 hit with Kiss You All Over?,Exile,"['exiles', 'voluntary exile', 'forced exile', 'banish', 'self exile', 'exile politics and government', 'exile in greek tragedy', 'sent into exile', 'banishment', 'transported for life', 'exile', 'internal exile', 'exile and banishment']",correct,none,,ok,370,076cba87a8738d7f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'exile'.""}
+```"
+d019e18e8baf064b35ac2ed6698fb8a4717dd7b23f17f29c19fe26f98e8e67b4,original_413,main,Which person or organization did Nilesh Kumar work for?,International Centre for Genetic Engineering and Biotechnology (ICGEB),['International Centre for Genetic Engineering and Biotechnology'],correct,none,,ok,371,dcfbe1306a480a70,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+091dbbb1de12f7c57aa6c43369465fc40839b733244710efd1c4f1ca517177eb,original_413,main,when was penicillin first introduced to the public,1945,"['After World War II', '1942']",incorrect,wrong_number,,ok,372,b08c41326c626901,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""1945 is not equivalent to 1942 or 'After World War II'""
+}
+```"
+3b1215b9111d9744736b177c89fe2162b853c5974f33a88bf65ae4720a803804,original_413,main,where does the last name andersen originate from,Denmark and Norway,"['Danish', 'Norwegian', 'Danish-Norwegian patronymic surname meaning ""son of Anders""']",correct,none,,ok,373,0ec2fa3dd5a563ab,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Denmark and Norway are equivalent to Danish and Norwegian""
+}
+```"
+421da00855318f5d6158e1ac1c164438adead33f987fa47bb3eb22a032e21841,original_413,main,who plays the woodsman in over the garden wall,Christopher Lloyd,['Christopher Lloyd'],correct,none,,ok,374,edce94e4d2f8168d,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+28411c50322e3b584c8f368e36ac199debe26a67bb89d64e66b9295974fcad4c,original_413,main,Which person or organization did Luis J Martinez work for?,Universidad ECCI,['Universidad ECCI'],correct,none,,ok,375,331c61dc276ce639,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+fcd2d0fa9831a3ea8934922e6d8b49c8bf785187ae3aef6f6e6da3bb32f9f300,original_413,main,Which person or organization did Dengqing Zhang work for?,University of Auckland,['Donghua University'],incorrect,wrong_entity,,ok,376,79b773a4ed2af1cb,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer.""
+}
+```"
+230dcba6c0834d550d877deec66db150d575ab191a9791df88005e2c1f22af42,original_413,main,who was defeated in the french and indian war,The French.,"['the French', 'France', 'Wabanaki Confederacy', 'British']",correct,none,,ok,377,f53ce606b731994a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'the French'.""}
+```"
+027c624a9f4ad35a32780704def5f9305f13fbd461289214315261ff19b1feff,original_413,main,Which person or organization did Takamitsu Inoue work for?,I don't know.,['International University of Health and Welfare'],incorrect,other,,ok,378,e9158a89fa0ac6ba,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+080f200db5707b49df740feb17e0a1b992e7a791c4de273a17bf553ac7b96900,original_413,main,Which person or organization did Fasong Yuan work for?,I don't know.,['Cleveland State University'],incorrect,other,,ok,379,7bb01e8bba8db5b0,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+dec031313a381d9d4ee9e901e0c23746f16af91754074d1e46f7cd658fd1c15a,original_413,main,the sport psychology sub-field of performance enhancement deals primarily with,improving an athlete's performance,['Arousal regulation'],incorrect,wrong_entity,,ok,380,b10ac63171591717,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is too broad.""
+}
+```"
+7f47033bc9479a2434a4243974a40e46f5ffba9b95ca43b3c26a3c7fdf070746,original_413,main,where does the last name andersen originate from,"Sweden, Norwegian patronymic","['Danish', 'Norwegian', 'Danish-Norwegian patronymic surname meaning ""son of Anders""']",incorrect,wrong_entity,,ok,381,5e9163f01f9a9d2c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate includes 'Sweden', not in accepted answers""
+}
+```"
+c05bc3508734f9947c0e12df373dafb678d825c0a3c0dccade4f2d6392dae0e7,original_413,main,Who was the last inmate of Spandau jail in Berlin?,Rudolf Hess,"['rudolf hesse', 'hess rudolf', 'walther richard rudolf hess', 'rudolf hess', 'rudolf w hess', 'rudolf walter richard heß', 'rudolf walter richard hess', 'rudolph heß', 'rudolf heß', 'rudolph hess']",correct,none,,ok,382,d321f31ce6fe6041,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+5a6992bf8d6c3d7f109dc6f3f42fd81c8738ceed7e3b366bdfbc873eee58b3cb,original_413,main,What is the capital of Ecuador?,Quito,"['Quito', 'San Francisco de Quito', 'Quito, Ecuador', 'UIO', 'Kitu']",correct,none,,ok,383,affadcbe08947866,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'Quito'.""}
+```"
+01a076694b7e9dc8f3bcea0a9c0458c6526d8188f051f7cd130bd19be1681263,restored_34,main,What claimed the life of singer Kathleen Ferrier?,Cancer,aids related cancer ; sporadic cancer ; cancer disease ; malignant tumors ; cancers ; carcinophobia ; cancer ; cancer diagnosis ; malignant neoplastic disease ; malignant neoplasm ; tumour virus ; cancer medicine ; deaths by cancer ; malignant tumour ; epithelial cancers ; solid cancer ; cancerous ; borderline cancer ; invasive cancer ; anti cancer ; cancer pathology ; cancer signs ; cancer aromatase ; cancer therapy ; financial toxicity ; cancerophobia ; cancer en cuirasse ; cancer patient ; cancerous tumor ; malignant cancer ; malignant neoplasms ; tumor medication ; signs of cancer ; malignacy ; malignant tumor ; cancer medication ; microtumor ; malignancies ; malignant lesion ; malignant growth,correct,none,,ok,384,bc1661527d3450be,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""}
+```"
+db86a6952af08572cf454244bf8d6d4b41f5457710537a61fcaf51ace925634f,original_413,main,Which person or organization did Takamitsu Inoue work for?,University of São Paulo,['International University of Health and Welfare'],incorrect,wrong_entity,,ok,385,913464d7fea307ff,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+576d93953035c99f21fa2e24bf79b288915415542b41e253bf213a8e13f7cc30,original_413,main,Who directed the classic 30s western Stagecoach?,John Ford,"['john ford 1895 1973', 'sean o feeney', 'ford john 1895 1973', 'john ford statue', 'ford john', 'john o feeney', 'john ford', 'sean aloysius o feeney', 'argosy pictures', 'cavalry trilogy', 'john ford film director', 'john ford director', 'john martin o feeney']",correct,none,,ok,386,2a6f8693a6df5062,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'john ford'.""}
+```"
+8b82363163a25bc7560184b7901603e95fba6988898c3784d037f1fbe07d2641,original_413,main,Who had a 70s No 1 hit with Let's Do It Again?,The Staple Singers,"['cleotha staples', 'staple singers', 'staples singers']",correct,none,,ok,387,7d9d82fce13465b8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'staple singers'.""}
+```"
+d598859f3677452b669a6f0ffc80cf1220edfe1ff80095c91ef74205172518a7,restored_34,main,is there a name for the at symbol,"At sign, at symbol, commercial at, alphasand, arobase, arroba, ampersat, asperand, strudel",commercial at ; at symbol ; at sign,correct,none,,ok,388,0f0037bd193bea01,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""All candidate terms are semantically equivalent.""}
+```"
+8e0e4a73884afd16ac238313a9d3253c4d3c34204f09d3172596bb84e56d3493,original_413,main,Which person or organization did Gia Lisa Krahne work for?,I don't know.,['NYU Langone Medical Center'],incorrect,other,,ok,389,67bd1fbc4abe2011,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+4ee7868a8c7c4a2ae2dbeea5f66a3b71710959adf26c8baa96415ec8d5db0d95,original_413,main,when did the 5 day work week begin,1908,"['In 1908', '1908', '1940']",correct,partial,loose_parse,ok,390,3357bdb4f8f379b2,"```json
+{""verdict"": ""partial"", ""error_type"": ""partial"", ""brief_reason"": ""1908 is correct but incomplete""}
+```"
+f4ae274e68359d500b8717369fa020cb95c6f3fc3b8b4cc7ab8d59191de17f29,original_413,main,Which country does the airline TAAG come from?,Mozambique,"['angola', 'etymology of angola', 'republic of angola', 'sport in angola', 'angloa', 'iso 3166 1 ao']",incorrect,wrong_entity,,ok,391,067148364c93ca66,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""TAAG is associated with Angola, not Mozambique""
+}
+```"
+e79f693e4d8165ee07fedd53a6d3398eb8582ac5fabb717a890f4d411c68f5b7,original_413,main,In which sport could the Pacers take on the Pistons?,Basketball,"['men s basketball', 'baksetball', 'baketball', 'boy s basketball', 'basketball club', 'high school basketball', 'rim basketball', 'basketball team', 'bball', 'unicycle basketball', 'basketball worldwide', 'shoot hoops', 'b ball', 'basketball', 'basketball net', 'women s hoops', 'basketball gear', 'basketballer', 'basket ball', 'basketball rim', '🏀', 'basketball parity worldwide', 'basketball player']",correct,none,,ok,392,fb144ef867a2de9b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""}
+```"
+3a80e5860c896636577ca6e00a5457aaa85baa398ec815b6fefcea5a0c91bd7e,original_413,main,Which person or organization did Barbara Stecca work for?,The Unity Archives – Moravian Archives Herrnhut,['Careggi University Hospital'],incorrect,wrong_entity,,ok,393,75a715bbdb4c9357,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match any accepted answer.""
+}
+```"
+fadad5a81df0d1768e7960a72b423e8b0bb8de35d54076dfeb7509400c3a8ec1,original_413,main,What game does Outlast 2 follow?,Outlast,['Outlast'],correct,none,,ok,394,9f27fe5cb3275743,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer semantically.""}
+```"
+88c4f6a5eb50b0e99fda58c1b3281718ae9ed16e78e7e79efadb813afbf89e14,original_413,main,What country is Martin Compston a citizen of?,Scotland,"['United Kingdom', 'UK', 'United Kingdom of Great Britain and Northern Ireland', 'U.K.', 'U. K.', 'U K', 'G.B.', 'G. B.', 'G B', 'Great Britain', 'G.B.R.', 'G B R', 'Britain', 'Great Britain and Northern Ireland', 'The United Kingdom of Great Britain and Northern Ireland', 'The UK']",incorrect,wrong_entity,,ok,395,bed5bd73a1c647aa,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Scotland is not equivalent to any accepted answer""
+}
+```"
+d314e06bd32b13c5dfc6c29d37dd2df1f02a3753dbb351b22e20d3a475a588f9,original_413,main,who was defeated in the french and indian war,The French were defeated in the French and Indian War.,"['the French', 'France', 'Wabanaki Confederacy', 'British']",correct,none,,ok,396,16522be03cc55b97,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'the French'.""}
+```"
+681a03fd656b42126bf335f6b155dede1ac1bcc9dd87b66126956779622e0515,original_413,main,Where in England was actor Nigel Hawthorne born?,I don't know.,"['coventry uk', 'cofantre', 'coventry united kingdom', 'coventry borough', 'coventry city', 'coventry england', 'metropolitan borough of coventry', 'coventry city council', 'coventry', 'county borough of coventry', 'coventry warwickshire', 'city of coventry']",incorrect,other,,ok,397,3b103dc82dd9e574,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer.""}
+```"
+0a62f691614e175b9e8dbb028bed77de38e0744ecb83585dfeadc589e025eec0,original_413,main,Which person or organization did Ilse Braun work for?,Albert Speer's ministry,['Albert Speer'],incorrect,wrong_entity,,ok,398,9bbf2c55e9eef9d7,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer specifies ministry, not person""
+}
+```"
+f8605d029e11b9471574b0aa57ab361163e66344f61b8fbd8e02f6d77b0297fd,original_413,main,what is the latest version of chrome for linux,68.0.1,"['67.0', '67.0.3396']",incorrect,wrong_number,,ok,399,4cbd4e6f12bf161b,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_number"", ""brief_reason"": ""Candidate is not the latest version""}
+```"
+cd546844d52d68b791a37926cae91eba751c2d04715424f4d5d09918c94273b8,original_413,main,What award did M. G. Ramachandran receive?,Bharat Ratna,['Bharat Ratna'],correct,none,,ok,400,a6ccfacd160e3fca,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+3f86b1b60428b44832e389abae75fb0fc52707931329b55425a458053e218575,original_413,main,when did the song the joker come out,December 1972,"['October 1973', '1973']",incorrect,wrong_number,,ok,401,31f5b8ddb8572c64,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate answer is a different year""
+}
+```"
+9aa0251b0e1faf5572935197662874a132b8e638c2a447d920b4fa09b6789664,original_413,main,Which person or organization did Jan H Driller work for?,I don't know.,['Aarhus University'],incorrect,other,,ok,402,bc86bffc7bcd621f,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+4a056233ab9f4e0bd8d569bac4ea51e6f50b0100276108818a9b6bac1f0bf050,original_413,main,What is Osbert Lancaster best known for producing?,caricature portraits,"['cartoonish', 'cartoons', 'cartoon', 'cartoonistic', 'cartoonism', 'american cartoon']",incorrect,wrong_entity,,ok,403,b1f8324e510cb908,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+9ef648d00de369033f1a4812ffade62f96762db92bb5253632dfa0484a131e74,original_413,main,"""In which movie did Garbo say, """"I want to be alone"""".""","""Grand Hotel"" (1932)","['grand hotel disambiguation', 'grand hôtel', 'grand hotel']",correct,none,,ok,404,0d25d9953c05496f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Granularity and notation rules apply""}
+```"
+d16b343e91b45d6fa12a6ebbc5a7264476f9cf9b7b3f0ed564948dbbe67a6584,original_413,main,Which Brit broke the land speed record in 1990 in Thrust 2?,Andy Green,['richard noble'],incorrect,wrong_entity,,ok,405,cf0ef59f9b528649,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to accepted answer.""
+}
+``"
+774c84a406d18804bf9f8f2bb7e5173a5020cf92e9e40912e3572d09dedb98dd,original_413,main,What sport is Wolverine (character) associated with?,Karate,"['karate', 'karatedō', 'karate-dō', 'karatedo', 'karate-do', 'karate-dô', 'karatedô']",correct,none,,ok,406,f5f36786af0602b6,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'karate'.""}
+```"
+8e629f277fccb7b5d22cbe920c8e4ddfcb55b8c1e65f13be6de4425776a0ebb8,restored_34,main,india participated olympic hockey for the first time,1920,1928 ; 1927,incorrect,wrong_number,,ok,407,6204fc8fa39f7fd0,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""wrong_number"", ""brief_reason"": ""1920 is not in accepted answers""}
+```"
+fbc741f8943c63998acb8e6f622e45ef9538eb8e0eed5539aa6160a170b5fa30,original_413,main,Which person or organization did Abebe Mekuria Shenkutie work for?,I don't know.,['Arsi University'],incorrect,other,,ok,408,29b084732f56f802,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+785fb60f12f240a459a9f0251cbc480b53212d21b62ba5d207ba4e8b48f646b3,original_413,main,Kim Carnes' nine weeks at No 1 with Bette Davis Eyes was interrupted for one week by which song?,"""Stars on 45 Medley""","['stars on 45 song', 'stars on 45 single', 'stars on 45 medley', 'medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45']",correct,none,,ok,409,56bb36d71c442f64,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches 'stars on 45 medley'.""}
+```"
+cde409a2a96a07e811a534bb168b945c61d730e3116d9086cfbfe2876ee4289a,original_413,main,who plays caesar planet of the apes 2014,Andy Serkis,['Andy Serkis'],correct,none,,ok,410,4d8a830aa6de8584,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+d27edb819ff8fcd788562df903e4b11284070d21472060fa5c8ab9c40460a5da,original_413,main,Which musician founded the Red Hot Peppers?,Jelly Roll Morton,"['ferdinand morton', 'jellyroll morton', 'joseph ferdinand morton', 'f p lamothe', 'ferdinand lamothe', 'ferdinand joseph la menthe', 'ferdinand joseph morton', 'ferdinand joseph lamothe', 'jelly roll morton', 'louise monette', 'ferdinand 22jelly roll 22 morton']",correct,none,,ok,411,ca5840f6c3ed8644,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'jellyroll morton'.""}
+```"
+448519744012d094ccd0224a6a5d5b7aec98c591fa06077fb13089729aa4874c,original_413,main,Who developed Resident Evil 2?,Gearbox Software,"['Capcom', 'Capcom Co., Ltd.', 'CAPCOM', 'Capcom Entertainment Inc', 'CAPCOM Germany']",incorrect,wrong_entity,,ok,412,cf2018322d58c043,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+06d647a40e600be245cd41d9bae0265d49b486cf0ed01a7854dc283ceba8bf5d,original_413,main,"""In which movie did Garbo say, """"I want to be alone"""".""",Grand Hotel,"['grand hotel disambiguation', 'grand hôtel', 'grand hotel']",correct,none,,ok,413,8b218eab218dc8ef,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'grand hotel'.""}
+```"
+c7e7c3ec396090069f2696b69aa08c85e1508ff2a17ffecef8db6ecdc69c4806,original_413,main,What organization is Sheryl Sandberg a member of?,I don't know.,"['National Honor Society', 'NHS']",incorrect,other,,ok,414,4829c0752a38f70a,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+9052c0d1896c3d78b5383602c87086e10a470b87d8a7b2e9f600dce5fc66014e,original_413,main,What claimed the life of singer Kathleen Ferrier?,Tuberculosis,"['aids related cancer', 'sporadic cancer', 'cancer disease', 'malignant tumors', 'cancers', 'carcinophobia', 'cancer', 'cancer diagnosis', 'malignant neoplastic disease', 'malignant neoplasm', 'tumour virus', 'cancer medicine', 'deaths by cancer', 'malignant tumour', 'epithelial cancers', 'solid cancer', 'cancerous', 'borderline cancer', 'invasive cancer', 'anti cancer', 'cancer pathology', 'cancer signs', 'cancer aromatase', 'cancer therapy', 'financial toxicity', 'cancerophobia', 'cancer en cuirasse', 'cancer patient', 'cancerous tumor', 'malignant cancer', 'malignant neoplasms', 'tumor medication', 'signs of cancer', 'malignacy', 'malignant tumor', 'cancer medication', 'microtumor', 'malignancies', 'malignant lesion', 'malignant growth']",incorrect,wrong_entity,,ok,415,ba4952a978ffe65b,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Tuberculosis is not equivalent to cancer.""
+}
+```"
+b4dc7bbecb146328e39e4906a048cab36f76779794db316293d0ff5806187367,original_413,main,Who is the spouse of Warren Beatty?,Sophie Grégoire,"['Annette Bening', 'Annette Carol Bening']",incorrect,wrong_entity,,ok,416,7b8d1db97ed231a1,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+37060f40fe7ebef9b1ab3fdb80f88215e046385c44c56907182dac966a93aae9,original_413,main,What genre is the film Downsizing?,Science fiction comedy drama,"['science fiction film', 'sci-fi film', 'science fiction movie', 'sci-fi movie', 'scifi film', 'scifi movie', 'sci fi film', 'sci fi movie', 'scifi-film', 'scifi']",correct,none,,ok,417,33492f925143e042,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Includes 'science fiction' and 'comedy drama'""
+}
+```"
+2253e4ceb86e8ea79da73f75fd4117c2c79dff6a8dd93ff62dacf639f37b7d49,original_413,main,civil war what did the north fight for,The North fought to preserve the Union and end slavery.,"['loyalty to the U.S. Constitution', 'maintaining the republic']",incorrect,unsupported,,ok,418,70676cdd10a98e43,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer not semantically equivalent""
+}
+```"
+f17ebd303877e38a540d1e3623d7e16429216543e9335110fc00c26da1932ad5,original_413,main,who played king theoden in lord of the rings,Bernard Hill,['Bernard Hill'],correct,none,,ok,419,615b8c922daca424,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+1d362cfb3541e53e3649054eb471d333796ba618d6487261c103f64b10c1a09a,original_413,main,"In Greek mythology, who were Arges, Brontes and Steropes?","Brontes, Steropes, and Arges were Titans, skilled artisans and engineers.","['cyclopes disambiguation', 'cyclopes']",correct,none,,ok,420,e4b47ac744407f35,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Names match accepted answers.""}
+```"
+a32c242da389c88abf177d83d99e71c5aac19dd6723a4c4916a5bde2c5e85964,original_413,main,Which person or organization did Gia Lisa Krahne work for?,NYU Langone Medical Center,['NYU Langone Medical Center'],correct,none,,ok,421,9bcc1386fe29d4f5,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+0e2b0cd83f0f000d5817b2c798ceff5cf132f54bf77afa81f5c2f8833b348d26,original_413,main,What is the field of work of Daniel Day-Lewis?,Actor,['film acting'],correct,none,,ok,422,665b94fa7ec31824,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Actor is equivalent to film acting""}
+```"
+3384b12aedf37ae17d46f927dfc04ec82d4d5a61883d369b59ff3e9d981d2ecc,original_413,main,when was penicillin first introduced to the public,"March 15, 1945.","['After World War II', '1942']",incorrect,wrong_number,,ok,423,fe0fe53eaa079365,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_number"",
+  ""brief_reason"": ""Candidate date is after accepted answers""
+}
+```"
+cd005c64800b1fdf14e2d2489b5a7dd79edf4942130fcc0d5eee586ccadc1c5e,original_413,main,Richard Daley was mayor of which city for 21 years?,"Philadelphia, Pennsylvania","['sayre language academy', 'chicago transportation committee', 'chicago illinois u s', 'sister cities of chicago', 'sister cities chicago', 'transport in chicago', 'chicago illinois', 'chicago illinois usa', 'chi town', 'hog butcher for world', 'religion in chicago', 'chicago', 'chicago wi', 'near north montessori', 'un locode uschi', 'city of broad shoulders', 'chicago theatre', 'chicago usa', 'uschi', 'chicago il', 'city of chicago', 'chicago finance committee', 'list of sister cities of chicago', 'chi beria', 'weather in chicago', 'chicago wisconsin', 'land of smelly onions', 'ariel community academy', 'chicago theater scene', 'chicago united states', 'paris of america', 'chicago illionis', 'chicago illinois united states', 'chcago', 'chi city', 'chicago illinois us', 'performing arts in chicago', 'chicago theatre scene', 'chichago', 'chicago ill', 'city of chicago illinois']",incorrect,wrong_entity,,ok,424,7dcc0d9bad2f89ff,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not Chicago""
+}
+```"
+37ee524de409a39bfa035b7b15c4b6779449656bc5d8d1f8bdbcc7adac0031d7,original_413,main,Who is the performer of Solo: A Star Wars Story?,Alden Ehrenreich,['John Powell'],incorrect,wrong_entity,,ok,425,63cba7a3b207c08c,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate is a performer, not the composer.""
+}
+```"
+faef95233412e85d22347bfcb6072783e546260def68447e249abf924c991c35,original_413,main,who plays the woodsman in over the garden wall,I don't know.,['Christopher Lloyd'],incorrect,other,,ok,426,177f41d9226f835d,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response""}
+```"
+4a34138795e961b576d05548c8f3351ea0115d335bccdbb144cd3fe5c7ffcd01,original_413,main,who turned out to be the mother on how i met your mother,Lily Aldrin,['Tracy McConnell'],correct,none,,ok,427,953ee2fdedcb83d3,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Lily Aldrin is Tracy McConnell""
+}
+```"
+c1912c32235234a3943d366fe835f27a49d1a0c5904bb86034739bf77571b92c,original_413,main,Which 90s sci fi series with James Belushi was based on Bruce Wagner's comic strip of the same name?,Wild Palms,['wild palms'],correct,none,,ok,428,f59cd7a2d5d3fac6,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Case and punctuation differences are ignored.""}
+```"
+01242e886de61107a4a15881478b1b5e5770b0a9adc27c258d37c64d57f21207,original_413,main,Which highway was Revisited in a classic 60s album by Bob Dylan?,Highway 66 Revisited,"['61', 'sixty one']",incorrect,wrong_entity,,ok,429,b4633c4389de7db1,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate mentions Highway 66, not Highway 61""
+}
+```"
+7dcdbb0b8519174af5eaa3123266fe99144ec65acfc2805cc1e776f844e0e6ba,original_413,main,who won the award for best goalkeeper in football world cup 2006,Gianluigi Buffon,['Gianluigi Buffon'],correct,none,,ok,430,8bcae2056a9bcc9e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+8995342ebc04c6dffc9a5f685c1ef2339d9ad393aff35f3ca787120bd360d454,original_413,main,Kagoshima international airport is in which country?,South Korea,"['nihon koku', 'nihon', 'japoa', 'japang', 'japan', '日本國', 'etymology of japan', 'iso 3166 1 jp', 'jpan', 'japan country', 'riben', 'rìběn', '🗾', 'japanese financial sector', 'japian', 'nippon koku', 'state of japan', 'nippon', 'modern–era japan', 'republic of japan', '日本国', 'jpn', 'japao', 'ja pan', '日本']",incorrect,wrong_entity,,ok,431,e962ab016867ad4a,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent to any accepted answer.""
+"
+fe340eedc6ea4fe9d27abb421f75c4fbae099b8702d82b84263c6d37300b435b,original_413,main,Which person or organization did Luis J Martinez work for?,King's College London,['Universidad ECCI'],incorrect,wrong_entity,,ok,432,bdbab13415db7a52,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer does not match accepted answer""
+}
+```"
+5ae1b66fef879afd5cf5bd5397b199e3d58d4f2855d9edc016c6ce99140c1519,original_413,main,Which artist David was born in Bradford UK?,Lowry,"['hockney', 'david hockney']",incorrect,wrong_entity,,ok,433,fea601c47ff0ac41,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+3f36cc5bdae4f0703f717dbde290602a1a97994d63437668e492a7cbd6469b9a,original_413,main,who played sarah hedley in when the boat comes in,I don't know.,['Rosalind Bailey'],incorrect,other,,ok,434,d557a570f42b7e9b,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not a factual response.""}
+```"
+3669fe5af95b338029c71f45d782b64cbbea3b1e7c9c80b834e36efb1e719e35,restored_34,main,who was defeated in the french and indian war,France,the French ; France ; Wabanaki Confederacy ; British,correct,none,,ok,435,88393dedd502ee23,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""France is semantically equivalent to 'the French'.""}
+```"
+25fa658506f6ce91a5854b61f77f32c887c8106eee4055cf0734aeab4a291243,original_413,main,What sport is Wolverine (character) associated with?,Mountaineering,"['karate', 'karatedō', 'karate-dō', 'karatedo', 'karate-do', 'karate-dô', 'karatedô']",incorrect,wrong_entity,,ok,436,a54d2dc84915123d,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent.""
+}
+```"
+9535e1456a33350620936c75fa746fba959c574b513d195e490f682afa9c7b14,original_413,main,Which society was Sigmund Freud a member of?,Multilateral Investment Guarantee Agency,"['Royal Society', 'The Royal Society of London for Improving Natural Knowledge', 'Royal Society of London', 'The President, Council, and Fellows of the Royal Society of London for Improving Natural Knowledge', 'The Royal Society, UK', 'royalsociety.org']",incorrect,wrong_entity,,ok,437,89edd99b64cd9ca5,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is unrelated to accepted answers.""
+}
+```"
+16e45cbf9db136c5da607fe977da4f798106248621cd8003254d6cba2366d7bf,original_413,main,when did the song the joker come out,October 1973,"['October 1973', '1973']",correct,none,,ok,438,b668868f513317e0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'October 1973'.""}
+```"
+2edb9e2bb54326b6ca3953bb381a7377ce1907dc5a6536ace173fc8d401b4681,original_413,main,What band is Hugh Laurie a member of?,I don't know.,['Band from TV'],incorrect,other,,ok,439,5cb7efaa39281c3e,"```json
+{""verdict"": ""incorrect"", ""error_type"": ""other"", ""brief_reason"": ""Candidate answer is not an answer""}
+```"
+f817eca80243df1afb1c1c971dab3323e9f37c7bfcb5dd8d9dcf9cffb53b94c9,original_413,main,Where did the Shinning Path terrorists operate?,Peru,"['republic of perú', 'piruw suyu', 'iso 3166 1 pe', 'peruvian republic', 'perú', 'piruw ripuwlika', 'perù', 'lower peru', 'republic of peru', 'el peru', 'el perú', 'pérou', 'peruano', 'name of peru', 'peruvia', 'piruw', 'peru', 'república del perú', 'peruvian', 'etymology of peru', 'péru']",correct,none,,ok,440,ee2b6bf65d6f5995,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer is semantically equivalent to accepted answers.""}
+```"
+cfd7d80d988c9c310683044f1760179e84684ae5fd4cab4896a4ea2df9e12d71,original_413,main,wolf of wall street number of f words,569,['569'],correct,none,,ok,441,2a20a2eb662151a4,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer exactly.""}
+```"
+c5d957ba4b45e5a3dc382ead63472f5688793737a74ffa97bf556f593ac55bd8,original_413,main,Which US No 1 single came from Diana Ross's platinum album Diana?,"""Upside Down""","['upside down diana ross song', 'up side down', 'upside down', 'upside down single']",correct,none,,ok,442,918285535fcb9cd8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answers semantically.""}
+```"
+72c02e804b93a395f6c686e6bbea851b54c9d5e58e437978f5d4fcfe36bf2585,original_413,main,What was Truman Capote's last name before he was adopted by his stepfather?,I don't know.,"['personhood theory', 'persons', 'person', 'perſon', 'perſons', 'person philosophical']",incorrect,unsupported,,ok,443,28e86da9c3a97e93,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""unsupported"",
+  ""brief_reason"": ""Candidate answer is not an answer.""
+}
+```"
+dc653af8cdb753820a061569e3f7bdf1651b10ec08060aef0e64c03dcf94e439,original_413,main,bacterial cell walls are made rigid by the presence of,chitin,"['Peptidoglycan', 'Peptidoglycan, also known as murein']",incorrect,wrong_entity,,ok,444,09057cd6484ed0e0,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Chitin is not in accepted answers""
+}
+```"
+f4d4a735ca8ee84e7bf27e02bf138807d1bd57aba0e5e72c20fb010d76e4c478,original_413,main,Who was the defending champion when Martina Navratilova first won Wimbledon singles?,Chris Evert,"['virginia wade', 'sarah virginia wade']",correct,none,,ok,445,5f4f45a75b1a4c72,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Chris Evert is Virginia Wade""}
+```"
+ec823e6b14e70f8f81f1b71281618a9ee28a8d5dada6ae314376cf11e91ceb3f,original_413,main,who is the actor that plays saul on grace and frankie,John Travolta,['Sam Waterston'],incorrect,wrong_entity,,ok,446,854a8940dd975cba,"```json
+{
+  ""verdict"": ""incorrect"",
+  ""error_type"": ""wrong_entity"",
+  ""brief_reason"": ""Candidate answer is not semantically equivalent""
+}
+```"
+6e53a444a46312b619c2e645a26913a6133b8801277ae1df88fce6812cf0e72e,original_413,main,what part of the brain is in the middle cranial fossa,"Temporal lobes, pituitary gland.","['pituitary gland', 'temporal lobes', 'the temporal lobes', 'the pituitary gland']",correct,none,,ok,447,9ee2d9955b7a79f7,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Both elements are semantically equivalent to accepted answers.""}
+```"

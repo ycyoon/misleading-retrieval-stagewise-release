@@ -1,0 +1,9 @@
+cost,eval_fold,p1,p2,p3
+0.5,0,closure_cascade_RP,trustmargin_tau0,trustmargin_tau0
+0.5,1,closure_agree_any_else_P,closure_agree_any_else_P,closure_agree_any_else_P
+1.0,0,closure_agree_any,closure_agree_any,closure_agree_any
+1.0,1,closure_agree_any_else_P,closure_agree_any_else_P,closure_agree_any_else_P
+2.0,0,closure_agree_any,closure_agree_any,closure_agree_any
+2.0,1,closure_agree_any_else_P,closure_agree_any_else_P,closure_agree_any_else_P
+4.0,0,closure_agree_RP,closure_agree_RP,closure_agree_RP
+4.0,1,closure_agree_CR,closure_agree_CR,closure_agree_CR

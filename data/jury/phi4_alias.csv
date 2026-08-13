@@ -1,0 +1,96 @@
+item_id,origin,condition,question,candidate_shown,accepted_answers,verdict,error_type,parse_note,status,presented_position,prompt_sha256,raw
+3ae596166584d465b5a543baba407b268c86c786b862b6119197714e442a0290,restored_34,alias,civil war what did the north fight for,maintaining the republic,loyalty to the U.S. Constitution ; maintaining the republic,correct,none,,ok,1,d2b69948df4330f4,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches an accepted answer.""}
+```"
+c72fe187bd3970b8d841081308a083b5b8a9224250f8aed890d55a989c6c04aa,restored_34,alias,What is the country of citizenship of Judi Dench?,The UK,United Kingdom ; UK ; United Kingdom of Great Britain and Northern Ireland ; U.K. ; U. K. ; U K ; G.B. ; G. B. ; G B ; Great Britain ; G.B.R. ; G B R ; Britain ; Great Britain and Northern Ireland ; The United Kingdom of Great Britain and Northern Ireland ; The UK,correct,none,,ok,2,99d3c0ef5c9fe202,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'UK'.""}
+```"
+a537ee700f994e4b61022038104ad815e1cb8cfd32509b64cba645d433fca427,restored_34,alias,what part of the brain is in the middle cranial fossa,the pituitary gland,pituitary gland ; temporal lobes ; the temporal lobes ; the pituitary gland,correct,none,,ok,3,2310547a65aa1dc1,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Semantically equivalent to accepted answer""}
+```"
+4afb975690cfdb78e01ae0f4e27a191d38d5c32be1ac254c6040acc7fe564ceb,restored_34,alias,Which society was Sigmund Freud a member of?,royalsociety.org,"Royal Society ; The Royal Society of London for Improving Natural Knowledge ; Royal Society of London ; The President, Council, and Fellows of the Royal Society of London for Improving Natural Knowledge ; The Royal Society, UK ; royalsociety.org",correct,none,,ok,4,4b73538fab2c23b0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted URL answer.""}
+```"
+efa6a89436d4d4247ef13c66f14a402923d8f03d31c107f39e4090678ad50936,restored_34,alias,Where is the headquarters of the Minnesota Vikings located?,North Star State,"Minnesota ; MN ; Land of 10,000 Lakes ; Minnesota, United States ; State of Minnesota ; Minn. ; US-MN ; North Star State",correct,none,,ok,5,6d27b86fcf8c9a30,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+e91a61833fe67faf5c489ad2cd1ec563e0d8349021fd288580994c318800098c,restored_34,alias,Kim Carnes' nine weeks at No 1 with Bette Davis Eyes was interrupted for one week by which song?,medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45,stars on 45 song ; stars on 45 single ; stars on 45 medley ; medley intro venus sugar sugar no reply i ll be back drive my car do you want to know secret we can work it out i should have known better nowhere man you re going to lose that girl stars on 45,correct,none,,ok,6,20ef3db98c642a8e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+fcac3cf2060f65a6b4532100b2ab1ebd651b88710a250a1709bd3b8153d32fb3,restored_34,alias,what is the definition of ph in water,potential of hydrogen,"neutral, at pH 7 (25 °C), being neither an acid nor a base ; potential of hydrogen",correct,none,,ok,7,0374acfb4f566d16,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate answer matches one accepted answer.""
+}
+```"
+01a076694b7e9dc8f3bcea0a9c0458c6526d8188f051f7cd130bd19be1681263,restored_34,alias,What claimed the life of singer Kathleen Ferrier?,malignant growth,aids related cancer ; sporadic cancer ; cancer disease ; malignant tumors ; cancers ; carcinophobia ; cancer ; cancer diagnosis ; malignant neoplastic disease ; malignant neoplasm ; tumour virus ; cancer medicine ; deaths by cancer ; malignant tumour ; epithelial cancers ; solid cancer ; cancerous ; borderline cancer ; invasive cancer ; anti cancer ; cancer pathology ; cancer signs ; cancer aromatase ; cancer therapy ; financial toxicity ; cancerophobia ; cancer en cuirasse ; cancer patient ; cancerous tumor ; malignant cancer ; malignant neoplasms ; tumor medication ; signs of cancer ; malignacy ; malignant tumor ; cancer medication ; microtumor ; malignancies ; malignant lesion ; malignant growth,correct,none,,ok,8,16482bb0648d7a0f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+98afb06b497cae9f3f15cb7919d39d2fd5069b20a0d0655c0f267d1c8bfb8112,restored_34,alias,Who had a Too Legit To Quit Tour?,mc hammer,too tight mc hammer album ; family affair mc hammer album ; stanley burrell ; hammer rapper ; stanley kirk burrell ; stanley k burrell ; wiredoo ; mchammer ; hammer crew ; m c hammer ; you shouldn t touch this ; mc hammer,correct,none,,ok,9,c7824255512b1868,"```json
+{
+  ""verdict"": ""correct"",
+  ""error_type"": ""none"",
+  ""brief_reason"": ""Candidate is semantically equivalent to accepted answers.""
+}
+```"
+53f7a82b57f46dab23a2ac32735b8d949dc23c7af8e7dd33c4c839fd57696b5f,restored_34,alias,cast of law & order special victim unit,Peter Scanavino,Dann Florek ; Mariska Hargitay ; B. D. Wong ; Diane Neal ; Danny Pino ; Michelle Hurd ; Kelli Giddish ; Adam Beach ; Michaela McManus ; Tamara Tunie ; Richard Belzer ; Ice-T ; Christopher Meloni ; Raúl Esparza ; Stephanie March ; Peter Scanavino,correct,none,,ok,10,6c273fef10bbc5a8,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is in accepted answers list""}
+```"
+b4205b7a37cfeda9463a667e0ad928b9c32647062e73ecd4900205efe274feea,restored_34,alias,where does the last name andersen originate from,"Danish-Norwegian patronymic surname meaning ""son of Anders""","Danish ; Norwegian ; Danish-Norwegian patronymic surname meaning ""son of Anders""",correct,none,,ok,11,e73c54100658e2a0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Matches accepted answer""}
+```"
+3669fe5af95b338029c71f45d782b64cbbea3b1e7c9c80b834e36efb1e719e35,restored_34,alias,who was defeated in the french and indian war,British,the French ; France ; Wabanaki Confederacy ; British,correct,none,,ok,12,3cb434362c7e4e66,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""British is an accepted answer""}
+```"
+48e1d21651eea577ce22d5ed904edfee8d3983d7d4478d08e024baa9abdb3a1e,restored_34,alias,What is the field of work associated with Ted Kennedy?,handgun ban,gun control ; firearms control ; gun law ; gun ban ; gun control law ; gun prohibition ; gun regulation ; handgun ban,correct,none,,ok,13,2c0c7840abfd4674,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+b3471dce9a404dd90bd40b17d94488b6a03c59826f005d625955040599d052de,restored_34,alias,What organization is Sheryl Sandberg a member of?,NHS,National Honor Society ; NHS,correct,none,,ok,14,00a7ab0ed4b0b1ab,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer NHS""}
+```"
+1b0da11d12e5f5161d8c5dcb02e50656eee3d05c64294329a3d4fa9dac31d143,restored_34,alias,River Phoenix died during the making of which movie?,dark blood film,dark blood ; dark blood film,correct,none,,ok,15,79253bb1096d06fc,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer 'dark blood film'.""}
+```"
+df031a7dd2c8339534ef9c13df62d497c9ee625bd151555a53b9da12de374014,restored_34,alias,where do they grow hops in the us,Washington,"Willamette (Oregon) ; western Canyon County, Idaho ; western Canyon County, Idaho (including the communities of Parma, Wilder, Greenleaf, and Notus) ; the Yakima (Washington) and Willamette (Oregon) valleys ; Yakima (Washington) ; Idaho ; the leading potato-growing states in the United States ; Oregon ; Washington",correct,none,,ok,16,46b36a43e0a59f2f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Washington is an accepted answer.""}
+```"
+cc2a38947871b7f92f84c6a5f2eba4299b8bfa26c3282ac2ff86ab81dab55483,restored_34,alias,Who is the spouse of B. R. Ambedkar?,Ramabai Bhimrao Ambedkar,Ramabai Ambedkar ; Ramabai Bhimabai Ambedkar ; Ramai ; Ramabai Bhimrao Ambedkar,correct,none,,ok,17,9389a02ca2cb3e9e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted answer.""}
+```"
+e80d9fecdbf3f4e6b9f2c2c125ea1048b5def810d8d622acea88dc784cabff8b,restored_34,alias,who is the winner of bigg boss kannada season,rapper Chandan Shetty,Chandan Shetty ; rapper Chandan Shetty,correct,none,,ok,18,66c3083a11982b79,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+d598859f3677452b669a6f0ffc80cf1220edfe1ff80095c91ef74205172518a7,restored_34,alias,is there a name for the at symbol,at sign,commercial at ; at symbol ; at sign,correct,none,,ok,19,fa56b4d0936e9a52,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is semantically equivalent to accepted answers""}
+```"
+090a051b9c18860c45c5000b12ff9331d2727c3df8b11197c134e09cda2aa2c5,restored_34,alias,What genre is the film Downsizing?,scifi,science fiction film ; sci-fi film ; science fiction movie ; sci-fi movie ; scifi film ; scifi movie ; sci fi film ; sci fi movie ; scifi-film ; scifi,correct,none,,ok,20,b6ee432e657f935b,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate matches accepted 'scifi'.""}
+```"
+43e686af31a503647fd1a40b84e9f78afe47ac855c0a194d4d1618afefc2b7b9,restored_34,alias,What was the country of citizenship of Anne Frank?,Thousand-Year Reich,Nazi Germany ; Third Reich ; Greater German Reich ; Hitler's Third Reich ; German Reich ; Thousand-Year Reich,correct,none,,ok,21,02db3e17471c3fb0,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches an accepted answer.""}
+```"
+579b8afcc7a93ec3a86874e44fe9c62c0741142fe9460e88205fe8dd4bcd45a7,restored_34,alias,Where did Lyndon B. Johnson work?,DC,"Washington, D.C. ; Washington, District of Columbia ; Washington D.C. ; D.C. ; Washington, D. C. ; Washington ; Washington DC ; Washington, DC ; Washington, D.C., U.S. ; D.C. Washington ; The District ; District of Columbia ; US-DC ; DC",correct,none,,ok,22,50ffa60bbdac743d,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer 'D.C.'""}
+```"
+12443e5df2834d02f7e3b64523e33ceacd88bf7ba3f78fc03b265cecede510d0,restored_34,alias,epidemiologists attempt to explain the link between health and variables such as,biological agents,stress ; chemicals ; alcohol ; smoking ; disease conditions in defined populations ; biological agents,correct,none,,ok,23,d2fb83f569c9b75f,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches an accepted answer.""}
+```"
+046406dfe3c051251c6d0771c51ed07ef7347e636c800c4eeb3a27e4b3ef05a8,restored_34,alias,"In Greek mythology, who were Arges, Brontes and Steropes?",cyclopes,cyclopes disambiguation ; cyclopes,correct,none,,ok,24,db2fd2708f2443e2,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answers.""}
+```"
+006c44d658bfb46969cc5c587f148b216c3823891527b201d4746abe7bce3296,restored_34,alias,when was penicillin first introduced to the public,1942,After World War II ; 1942,correct,none,,ok,25,14fdd84621d6b964,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"
+46217857b7f3051f510bd20a5922ab948a3bf235314ea98dfa154256d5821ec3,restored_34,alias,who were the original voices of the flintstones,Bea Benaderet,John Stephenson ; Jean Vander Pyl ; Harvey Korman ; Verna Felton ; Mel Blanc ; Don Messick ; Alan Reed ; Bea Benaderet,correct,none,,ok,26,80e25bd4a909127a,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate is in accepted answers""}
+```"
+8e629f277fccb7b5d22cbe920c8e4ddfcb55b8c1e65f13be6de4425776a0ebb8,restored_34,alias,india participated olympic hockey for the first time,1927,1928 ; 1927,correct,none,,ok,27,d6d58c71138a2cdb,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches one accepted answer.""}
+```"
+62c488c0ba8690ba5703cf4af18311494b2b27a661d22a7fe0b077e6ad9ddcd8,restored_34,alias,Where did Ernest Rutherford work?,University of Manchester,"Victoria University of Manchester ; Owens College ; Owens College, Manchester ; University of Manchester",correct,none,,ok,28,c2033da938731963,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Equivalent to accepted answer""}
+```"
+c3379e8f797d4873db994a709cd7d2a4242c135bd4d0c7ff2b49c99f70498055,restored_34,alias,What organization is Indonesia a member of?,ARF,ASEAN Regional Forum ; ARF,correct,none,,ok,29,bf6e4351d838097e,"```json
+{""verdict"": ""correct"", ""error_type"": ""none"", ""brief_reason"": ""Candidate answer matches accepted answer.""}
+```"

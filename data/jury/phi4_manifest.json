@@ -1,0 +1,47 @@
+{
+ "judge": "phi4",
+ "model_id": "microsoft/phi-4",
+ "snapshot": "microsoft/phi-4",
+ "transport": "local",
+ "greedy": true,
+ "max_new_tokens": 64,
+ "temperature": 0.0,
+ "shuffle_seed": 20260811,
+ "inventory": "artifacts/maintrack_v1/v12_15_jury/inventory_447.csv",
+ "inventory_sha256": "3eff5255778be474be7f81a8368cf70c2bfccddbcf7fed2dba71c6d2430666af",
+ "rubric_sha256": "4b3aecd8a898c4e8cc8092cfca15d61c2d92849b4c04d450915d14a9a5972fe8",
+ "blinding": "question, accepted answers and one candidate only; no source, policy, condition, dataset, prior verdict or other judge's opinion; inventory order shuffled",
+ "conditions": {
+  "main": {
+   "n": 447,
+   "parsed": 446,
+   "verdict_counts": {
+    "correct": 217,
+    "incorrect": 228,
+    "unresolved": 1
+   },
+   "elapsed_seconds": 408.2
+  },
+  "positive": {
+   "n": 447,
+   "parsed": 447,
+   "verdict_counts": {
+    "correct": 435,
+    "incorrect": 8,
+    "unresolved": 4
+   },
+   "elapsed_seconds": 366.0
+  },
+  "foreign": {
+   "n": 447,
+   "parsed": 447,
+   "verdict_counts": {
+    "correct": 8,
+    "incorrect": 439,
+    "unresolved": 0
+   },
+   "elapsed_seconds": 436.6
+  }
+ },
+ "source_script": "experiments/scripts/maintrack/jury_adjudication.py"
+}

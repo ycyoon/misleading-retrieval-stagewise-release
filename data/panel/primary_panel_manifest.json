@@ -1,0 +1,32 @@
+{
+  "status": "WP4_PANEL_INPUT_PREPARED_BEFORE_CANDIDATE_GENERATION",
+  "panel": "artifacts/maintrack_v1/wp4_prospective_v2/panel_input.jsonl",
+  "n_rows": 400,
+  "n_questions": 400,
+  "datasets": [
+    "wp4_confiqa-qa",
+    "wp4_conflictbank-pilot10k",
+    "wp4_nq-huang",
+    "wp4_triviaqa-huang"
+  ],
+  "source_files": {
+    "external/saber/data/datasets/nq-huang.jsonl": "e6ade7f6d5eb90af1cb275c56bcbefe7dcac15e0191c76fcc73ba016b4e8ca3b",
+    "external/saber/data/datasets/triviaqa-huang.jsonl": "99b1afd677816c04d0ea12641c63b2981f95afde8ed127972a0fa695f1016da0",
+    "external/saber/data/datasets/confiqa-qa.jsonl": "53da6ab025e6d8630863c2672a84790c087065bdf4d26622e5c5aae5773c8ab4",
+    "external/saber/data/datasets/conflictbank-pilot10k.jsonl": "262efb610200d8e8acc8ad5c3e5f5fb6fada17097fe7239ecad244aaccfb9ce4"
+  },
+  "base_inventory": {
+    "question_keys": 2090,
+    "qids": 3382,
+    "source_document_ids": 11902,
+    "source_texts": 11452
+  },
+  "overlap_counts": {
+    "question": 0,
+    "qid": 0,
+    "source_pid": 0,
+    "source_text": 0
+  },
+  "overlap_rule": "exact canonical question/qid/source pid/source text equality rejected",
+  "human_annotation": false
+}

@@ -1,0 +1,15 @@
+{
+ "reader": "meta-llama/Llama-3.1-70B-Instruct",
+ "oracle_utility": 0.6675,
+ "identity_max_residual": 0.0,
+ "split_seed": 20260811,
+ "draws": 10000,
+ "classes": {
+  "P1": 23,
+  "P2": 32,
+  "P3": 33
+ },
+ "protocol": "identical to the primary panel: same folds rule, same bootstrap with in-draw reselection, same lexical matcher",
+ "simultaneous_upper_max": 0.0005152400068553526,
+ "source_script": "experiments/scripts/maintrack/second_reader_decomposition.py"
+}

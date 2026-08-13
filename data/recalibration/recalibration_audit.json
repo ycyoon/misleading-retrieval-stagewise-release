@@ -1,0 +1,21 @@
+{
+ "panel": "artifacts/maintrack_v1/v12_9a_panel_rederived/panel_input.candidates.jsonl",
+ "split_seed": 20260811,
+ "split": "question-keyed, stratified by collection; identical to the telescoping ladder's split",
+ "n_panel_dev_cells": 198,
+ "n_panel_test_cells": 202,
+ "arms": [
+  "cgrv_internal_threshold",
+  "cgrv_panel_recalibrated",
+  "gbdt_internal_threshold",
+  "gbdt_panel_recalibrated"
+ ],
+ "what_differs": "only where the operating point is chosen; the fit, the features and the scores are identical within a seed",
+ "panel_dev_arm_is_a_ceiling": "it consumes panel gold for threshold selection, which the deployed setting does not have",
+ "rows": 76800,
+ "fit_failures": 0,
+ "contract_failures": 0,
+ "utility_failures": 0,
+ "elapsed_seconds": 413.4,
+ "source_script": "experiments/scripts/maintrack/p1_recalibration.py"
+}

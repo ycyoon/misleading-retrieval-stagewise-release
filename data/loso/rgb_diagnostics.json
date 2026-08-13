@@ -1,0 +1,129 @@
+{
+ "cost": 1.0,
+ "per_source": {
+  "clash_eval": {
+   "availability": {
+    "a_C": 0.6796,
+    "a_P": 0.34
+   },
+   "selectors": {
+    "cgrv_recovery": {
+     "answer_rate": 0.6841,
+     "accuracy_given_answer": 0.6851,
+     "return_source_shares": {
+      "a_C": 0.8392,
+      "a_P": 0.1608
+     }
+    },
+    "gbdt_recovery": {
+     "answer_rate": 0.732,
+     "accuracy_given_answer": 0.6738,
+     "return_source_shares": {
+      "a_C": 0.8298,
+      "a_P": 0.1702
+     }
+    }
+   },
+   "agreement_CP": {
+    "n_both_available": 2245,
+    "rate": 0.269
+   }
+  },
+  "raguard": {
+   "availability": {
+    "a_C": 0.3021,
+    "a_P": 0.2874
+   },
+   "selectors": {
+    "cgrv_recovery": {
+     "answer_rate": 0.4487,
+     "accuracy_given_answer": 0.7369,
+     "return_source_shares": {
+      "a_C": 0.6356,
+      "a_P": 0.3644
+     }
+    },
+    "gbdt_recovery": {
+     "answer_rate": 0.4454,
+     "accuracy_given_answer": 0.7492,
+     "return_source_shares": {
+      "a_C": 0.6126,
+      "a_P": 0.3874
+     }
+    }
+   },
+   "agreement_CP": {
+    "n_both_available": 158,
+    "rate": 0.4937
+   }
+  },
+  "ramdocs": {
+   "availability": {
+    "a_C": 0.5934,
+    "a_P": 0.2365
+   },
+   "selectors": {
+    "cgrv_recovery": {
+     "answer_rate": 0.6259,
+     "accuracy_given_answer": 0.6428,
+     "return_source_shares": {
+      "a_C": 0.8293,
+      "a_P": 0.1707
+     }
+    },
+    "gbdt_recovery": {
+     "answer_rate": 0.6644,
+     "accuracy_given_answer": 0.6461,
+     "return_source_shares": {
+      "a_C": 0.8733,
+      "a_P": 0.1267
+     }
+    }
+   },
+   "agreement_CP": {
+    "n_both_available": 131,
+    "rate": 0.2137
+   }
+  },
+  "rgb": {
+   "availability": {
+    "a_C": 0.0685,
+    "a_P": 0.5508
+   },
+   "selectors": {
+    "cgrv_recovery": {
+     "answer_rate": 0.5209,
+     "accuracy_given_answer": 0.8127,
+     "return_source_shares": {
+      "a_P": 0.8961,
+      "a_C": 0.1039
+     }
+    },
+    "gbdt_recovery": {
+     "answer_rate": 0.3955,
+     "accuracy_given_answer": 0.7822,
+     "return_source_shares": {
+      "a_P": 0.8389,
+      "a_C": 0.1611
+     }
+    }
+   },
+   "agreement_CP": {
+    "n_both_available": 80,
+    "rate": 0.325
+   }
+  }
+ },
+ "reading": {
+  "rgb_context_availability": 0.0685,
+  "other_context_availability_range": [
+   0.3021,
+   0.6796
+  ],
+  "rgb_cgrv_answer_rate": 0.5209,
+  "rgb_gbdt_answer_rate": 0.3955,
+  "rgb_cgrv_parametric_share": 0.8961,
+  "rgb_gbdt_parametric_share": 0.8389
+ },
+ "source_script": "experiments/scripts/maintrack/rgb_diagnostics.py"
+}
