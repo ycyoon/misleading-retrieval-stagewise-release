@@ -57,27 +57,25 @@ paper depends on it, so a reviewer can rebuild the parts we cannot ship.
 ### Benchmarks behind the evaluation panels
 
 Every panel cell records the upstream file it came from in its `source_file`
-field, and the panel manifests under `data/panel/` record the sha256 of each
-source file at the time the panel was frozen.
+field.
 
 | resource | where | what depends on it |
 |---|---|---|
-| SABER benchmark redistribution (`nq-huang`, `triviaqa-huang`, `confiqa-qa`, `confiqa-mc`, `confiqa-mr`, `conflictbank-pilot10k`, `conflictqa-popqa-llama2-7b`) | <https://github.com/xizhu1022/SABER>, directory `data/datasets/` | the 400-cell primary panel and the 300-cell extension; `data/panel/*_panel_manifest.json` lists the exact file and hash per collection |
+| SABER benchmark redistribution (`nq-huang`, `triviaqa-huang`, `confiqa-qa`, `confiqa-mc`, `confiqa-mr`, `conflictbank-pilot10k`, `conflictqa-popqa-llama2-7b`) | <https://github.com/xizhu1022/SABER>, directory `data/datasets/` | the 400-cell primary panel and the 300-cell extension; each cell's `source_file` names its collection |
 | ConflictQA (Adaptive Chameleon or Stubborn Sloth, ICLR 2024) | <https://huggingface.co/datasets/osunlp/ConflictQA>, config `ConflictQA-popQA-llama2-7b` | the popularity-stratified head and long-tail panels; supplies the evidence passages we do not release |
 | PopQA | <https://huggingface.co/datasets/akariasai/PopQA>, file `test.tsv` | the `s_pop` subject-popularity measure that defines the head and long-tail strata; the quartile thresholds are recorded in `data/popqa_tail/popularity_thresholds.json` |
 | ClashEval, RAGuard, RAMDocs, RGB | the sources cited in the paper | the internal fitting pool. `data/internal_pool/` ships per-record availability and correctness flags, not the passages |
 
-To rebuild a panel from scratch, fetch the upstream file named in the manifest,
-confirm its sha256 against the manifest, and apply the cell-construction rule
-recorded there (for the popularity panels the rule and its frozen
-pre-registration are in `data/popqa_tail/DESIGN.md`, whose own sha256 the
-builder asserts before sampling).
+To rebuild a panel from scratch, fetch the upstream file named in each cell's
+`source_file` and apply the cell-construction rule the paper describes. For the
+popularity panels the strata are defined by the thresholds in
+`data/popqa_tail/popularity_thresholds.json`.
 
 ### Retrieval corpora, encoder and index
 
 | resource | where | what depends on it |
 |---|---|---|
-| Wikipedia passage collection released with Dense Passage Retrieval | the DPR release (Karpukhin et al., EMNLP 2020) | the reference channel `a_R` on every panel. The exact index size, 21,015,324 passages, is recorded in `data/robustness_arms/provenance/e5exact_manifest.json` |
+| Wikipedia passage collection released with Dense Passage Retrieval | the DPR release (Karpukhin et al., EMNLP 2020) | the reference channel `a_R` on every panel; the index we built over it holds 21,015,324 passages |
 | CC-News | the CC-News collection as distributed by its maintainers | the corpus-swap robustness row. We record the arm's decisions in `data/robustness_arms/`, not the corpus; the passage count quoted in the paper is a property of the snapshot we indexed and is not recoverable from the released rows |
 | `BAAI/bge-base-en-v1.5` | <https://huggingface.co/BAAI/bge-base-en-v1.5> | passage and query encoding for the reference channel |
 | `intfloat/e5-base` family | <https://huggingface.co/intfloat> | the reranking and exact-retrieval robustness arms |
@@ -98,15 +96,6 @@ decisions of each retrieval arm.
 | `mistralai/Mistral-Small-24B-Instruct-2501` | <https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501> | one sufficiency judge, one jury member |
 | `microsoft/phi-4` | <https://huggingface.co/microsoft/phi-4> | one jury member |
 
-Decoding settings and, where recorded, the model snapshot identifier are in the
-candidate manifests under `data/panel/` and in the per-judge manifests under
-`data/jury/`. Regenerating an inventory requires serving the reader; scoring an
-existing inventory does not, because every candidate answer we generated ships
-in the decision rows.
-
-### What still cannot be checked from the release alone
-
-Two quantities in the paper depend on resources above and are not derivable
-from anything we ship: the CC-News index passage count, and any statistic over
-retrieved passage text beyond the derived flags listed above. Both are stated
-here so a reviewer knows the boundary rather than discovering it.
+Every candidate row records the reader that produced it. Regenerating an
+inventory requires serving that reader; scoring an existing inventory does not,
+because every candidate answer we generated ships in the decision rows.
