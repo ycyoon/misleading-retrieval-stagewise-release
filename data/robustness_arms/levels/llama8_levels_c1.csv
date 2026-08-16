@@ -1,0 +1,8 @@
+method_id,answer_utility
+always_abstain,0.0
+cgrv_recovery,-0.08708333333333335
+fixed_parametric,0.13
+fixed_recovery,-0.1975
+fixed_reference,0.09
+gbdt_recovery,-0.13229166666666667
+prompt_candidatewise,-0.1075

@@ -1,0 +1,13 @@
+{
+  "Q25": 235.0,
+  "Q75": 5784.0,
+  "median": 975.0,
+  "n_popqa": 14267,
+  "measure": "PopQA s_pop (subject pageviews), test.tsv",
+  "tie_rule": "long-tail s_pop<=Q25 inclusive; head s_pop>=Q75 inclusive",
+  "eligible_tail": 2134,
+  "eligible_head": 1508,
+  "after_exclusion_tail": 2111,
+  "after_exclusion_head": 1505,
+  "max_balanced_per_stratum": 985
+}

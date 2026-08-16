@@ -1,0 +1,27 @@
+stratum,raw_idx,reason,question,subj,prop,obj,s_pop
+tail,0,extension_conflictqa_popqa,What is George Rankin's occupation?,George Rankin,occupation,politician,142
+tail,2,extension_conflictqa_popqa,What is Henry Feilden's occupation?,Henry Feilden,occupation,politician,58
+tail,3,extension_conflictqa_popqa,What is Kathy Saltzman's occupation?,Kathy Saltzman,occupation,politician,127
+tail,8,extension_conflictqa_popqa,What is Herlyn Espinal's occupation?,Herlyn Espinal,occupation,journalist,88
+tail,9,extension_conflictqa_popqa,What is Jacob Kraemer's occupation?,Jacob Kraemer,occupation,actor,230
+tail,10,extension_conflictqa_popqa,What is Edward Corser's occupation?,Edward Corser,occupation,politician,74
+tail,12,extension_conflictqa_popqa,What is Javier Alva Orlandini's occupation?,Javier Alva Orlandini,occupation,politician,169
+tail,13,extension_conflictqa_popqa,What is John Finlay's occupation?,John Finlay,occupation,politician,48
+tail,15,extension_conflictqa_popqa,What is Sachiko Kokubu's occupation?,Sachiko Kokubu,occupation,actor,115
+tail,17,extension_conflictqa_popqa,What is Paris's occupation?,Paris,occupation,actor,126
+tail,18,extension_conflictqa_popqa,What is Thomas McMurtry's occupation?,Thomas McMurtry,occupation,test pilot,152
+tail,24,extension_conflictqa_popqa,What is Bruce McDaniel's occupation?,Bruce McDaniel,occupation,composer,91
+tail,25,extension_conflictqa_popqa,What is Edwin Wallock's occupation?,Edwin Wallock,occupation,actor,68
+tail,26,extension_conflictqa_popqa,What is Tsutomu Seki's occupation?,Tsutomu Seki,occupation,astronomer,195
+tail,27,extension_conflictqa_popqa,What is Matthew McKay's occupation?,Matthew McKay,occupation,dentist,63
+tail,28,extension_conflictqa_popqa,What is Dominick Bellizzi's occupation?,Dominick Bellizzi,occupation,jockey,97
+tail,33,extension_conflictqa_popqa,What is Ole Krarup's occupation?,Ole Krarup,occupation,politician,61
+tail,34,extension_conflictqa_popqa,What is Antonio Álvarez Alonso's occupation?,Antonio Álvarez Alonso,occupation,composer,75
+tail,35,extension_conflictqa_popqa,What is Boutheina Jabnoun's occupation?,Boutheina Jabnoun,occupation,journalist,57
+tail,39,extension_conflictqa_popqa,What is Shozaburo Nakamura's occupation?,Shozaburo Nakamura,occupation,politician,206
+tail,41,extension_conflictqa_popqa,What is Derek Wheatley's occupation?,Derek Wheatley,occupation,novelist,43
+tail,42,extension_conflictqa_popqa,What is Modou Dia's occupation?,Modou Dia,occupation,diplomat,51
+tail,49,extension_conflictqa_popqa,What is Rick Gilmore's occupation?,Rick Gilmore,occupation,economist,156
+head,5,extension_conflictqa_popqa,What is Scooter Braun's occupation?,Scooter Braun,occupation,talent manager,66280
+head,38,extension_conflictqa_popqa,What is Paul's occupation?,Paul,occupation,missionary,135900
+head,8004,primary_extension_or_fitting_pool,What is the capital of Ecuador?,Ecuador,capital,Quito,116147

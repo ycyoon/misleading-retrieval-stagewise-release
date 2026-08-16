@@ -1,0 +1,45 @@
+arm,cost,utility,selection,answer_rate,acc_given_answer,n_correct,n_wrong,n_abstain
+srstyle_primary,0.5,0.0,"internal-dev fixed (tau,beta)",0.0,,0.0,0.0,400.0
+srstyle_primary,1.0,0.0,"internal-dev fixed (tau,beta)",0.0,,0.0,0.0,400.0
+srstyle_primary,2.0,0.0,"internal-dev fixed (tau,beta)",0.0,,0.0,0.0,400.0
+srstyle_primary,4.0,0.0,"internal-dev fixed (tau,beta)",0.0,,0.0,0.0,400.0
+context_rule_fixed_recovery,0.5,0.13125,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+context_rule_fixed_recovery,1.0,-0.1125,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+context_rule_fixed_recovery,2.0,-0.6000000000000001,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+context_rule_fixed_recovery,4.0,-1.575,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+p_true_gate,0.5,0.15495192307692307,fixed rule,0.7925,0.4637223974763407,147.0,170.0,83.0
+p_true_gate,1.0,-0.05759615384615385,fixed rule,0.7925,0.4637223974763407,147.0,170.0,83.0
+p_true_gate,2.0,-0.4753846153846154,fixed rule,0.785,0.46496815286624205,146.0,168.0,86.0
+p_true_gate,4.0,-1.2682692307692307,fixed rule,0.77,0.4707792207792208,145.0,163.0,92.0
+always_abstain,0.5,0.0,fixed rule,0.0,,0.0,0.0,400.0
+always_abstain,1.0,0.0,fixed rule,0.0,,0.0,0.0,400.0
+always_abstain,2.0,0.0,fixed rule,0.0,,0.0,0.0,400.0
+always_abstain,4.0,0.0,fixed rule,0.0,,0.0,0.0,400.0
+m0_context_only,0.5,0.13125,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+m0_context_only,1.0,-0.1125,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+m0_context_only,2.0,-0.6000000000000001,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+m0_context_only,4.0,-1.575,fixed rule,0.8625,0.43478260869565216,150.0,195.0,55.0
+m0_current_paper_rule,0.5,0.17120192307692308,fixed rule,0.565,0.5353982300884956,121.0,105.0,174.0
+m0_current_paper_rule,1.0,0.03980769230769231,fixed rule,0.565,0.5353982300884956,121.0,105.0,174.0
+m0_current_paper_rule,2.0,-0.22298076923076923,fixed rule,0.565,0.5353982300884956,121.0,105.0,174.0
+m0_current_paper_rule,4.0,-0.7485576923076922,fixed rule,0.565,0.5353982300884956,121.0,105.0,174.0
+m0_strict_corroboration,0.5,0.175,fixed rule,0.2125,0.8823529411764706,75.0,10.0,315.0
+m0_strict_corroboration,1.0,0.1625,fixed rule,0.2125,0.8823529411764706,75.0,10.0,315.0
+m0_strict_corroboration,2.0,0.1375,fixed rule,0.2125,0.8823529411764706,75.0,10.0,315.0
+m0_strict_corroboration,4.0,0.08750000000000001,fixed rule,0.2125,0.8823529411764706,75.0,10.0,315.0
+verification_oracle,0.5,0.375,fixed rule,0.375,1.0,150.0,0.0,250.0
+verification_oracle,1.0,0.375,fixed rule,0.375,1.0,150.0,0.0,250.0
+verification_oracle,2.0,0.375,fixed rule,0.375,1.0,150.0,0.0,250.0
+verification_oracle,4.0,0.375,fixed rule,0.375,1.0,150.0,0.0,250.0
+cgrv_verification,0.5,0.05713942307692307,"12 training seeds, seed-mean",0.560625,0.4013377926421405,90.0,134.25,175.75
+cgrv_verification,1.0,-0.0908173076923077,"12 training seeds, seed-mean",0.5252083333333334,0.4137247124157081,86.91666666666667,123.16666666666667,189.91666666666666
+cgrv_verification,2.0,-0.26449586004273506,"12 training seeds, seed-mean",0.38125,0.4355191256830601,66.41666666666667,86.08333333333333,247.5
+cgrv_verification,4.0,-0.06787326388888888,"12 training seeds, seed-mean",0.069375,0.6036036036036037,16.75,11.0,372.25
+devselected_fixed_comparator,0.5,0.17057692307692307,"registry envelope, cross-fit per cost (re-selected per draw)",0.395,0.620253164556962,98.0,60.0,242.0
+devselected_fixed_comparator,1.0,0.1625,"registry envelope, cross-fit per cost (re-selected per draw)",0.2125,0.8823529411764706,75.0,10.0,315.0
+devselected_fixed_comparator,2.0,0.1375,"registry envelope, cross-fit per cost (re-selected per draw)",0.2125,0.8823529411764706,75.0,10.0,315.0
+devselected_fixed_comparator,4.0,0.08750000000000001,"registry envelope, cross-fit per cost (re-selected per draw)",0.2125,0.8823529411764706,75.0,10.0,315.0
+srstyle_crossfit_secondary,0.5,0.0,"panel cross-fitted (tau,beta), re-selected per draw (SECONDARY)",0.0,,0.0,0.0,400.0
+srstyle_crossfit_secondary,1.0,0.0,"panel cross-fitted (tau,beta), re-selected per draw (SECONDARY)",0.0,,0.0,0.0,400.0
+srstyle_crossfit_secondary,2.0,0.0,"panel cross-fitted (tau,beta), re-selected per draw (SECONDARY)",0.0,,0.0,0.0,400.0
+srstyle_crossfit_secondary,4.0,0.0,"panel cross-fitted (tau,beta), re-selected per draw (SECONDARY)",0.0,,0.0,0.0,400.0

@@ -200,6 +200,16 @@ def main() -> int:
     check("crosscheck interval, lower", round(float(lo), 3), 0.706, tol=0)
     check("crosscheck interval, upper", round(float(hi), 3), 0.778, tol=0)
 
+    # Later experiment families ship their own recomputation module beside this
+    # one. Each exposes run(D, check) and recomputes from its own raw rows. A
+    # missing or broken module is a hard failure: a release that silently
+    # dropped a family's checks would still print a clean bill of health.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    for fam in ("published_baselines", "reader_scale", "popqa_tail",
+                "diagnostics", "internal_pool", "robustness_arms",
+                "internal_verification", "selector_code"):
+        __import__(f"checks_{fam}").run(D, check)
+
     bad = [c for c in CHECKS if not c[1]]
     print(f"\n{len(CHECKS) - len(bad)} of {len(CHECKS)} checks pass"
           + (f"; FAILURES: {[c[0] for c in bad]}" if bad

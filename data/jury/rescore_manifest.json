@@ -1,7 +1,0 @@
-{
- "jury_labelled_returned_rows": 95157,
- "returned_rows": 95229,
- "coverage": 0.9992439277951044,
- "labels": "<repository root>/artifacts/maintrack_v1/v12_15_jury/jury_labels.csv",
- "note": "criterion levels under the jury consensus and its conservative/optimistic bounds"
-}

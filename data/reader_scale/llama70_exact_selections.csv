@@ -1,0 +1,9 @@
+cost,eval_fold,P1,P1_selscore,P1_heldout,P2,P2_selscore,P2_heldout,P3,P3_selscore,P3_heldout,U_context_heldout
+0.5,0,closure_agree_any_else_P,0.4025,0.4225,closure_agree_any_else_P,0.4025,0.4225,closure_agree_any_else_P,0.4025,0.4225,0.14375
+0.5,1,closure_agree_any_else_P,0.4225,0.4025,closure_agree_any_else_P,0.4225,0.4025,closure_agree_any_else_P,0.4225,0.4025,0.12125
+1.0,0,closure_agree_any_else_P,0.3,0.325,closure_agree_any_else_P,0.3,0.325,closure_agree_any_else_P,0.3,0.325,-0.13
+1.0,1,closure_agree_any_else_P,0.325,0.3,closure_agree_any_else_P,0.325,0.3,closure_agree_any_else_P,0.325,0.3,-0.155
+2.0,0,closure_agree_any,0.195,0.15,closure_agree_any,0.195,0.15,closure_agree_any,0.195,0.15,-0.6775
+2.0,1,closure_agree_any,0.15,0.195,closure_agree_any,0.15,0.195,closure_agree_any,0.15,0.195,-0.7075
+4.0,0,closure_agree_any,0.045,0.01,closure_agree_any,0.045,0.01,closure_agree_any,0.045,0.01,-1.7725
+4.0,1,closure_agree_CP,0.05,0.02,closure_agree_CP,0.05,0.02,closure_agree_CP,0.05,0.02,-1.8125

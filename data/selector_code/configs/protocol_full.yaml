@@ -1,0 +1,1244 @@
+output_dir: experiments/outputs/protocol
+seeds:
+- 13
+- 17
+- 29
+- 42
+- 101
+heads:
+- primary
+- recovery
+utility_cost: 2.0
+datasets:
+  clash_eval: experiments/outputs/candidates/clash_eval.candidates.jsonl
+  ramdocs: experiments/outputs/candidates/ramdocs.candidates.jsonl
+  raguard: experiments/outputs/candidates/raguard.candidates.jsonl
+  rgb: experiments/outputs/candidates/rgb.candidates.jsonl
+external_files:
+  raguard: experiments/outputs/candidates/raguard.candidates.jsonl
+  ramdocs: experiments/outputs/candidates/ramdocs.candidates.jsonl
+  ramdocs_primary: experiments/outputs/candidates/ramdocs_primary.candidates.jsonl
+  rgb: experiments/outputs/candidates/rgb.candidates.jsonl
+  neoqa: experiments/outputs/candidates/neoqa.candidates.jsonl
+  clash_eval_cc600: experiments/outputs/candidates/clash_eval_cc600.candidates.jsonl
+  # ConflictQA: an external slice whose supplied contexts are generated text,
+  # so they share no corpus with the Wikipedia reference channel.
+  conflictqa: experiments/outputs/candidates/conflictqa.candidates.jsonl
+macro_external:
+- raguard
+- ramdocs_primary
+- rgb
+- neoqa
+methods:
+  m1_logreg:
+    kind: gate
+    model_type: logreg
+    model_params: {}
+  m1_gbt:
+    kind: gate
+    model_type: gbt
+    model_params: {}
+  m3:
+    kind: relational
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      max_evidence_chars: 512
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      hidden_dim: 256
+      dropout: 0.1
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      source_conf: 0.3
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+  m2:
+    kind: relational
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      max_evidence_chars: 512
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      hidden_dim: 256
+      dropout: 0.1
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      source_conf: 0.3
+      relation: 0.3
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+  m3_dro:
+    kind: relational
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      max_evidence_chars: 512
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      hidden_dim: 256
+      dropout: 0.1
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      source_conf: 0.3
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    group_dro:
+      enabled: true
+      eta: 0.1
+  cgrv_tuned:
+    kind: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 256
+      rel_hidden: 64
+      gate_hidden: 8
+      dropout: 0.2
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.1
+      counterfactual: 0.25
+    optim:
+      lr: 0.003
+      weight_decay: 0.0001
+      batch_size: 128
+      max_epochs: 60
+      patience: 8
+      min_epochs: 3
+    counterfactual:
+      enabled: true
+      margin: 0.3
+    calibration:
+      enabled: true
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: /nonexistent_disabled_by_tuning
+  m1_logreg_tuned:
+    kind: gate
+    model_type: logreg
+    model_params:
+      C: 100.0
+      class_weight: balanced
+  m1_gbt_tuned:
+    kind: gate
+    model_type: gbt
+    model_params:
+      n_estimators: 300
+      learning_rate: 0.3
+      max_depth: 3
+      subsample: 0.7
+  cgrv_tuned_pst:
+    kind: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 256
+      rel_hidden: 64
+      gate_hidden: 8
+      dropout: 0.2
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.1
+      counterfactual: 0.25
+    optim:
+      lr: 0.003
+      weight_decay: 0.0001
+      batch_size: 128
+      max_epochs: 60
+      patience: 8
+      min_epochs: 3
+    counterfactual:
+      enabled: true
+      margin: 0.3
+    calibration:
+      enabled: true
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: /nonexistent_disabled_by_tuning
+    variants:
+      per_state_threshold: true
+  cgrv:
+    kind: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # --- component ablations of the DEFAULT `cgrv` spec above --------------------
+  # Each block is field-for-field identical to `cgrv` with EXACTLY ONE model flag
+  # flipped to false (asserted by tests/test_protocol.py::
+  # test_cgrv_component_ablations_differ_from_default_by_one_flag).
+  cgrv_no_gates:
+    kind: cgrv
+    ablation_of: cgrv
+    ablated_component: gates
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: false
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  cgrv_no_typed:
+    kind: cgrv
+    ablation_of: cgrv
+    ablated_component: typed_relations
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  cgrv_no_statemix:
+    kind: cgrv
+    ablation_of: cgrv
+    ablated_component: state_mixture
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: true
+      state_mixture: false
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  cgrv_no_monotone:
+    kind: cgrv
+    ablation_of: cgrv
+    ablated_component: monotone
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: false
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # --- simplified candidates for THE model -------------------------------------
+  # Motivated by the component ablation (outputs/verdict/ablation_combined.md):
+  # gates / state_mixture / monotone are load-bearing, typed_relations is not.
+  # Asserted by tests/test_protocol.py::test_simplified_cgrv_variants_*.
+  #
+  # cgrv_simple: the DEFAULT cgrv with ONLY typed_relations off — the same spec
+  # the `cgrv_no_typed` ablation runs, promoted to a candidate model in its own
+  # right (identical fields, so the two must reproduce each other seed-for-seed).
+  cgrv_simple:
+    kind: cgrv
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # cgrv_minimal: keep ONLY what the 5-seed ablation proved load-bearing
+  # (gates, state_mixture, monotone) plus the separately validated
+  # counterfactual loss; typed relations off AND the relation supervision
+  # weight set to 0, so no typed silver labels are consumed at all.
+  cgrv_minimal:
+    kind: cgrv
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.0
+      counterfactual: 0.5
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # --- EXP7 gate-desaturation variants of the DEFAULT `cgrv` spec ------------
+  # Field-for-field identical to `cgrv` except for the EXP7 switches named in
+  # `gate_fix_switches` (asserted by tests/test_gate_fix.py::
+  # test_gate_fix_methods_differ_from_default_by_exp7_switches_only).
+  # cgrv_gatefix = switch (A) only: the criteria-selected variant of the
+  # seed-13 sweep in outputs/verdict/gate_fix.md.
+  cgrv_gatefix:
+    kind: cgrv
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # cgrv_gatefix_abc = switches (A)+(B)+(C); reported alongside the selected
+  # variant because it is the only sweep cell that ALSO preserves the g_P
+  # diagonal (g_P vs familiarity AUC .892, unchanged from the frozen model).
+  cgrv_gatefix_abc:
+    kind: cgrv
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  # --- THE paper's model + its switch-attribution control ---------------------
+  # Both blocks are field-for-field identical to the DEFAULT `cgrv` spec above
+  # except for (a) the EXP7 gate-fix switches named in `gate_fix_switches` and
+  # (b) model.typed_relations = false.  Asserted by
+  # tests/test_final_model.py::test_final_model_methods_are_cgrv_plus_declared_switches.
+  #
+  # cgrv_final = gate-fix (A)+(B)+(C) AND typed_relations OFF.  Why each choice:
+  #   * (A) supervised per-source confidence head tied to the gate logit
+  #     [loss_weights.source_conf] — outputs/verdict/gate_fix.md, VERDICT FIXED:
+  #     without it g_R is a constant (std 1.26e-05, covered_v2 AUC .431, i.e.
+  #     INVERTED) and the design's veto p_contra_CR x g_R is a no-op.
+  #   * (B) gate-input z-scoring [model.gate_standardize] and (C) gate-logit L2
+  #     [loss_weights.gate_l2] — same verdict: A alone COLLAPSES the second
+  #     diagonal (AUC(g_P, familiarity) .843 -> .488).  A+B+C is the ONLY sweep
+  #     cell that keeps BOTH diagonals dominant (g_R gap +.198, g_P gap +.367),
+  #     which is what the paper's two-boundary (coverage AND familiarity) claim
+  #     requires; it costs .007 strict (.740 +/- .014 vs .747 +/- .006).
+  #   * typed_relations OFF — outputs/verdict/simplification.md: the typed
+  #     4-way relation head is INERT (`cgrv_simple` == `cgrv`, paired t over the
+  #     5 seeds p=0.34 on strict), and dropping it removes the 8,550 pairwise
+  #     72B-judge silver labels the typed taxonomy needs at training time.
+  #     `relation` loss weight is KEPT at 0.3 (the matcher's own binary silver
+  #     labels): `cgrv_minimal`, which zeroes it, was significantly worse
+  #     (Dstrict -0.026, Dpoison +0.066, harmed on 5/5 seeds).
+  cgrv_final:
+    kind: cgrv
+    final_model: true
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  # Context-only learned arm: both auxiliary channels removed from the rows.
+  # Completes the channel grid for the value-of-learning decomposition.
+
+  cgrv_c_only:
+    kind: cgrv
+    source_ablation_of: cgrv_final
+    sources_off: [reference, parametric]
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+
+  # --- simpler designs the localisation experiment does not rule out ---------
+  # Table 7 shows no competence gate is load bearing for strict safety and that
+  # the parametric channel does not separate from zero.  These two blocks build
+  # what that implies: the same model without the gates, and without the gates
+  # or the parametric channel.  If either matches `cgrv_final`, the architecture
+  # carries components it does not need.
+
+  cgrv_nogate:
+    kind: cgrv
+    simplification_probe_of: cgrv_final
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: false
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  cgrv_cr_nogate:
+    kind: cgrv
+    simplification_probe_of: cgrv_final
+    sources_off: [parametric]
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: false
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+
+  # --- whole-channel source ablations OF THE FINAL MODEL ---------------------
+  # `sources_off` removes an evidence channel from the ROW before anything is
+  # derived from it, so the absent flag, the node embedding, the observable
+  # block, the silver relation targets, the per-source correctness targets and
+  # the recovery action mask all see a world without that channel.  These
+  # answer what the reference corpus and the parametric memory are worth.
+  # The context channel cannot be removed: it is what the decision is about.
+
+  cgrv_final_no_ref:
+    kind: cgrv
+    source_ablation_of: cgrv_final
+    sources_off: [reference]
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  cgrv_final_no_par:
+    kind: cgrv
+    source_ablation_of: cgrv_final
+    sources_off: [parametric]
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+
+  # --- per-source gate ablations OF THE FINAL MODEL --------------------------
+  # Each block is field-for-field identical to `cgrv_final` except for
+  # model.gates_off, which pins exactly one competence gate to 1.0 (the same
+  # neutral value the whole-gate ablation uses) while the other two keep
+  # learning.  These answer "which gate carries the effect" ON THE MODEL THE
+  # PAPER PROPOSES; the `cgrv_no_gates` block above ablates all three gates of
+  # the DEFAULT `cgrv` spec, whose reference gate is saturated.
+
+  cgrv_final_no_gate_c:
+    kind: cgrv
+    gate_ablation_of: cgrv_final
+    ablated_gate: context
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      gates_off: [context]
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  cgrv_final_no_gate_r:
+    kind: cgrv
+    gate_ablation_of: cgrv_final
+    ablated_gate: reference
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      gates_off: [reference]
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  cgrv_final_no_gate_p:
+    kind: cgrv
+    gate_ablation_of: cgrv_final
+    ablated_gate: parametric
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    - B_gate_standardize
+    - C_gate_l2
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      gates_off: [parametric]
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+      gate_standardize: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+      gate_l2: 0.01
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+
+  # cgrv_gatefixA_simple = switch (A) ONLY + typed_relations OFF.  This is the
+  # attribution control for `cgrv_final`: it isolates whether (B)+(C) are still
+  # needed once the supervised source-confidence head is present and the typed
+  # relation head is gone.  If it matches cgrv_final on strict/poison AND keeps
+  # both gate diagonals, the paper can drop two switches; the seed-13 sweep in
+  # outputs/verdict/gate_fix.md says it should NOT (A alone lost the g_P
+  # diagonal there), so this block is what makes that a tested claim rather
+  # than an inherited one.
+  cgrv_gatefixA_simple:
+    kind: cgrv
+    gate_fix_of: cgrv
+    gate_fix_switches:
+    - A_source_conf
+    simplification_of: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.1
+      gates: true
+      typed_relations: false
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.3
+      counterfactual: 0.5
+      source_conf: 0.3
+    optim:
+      lr: 0.001
+      weight_decay: 0.0001
+      batch_size: 256
+      max_epochs: 100
+      patience: 10
+      min_epochs: 5
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+      max_iter: 100
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: experiments/outputs/familiarity
+  cgrv_tuned2:
+    kind: cgrv
+    encoder:
+      backend: bge
+      model_name: BAAI/bge-base-en-v1.5
+      batch_size: 128
+      device: auto
+      cache_dir: experiments/outputs/emb_cache
+      cache: true
+    model:
+      proj_dim: 64
+      rel_hidden: 64
+      gate_hidden: 16
+      dropout: 0.2
+      gates: true
+      typed_relations: true
+      state_mixture: true
+      monotone: true
+    loss_weights:
+      primary: 1.0
+      recovery: 1.0
+      relation: 0.5
+      counterfactual: 1.0
+    optim:
+      lr: 0.0003
+      weight_decay: 0.0001
+      batch_size: 128
+      max_epochs: 60
+      patience: 8
+      min_epochs: 3
+    counterfactual:
+      enabled: true
+      margin: 0.2
+    calibration:
+      enabled: true
+    relation_labels: experiments/outputs/relation_labels
+    familiarity_dir: /nonexistent_disabled_by_tuning
+    variants:
+      per_state_threshold: true
+      dead_state_defer_bias: true
+      use_familiarity: false
+regimes:
+  clash_only:
+    train_datasets:
+    - clash_eval
+    split:
+      train: 0.7
+      dev: 0.15
+      test: 0.15
+  combined:
+    train_datasets:
+    - clash_eval
+    - raguard
+    - ramdocs
+    - rgb
+    split:
+      train: 0.7
+      dev: 0.15
+      test: 0.15
+    note: 'standard train/val/test: group-level 70/15/15 WITHIN each of the 4 datasets;
+      train/dev = unions; test = union + per-dataset breakdown. neoqa excluded (2
+      conditions only, structural .50 floor) and kept as a separate stress slice;
+      ramdocs_primary excluded (subset of ramdocs).'
+  lodo:
+    datasets:
+    - clash_eval
+    - raguard
+    - ramdocs
+    - rgb
+    train_dev:
+      train: 0.85
+      dev: 0.15
+    note: 'leave-one-dataset-out over the SAME four datasets as `combined` (raguard
+      is now IN the pool; the earlier 3-dataset lodo predates rgb and excluded
+      raguard — those runs are archived under outputs/archive/protocol_lodo3_stale).
+      Train on the other three with a group-level 85/15 train/dev WITHIN each; the
+      held-out dataset is evaluated ENTIRE with dev-frozen thresholds. This is the
+      generalization evidence that replaces the harsh clash_only zero-shot setting.'

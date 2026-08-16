@@ -1,0 +1,12 @@
+method_id,answer_utility
+always_abstain,0.0
+cgrv_recovery,-0.055416666666666656
+cgrv_verification,-0.090625
+fixed_parametric,0.26
+fixed_recovery,-0.1125
+fixed_reference,0.22499999999999998
+fixed_reference_news,0.03
+gbdt_recovery,0.0027083333333333404
+p_true_gate,-0.057499999999999996
+prompt_candidatewise,0.10999999999999999
+prompt_candidatewise_news,0.0725

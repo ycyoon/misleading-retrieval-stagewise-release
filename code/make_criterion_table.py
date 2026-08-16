@@ -61,10 +61,11 @@ GAINS = [("fixed_policy_gain_G1", "$G_1$ fixed policy"),
          ("structured_gain_G3", "$G_3$ structured")]
 
 CAPTION = (
-    "Utility at $c{=}1$ under five scoring treatments: the jury consensus, "
-    "the no-reader panel with unsettled items scored against and then for "
-    "the policy, the optimistic bound, and the frozen lexical matcher; "
-    "below, the cross-fitted stage gains under the same treatments.")
+    "Utility at $c{=}1$ under five correctness treatments: Jury and Optim.\\ "
+    "are the lower and upper treatments for the full three-family jury; "
+    "No-reader$^-$ and No-reader$^+$ are the same pair after removing the "
+    "Qwen2.5-72B-Instruct judge; Lexical is the frozen matcher. Below, the "
+    "cross-fitted stage gains under the same treatments.")
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
@@ -155,13 +156,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             for c, _ in CRITERIA}
     lo, hi = min(gaps.values()), max(gaps.values())
     if ref_led and par_led:
-        ordering = (f"Every selector in the main ladder stays below both fixed channel "
+        ordering = (f"Every selector in $\\mathcal{{P}}_2$ and $\\mathcal{{P}}_3$ stays below both fixed channel "
                     f"rules under all five scoring treatments, and the two "
                     f"fixed rules' order depends on the treatment: the "
                     f"reference rule leads under {listed(ref_led)}, the "
                     f"parametric rule under {listed(par_led)}.")
     else:
-        ordering = (f"Every selector in the main ladder stays below both fixed channel "
+        ordering = (f"Every selector in $\\mathcal{{P}}_2$ and $\\mathcal{{P}}_3$ stays below both fixed channel "
                     f"rules under all five scoring treatments, and "
                     f"the {'reference' if ref_led else 'parametric'} rule leads "
                     f"under every one of them.")

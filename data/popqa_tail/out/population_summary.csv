@@ -1,0 +1,3 @@
+stratum,cells,questions,s_pop_min,s_pop_median,s_pop_max,relations,supportive,conflicting,mean_ref_passages
+head,400,199,5944,16597,706284,14,202,198,10.0
+tail,400,200,8,132,235,14,202,198,10.0

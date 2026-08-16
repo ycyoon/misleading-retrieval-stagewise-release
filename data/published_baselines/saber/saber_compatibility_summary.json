@@ -1,0 +1,112 @@
+{
+  "setting": "Family A' \u2014 all arms on Llama-3.1-8B-Instruct generations, same 400 panel questions/contexts",
+  "saber_classification": "FAITHFUL REIMPLEMENTATION (audit/saber.md \u00a711): official code path, probe trained by us on the internal pool; single training run (official seed)",
+  "tm_native_classification": "EXACT (audit/trustmargin.md \u00a711)",
+  "either_cell_rule": "official cell_counts.py either->PK (prespec branch: released code resolves it)",
+  "saber_cell_counts": {
+    "C01": 252,
+    "C11": 136,
+    "C00": 6,
+    "C10": 6
+  },
+  "levels": {
+    "context_only_star": {
+      "0.5": 0.18625000000000003,
+      "1.0": -0.08499999999999999,
+      "2.0": -0.6275,
+      "4.0": -1.7125
+    },
+    "d2s::abstain": {
+      "0.5": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0,
+      "4.0": 0.0
+    },
+    "d2s::agree_CP": {
+      "0.5": 0.0875,
+      "1.0": 0.0675,
+      "2.0": 0.027500000000000004,
+      "4.0": -0.052500000000000005
+    },
+    "d2s::agree_CP_else_C": {
+      "0.5": 0.18625000000000003,
+      "1.0": -0.08499999999999999,
+      "2.0": -0.6275,
+      "4.0": -1.7125
+    },
+    "d2s::agree_CP_else_P": {
+      "0.5": 0.05499999999999999,
+      "1.0": -0.26,
+      "2.0": -0.89,
+      "4.0": -2.15
+    },
+    "d2s::cascade_CP": {
+      "0.5": 0.18625000000000003,
+      "1.0": -0.08499999999999999,
+      "2.0": -0.6275,
+      "4.0": -1.7125
+    },
+    "d2s::cascade_PC": {
+      "0.5": 0.05499999999999999,
+      "1.0": -0.26,
+      "2.0": -0.89,
+      "4.0": -2.15
+    },
+    "d2s::fixed_C": {
+      "0.5": 0.18625000000000003,
+      "1.0": -0.08499999999999999,
+      "2.0": -0.6275,
+      "4.0": -1.7125
+    },
+    "d2s::fixed_P": {
+      "0.5": 0.05499999999999999,
+      "1.0": -0.26,
+      "2.0": -0.89,
+      "4.0": -2.15
+    },
+    "oracle2_star": {
+      "0.5": 0.5875000000000001,
+      "1.0": 0.5875000000000001,
+      "2.0": 0.5875000000000001,
+      "4.0": 0.5875000000000001
+    },
+    "parametric_only_star": {
+      "0.5": 0.05499999999999999,
+      "1.0": -0.26,
+      "2.0": -0.89,
+      "4.0": -2.15
+    },
+    "saber": {
+      "0.5": 0.2275,
+      "1.0": -0.025,
+      "2.0": -0.53,
+      "4.0": -1.54
+    },
+    "tm_native": {
+      "0.5": 0.25747596153846153,
+      "1.0": 0.009967948717948719,
+      "2.0": -0.4850480769230769,
+      "4.0": -1.4750801282051282
+    }
+  },
+  "d2_picks_point": [
+    [
+      "d2s::agree_CP_else_C",
+      "d2s::agree_CP",
+      "d2s::agree_CP",
+      "d2s::abstain"
+    ],
+    [
+      "d2s::agree_CP_else_C",
+      "d2s::agree_CP",
+      "d2s::agree_CP",
+      "d2s::abstain"
+    ]
+  ],
+  "panel_sha256": "d7e6d28ee3ce38490f3285cc2c711f48ee0616df9f2a464b5726e0459a8d3d76",
+  "behavior_sha256": "3c4c6908386fdb0d4700b2b7ad4002b1e0672076cf0edc75b1ab26bcab3b25b9",
+  "saber_decisions_sha256": "5955b01bd63638f4767241b0964cb96eee6f317e38171b3f95ceaaf284758d63",
+  "boot_seed": 20260808,
+  "split_seed": 20260811,
+  "draws": 10000
+}
