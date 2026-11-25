@@ -1,8 +1,57 @@
-# Code and data
+# Attributing the Value of Learned Source Arbitration under Misleading Retrieval: A Cross-Fitted Comparator Audit
 
-Release accompanying the WSDM 2027 submission *What Learning Buys under
-Misleading Retrieval: A Stagewise Decomposition of Answer Selection over
-Nested Policy Classes*.
+Code and reproducibility artifacts for the paper accepted to **WSDM 2027**.
+
+**Authors:** Minsu Oh, Chanjun Park, and Yeo Chan Yoon.
+
+**Venue:** Proceedings of the Twentieth ACM International Conference on Web
+Search and Data Mining (WSDM '27), February 15–19, 2027, Hong Kong.
+
+**DOI:** [10.1145/3862322.3863501](https://doi.org/10.1145/3862322.3863501)
+
+**Paper:** [Camera-ready PDF](paper/wsdm2027_main_submission_final.pdf) ·
+[LaTeX source](paper/wsdm2027_main_submission_final.tex)
+
+The paper measures the value added by instance-specific answer selection
+under misleading retrieval. It compares methods over the same frozen
+candidate answers, giving deterministic rules and instance-specific methods
+the same cross-fitted selection opportunity.
+
+The code and data were shared for peer review through an
+[anonymous mirror](https://anonymous.4open.science/r/misleading-retrieval-stagewise-release-6DB5/)
+of this repository. The camera-ready uses the final title above and links
+directly to this repository.
+
+## Citation
+
+```bibtex
+@inproceedings{oh2027attributing,
+  author    = {Oh, Minsu and Park, Chanjun and Yoon, Yeo Chan},
+  title     = {Attributing the Value of Learned Source Arbitration under Misleading Retrieval: A Cross-Fitted Comparator Audit},
+  booktitle = {Proceedings of the Twentieth ACM International Conference on Web Search and Data Mining},
+  series    = {WSDM '27},
+  year      = {2027},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3862322.3863501},
+  url       = {https://doi.org/10.1145/3862322.3863501},
+  isbn      = {979-8-4007-3117-4}
+}
+```
+
+## Build the paper
+
+The `paper/` directory includes the camera-ready source, bibliography,
+figures, ACM class, and bibliography style. With a compatible TeX Live
+installation, run:
+
+```bash
+cd paper
+pdflatex -interaction=nonstopmode -halt-on-error wsdm2027_main_submission_final.tex
+pdflatex -interaction=nonstopmode -halt-on-error wsdm2027_main_submission_final.tex
+```
+
+The supplied `.bbl` is included, so BibTeX is not needed unless the
+bibliography changes.
 
 ## Run
 
@@ -11,9 +60,12 @@ python -m pip install -r code/requirements.txt   # numpy, pandas, pyarrow
 python code/reproduce.py                          # from this directory
 ```
 
-`code/reproduce.py` recomputes the paper's numbers from the rows in `data/`
-and compares each against the printed value. It exits nonzero on any
-disagreement and ends with `N of N checks pass`. Runtime is a few minutes.
+`code/reproduce.py` recomputes headline results from the rows in `data/`
+and checks them against the reference values packaged with the release.
+It exits nonzero on any disagreement and ends with `N of N checks pass`.
+Runtime is a few minutes.
+
+Verified on November 25, 2026: **388 of 388 checks pass**.
 
 ## Data
 
@@ -38,6 +90,12 @@ disagreement and ends with `N of N checks pass`. Runtime is a few minutes.
 Band files record their `draws` and `bootstrap_seed`; the question-keyed fold
 seed is 20260811. `reproduce.py` checks point estimates, not bands.
 
+Some decomposition files retain the submission's three-stage column names.
+In the camera-ready notation, the combined instance-specific increment
+`G2` corresponds to `simple_selector_gain_G2 + structured_gain_G3`, and
+`R_c` corresponds to `residual_after_selected_policy_R`. The final identity
+is `H_c = G1 + G2 + R_c`; the released column names and results are preserved.
+
 ## Redaction
 
 Passage text (`supplied_context`, `reference_passages`, and nested `passages`)
@@ -45,7 +103,9 @@ is removed everywhere. No decision, label, score or identifier is altered.
 
 ## License
 
-To be set by the authors before the public release.
+The camera-ready paper states a Creative Commons Attribution 4.0
+International license. No separate license for the code or released data
+has been specified by the authors.
 
 ## External resources this release does not redistribute
 
